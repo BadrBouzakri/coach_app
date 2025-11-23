@@ -1,0 +1,470 @@
+[
+    {
+        "id": "ex_040",
+        "title": "La Course à l'Aveugle",
+        "theme": "Confiance",
+        "game_format": "Binômes",
+        "motor_skills_focus": "Équilibre et confiance",
+        "fun_rating": 5,
+        "setup_instructions": {
+            "field_dimensions": "20x10m avec parcours d'obstacles",
+            "equipment": [
+                "6 cônes",
+                "Bandeaux pour les yeux"
+            ],
+            "player_arrangement": "Binômes : 1 guide + 1 aveugle"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "Un joueur a les yeux bandés, l'autre le guide avec des instructions vocales.",
+                "Parcourir le slalom sans toucher les cônes.",
+                "Inverser les rôles."
+            ],
+            "scoring_system": "Temps le plus rapide sans faute."
+        },
+        "coaching_questions": [
+            "Comment donner des instructions claires ?",
+            "Fais-tu confiance à ton partenaire ?"
+        ],
+        "tags": [
+            "Confiance",
+            "Communication",
+            "Binôme"
+        ],
+        "animation": [
+            {
+                "step_description": "Guide et aveugle au départ",
+                "duration": 1,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 15,
+                        "y": 50,
+                        "team": "A",
+                        "label": "G"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 20,
+                        "y": 50,
+                        "team": "B",
+                        "label": "A"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 35,
+                        "y": 50
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 55,
+                        "y": 50
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 75,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "step_description": "Navigation guidée à travers le slalom",
+                "duration": 3,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 15,
+                        "y": 50,
+                        "team": "A",
+                        "label": "G"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 50,
+                        "y": 45,
+                        "team": "B",
+                        "label": "A"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 35,
+                        "y": 50
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 55,
+                        "y": 50
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 75,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "step_description": "Arrivée réussie !",
+                "duration": 1.5,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 15,
+                        "y": 50,
+                        "team": "A",
+                        "label": "G"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 85,
+                        "y": 50,
+                        "team": "B",
+                        "label": "A"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 35,
+                        "y": 50
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 55,
+                        "y": 50
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 75,
+                        "y": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex_041",
+        "title": "Le Ninja Silencieux",
+        "theme": "Agilité",
+        "game_format": "Individuel",
+        "motor_skills_focus": "Discrétion et agilité",
+        "fun_rating": 4,
+        "setup_instructions": {
+            "field_dimensions": "15x15m",
+            "equipment": [
+                "10 cônes dispersés",
+                "1 ballon"
+            ],
+            "player_arrangement": "File indienne"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "Se déplacer en silence entre les cônes avec le ballon.",
+                "Ne pas toucher les cônes.",
+                "Le coach a les yeux fermés et écoute."
+            ],
+            "scoring_system": "Si le coach t'entend, tu recommences."
+        },
+        "coaching_questions": [
+            "Comment te déplacer sans faire de bruit ?",
+            "Contrôles-tu bien ton ballon ?"
+        ],
+        "tags": [
+            "Agilité",
+            "Discrétion",
+            "Dribble"
+        ],
+        "animation": [
+            {
+                "step_description": "Départ en silence",
+                "duration": 1,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 15,
+                        "y": 50,
+                        "team": "A",
+                        "label": "N"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 17,
+                        "y": 50
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 30,
+                        "y": 40
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 45,
+                        "y": 60
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 60,
+                        "y": 35
+                    },
+                    {
+                        "id": "c4",
+                        "type": "cone",
+                        "x": 75,
+                        "y": 55
+                    }
+                ]
+            },
+            {
+                "step_description": "Évite les cônes en douceur",
+                "duration": 3,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 50,
+                        "y": 48,
+                        "team": "A",
+                        "label": "N"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 52,
+                        "y": 48
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 30,
+                        "y": 40
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 45,
+                        "y": 60
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 60,
+                        "y": 35
+                    },
+                    {
+                        "id": "c4",
+                        "type": "cone",
+                        "x": 75,
+                        "y": 55
+                    }
+                ]
+            },
+            {
+                "step_description": "Arrivée au but sans bruit",
+                "duration": 1.5,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 85,
+                        "y": 50,
+                        "team": "A",
+                        "label": "N"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 87,
+                        "y": 50
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 30,
+                        "y": 40
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 45,
+                        "y": 60
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 60,
+                        "y": 35
+                    },
+                    {
+                        "id": "c4",
+                        "type": "cone",
+                        "x": 75,
+                        "y": 55
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex_042",
+        "title": "Le Relais des Champions",
+        "theme": "Vitesse",
+        "game_format": "Équipes de 4",
+        "motor_skills_focus": "Vitesse explosive",
+        "fun_rating": 5,
+        "setup_instructions": {
+            "field_dimensions": "40x20m",
+            "equipment": [
+                "1 ballon par équipe",
+                "4 cônes"
+            ],
+            "player_arrangement": "Équipes en colonnes"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "Sprint avec ballon jusqu'au cône (20m).",
+                "Tour du cône et retour.",
+                "Passe au suivant qui repart immédiatement."
+            ],
+            "scoring_system": "Première équipe terminée gagne."
+        },
+        "coaching_questions": [
+            "Comment transmettre le ballon rapidement ?",
+            "Comment sprinter en gardant le ballon proche ?"
+        ],
+        "tags": [
+            "Relais",
+            "Vitesse",
+            "Équipe"
+        ],
+        "animation": [
+            {
+                "step_description": "Premier coureur prêt",
+                "duration": 1,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 15,
+                        "y": 50,
+                        "team": "A",
+                        "label": "1"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 17,
+                        "y": 50
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 10,
+                        "y": 50,
+                        "team": "A",
+                        "label": "2"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 80,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "step_description": "Sprint explosif vers le cône",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 75,
+                        "y": 50,
+                        "team": "A",
+                        "label": "1"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 77,
+                        "y": 50
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 10,
+                        "y": 50,
+                        "team": "A",
+                        "label": "2"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 80,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "step_description": "Retour et transmission",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 12,
+                        "y": 50,
+                        "team": "A",
+                        "label": "1"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 11,
+                        "y": 50
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 10,
+                        "y": 50,
+                        "team": "A",
+                        "label": "2"
+                    },
+                    {
+                        "id": "a1",
+                        "type": "arrow",
+                        "x": 12,
+                        "y": 50,
+                        "endX": 10,
+                        "endY": 50,
+                        "curve": 0
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 80,
+                        "y": 50
+                    }
+                ]
+            }
+        ]
+    }
+]
