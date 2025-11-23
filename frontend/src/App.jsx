@@ -7,11 +7,12 @@ import { ParticleBackground, PageTransition } from './components/PageTransition'
 import batch1 from './data/batch1_exercises.json';
 import batch2 from './data/batch2_warmup.json';
 import batch3 from './data/batch3_generated.json';
+import batchWarmup from './data/batch_warmup_complete.json';
 import examples from './data/example_exercises.json';
 import { Search, Filter } from 'lucide-react';
 
 function App() {
-  const [exercises] = useState([...examples, ...batch1, ...batch2, ...batch3]);
+  const [exercises] = useState([...examples, ...batch1, ...batch2, ...batch3, ...batchWarmup]);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTheme, setSelectedTheme] = useState("All");
   const [selectedExercise, setSelectedExercise] = useState(null);
