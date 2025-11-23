@@ -3,20 +3,35 @@ import { Layout } from './components/Layout';
 import { ExerciseCard } from './components/ExerciseCard';
 import { ExerciseDetail } from './components/ExerciseDetail';
 import { StatisticsPanel } from './components/StatisticsPanel';
+import { SessionPlanner } from './components/SessionPlanner';
 import { ParticleBackground, PageTransition } from './components/PageTransition';
 import batch1 from './data/batch1_exercises.json';
 import batch2 from './data/batch2_warmup.json';
 import batch3 from './data/batch3_generated.json';
 import batchWarmup from './data/batch_warmup_complete.json';
+import premiumExercises from './data/premium_exercises_complete.json';
 import examples from './data/example_exercises.json';
-import { Search, Filter } from 'lucide-react';
+import { Search, Filter, Star } from 'lucide-react';
 
 function App() {
-  const [exercises] = useState([...examples, ...batch1, ...batch2, ...batch3, ...batchWarmup]);
+  const [exercises] = useState([...examples, ...batch1, ...batch2, ...batch3, ...batchWarmup, ...premiumExercises]);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTheme, setSelectedTheme] = useState("All");
   const [selectedExercise, setSelectedExercise] = useState(null);
   const [currentView, setCurrentView] = useState('exercises');
+  const [favorites, setFavorites] = useState(() => {
+    const saved = localStorage.getItem('favoritesExercises');
+    return saved ? JSON.parse(saved) : [];
+  });
+  const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
+
+  const toggleFavorite = (exerciseId) => {
+    const newFavorites = favorites.includes(exerciseId)
+      ? favorites.filter(id => id !== exerciseId)
+      : [...favorites, exerciseId];
+    setFavorites(newFavorites);
+    localStorage.setItem('favoritesExercises', JSON.stringify(newFavorites));
+  };
 
   const themes = ["All", ...new Set(exercises.map(ex => ex.theme))];
 
@@ -24,7 +39,8 @@ function App() {
     const matchesSearch = ex.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       ex.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
     const matchesTheme = selectedTheme === "All" || ex.theme === selectedTheme;
-    return matchesSearch && matchesTheme;
+    const matchesFavorites = !showFavoritesOnly || favorites.includes(ex.id);
+    return matchesSearch && matchesTheme && matchesFavorites;
   });
 
   return (
@@ -54,6 +70,16 @@ function App() {
                   </div>
                   <div className="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
                     <Filter className="w-5 h-5 text-slate-400" />
+                    <button
+                      onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
+                      className={`px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap transition-all border flex items-center gap-2 ${showFavoritesOnly
+                        ? 'bg-yellow-600 text-white border-yellow-500 shadow-lg shadow-yellow-900/20'
+                        : 'bg-slate-800/50 text-slate-400 border-slate-700 hover:bg-slate-700 hover:text-white'
+                        }`}
+                    >
+                      <Star className={`w-4 h-4 ${showFavoritesOnly ? 'fill-white' : ''}`} />
+                      Favoris {favorites.length > 0 && `(${favorites.length})`}
+                    </button>
                     {themes.map(theme => (
                       <button
                         key={theme}
@@ -77,6 +103,8 @@ function App() {
                     key={exercise.id}
                     exercise={exercise}
                     onClick={() => setSelectedExercise(exercise)}
+                    isFavorite={favorites.includes(exercise.id)}
+                    onToggleFavorite={() => toggleFavorite(exercise.id)}
                   />
                 ))}
               </div>
@@ -99,6 +127,10 @@ function App() {
 
           {currentView === 'statistics' && (
             <StatisticsPanel exercises={exercises} />
+          )}
+
+          {currentView === 'planner' && (
+            <SessionPlanner exercises={exercises} />
           )}
         </PageTransition>
       </Layout>

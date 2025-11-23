@@ -1,0 +1,489 @@
+[
+    {
+        "id": "ex_premium_001",
+        "title": "Le Duel du Roi",
+        "theme": "Duel",
+        "game_format": "1v1 tournant",
+        "motor_skills_focus": "Déséquilibre offensif",
+        "fun_rating": 5,
+        "duration_minutes": 15,
+        "setup_instructions": {
+            "field_dimensions": "Carré de 10x10m délimité par des cônes",
+            "equipment": [
+                "4 cônes pour délimiter le carré",
+                "1 ballon",
+                "Chasubles pour différencier (optionnel)"
+            ],
+            "player_arrangement": "2 joueurs dans le carré, les autres en file indienne autour"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "Deux joueurs entrent dans le carré avec 1 ballon.",
+                "L'attaquant doit sortir du carré avec le ballon sous contrôle (passe la ligne avec le ballon).",
+                "Le défenseur essaie de récupérer le ballon ou de forcer l'attaquant à sortir sans contrôle.",
+                "Durée : 30 secondes par duel.",
+                "Le gagnant reste, le perdant sort et un nouveau challenger entre.",
+                "L'attaquant et le défenseur inversent les rôles à chaque tour."
+            ],
+            "scoring_system": "1 point pour l'attaquant s'il sort avec le ballon. 1 point pour le défenseur s'il récupère ou fait sortir sans contrôle. Le joueur avec le plus de points après 5 duels devient le Roi."
+        },
+        "variants": [
+            {
+                "name": "Facile - Grand Carré",
+                "description": "Augmenter la taille du carré à 12x12m pour donner plus d'espace à l'attaquant."
+            },
+            {
+                "name": "Moyen - Carré Standard",
+                "description": "10x10m comme décrit ci-dessus."
+            },
+            {
+                "name": "Difficile - Petit Carré + Temps Limité",
+                "description": "Réduire à 8x8m et limiter le temps à 20 secondes. L'attaquant doit être explosif."
+            },
+            {
+                "name": "Expert - 2 Sorties Obligatoires",
+                "description": "L'attaquant doit sortir par 2 côtés différents marqués (par exemple Nord puis Est) en 45 secondes."
+            }
+        ],
+        "success_criteria": [
+            "L'attaquant utilise des feintes de corps pour déséquilibrer",
+            "Le défenseur garde une posture basse et réactive",
+            "Les changements de direction sont explosifs",
+            "Le ballon reste proche du pied lors des feintes"
+        ],
+        "safety_notes": [
+            "Interdire les contacts physiques violents (épaule contre épaule autorisée mais contrôlée)",
+            "Vérifier que le sol n'est pas glissant",
+            "Espacer suffisamment les carrés si plusieurs duels simultanés",
+            "Échauffement obligatoire avant (échauffement articulaire + sprints courts)"
+        ],
+        "coaching_questions": [
+            "Quelle feinte a le mieux fonctionné pour te créer de l'espace ?",
+            "Comment as-tu lu les intentions de ton adversaire ?",
+            "Ton premier toucher était-il dans la bonne direction ?"
+        ],
+        "tags": [
+            "Duel",
+            "1v1",
+            "Déséquilibre",
+            "Technique individuelle"
+        ],
+        "animation": [
+            {
+                "step_description": "Face à face au centre du carré",
+                "duration": 1,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 45,
+                        "y": 50,
+                        "team": "A",
+                        "label": "ATT"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 50,
+                        "y": 50
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 55,
+                        "y": 50,
+                        "team": "B",
+                        "label": "DEF"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 30,
+                        "y": 30
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 70,
+                        "y": 30
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 70,
+                        "y": 70
+                    },
+                    {
+                        "id": "c4",
+                        "type": "cone",
+                        "x": 30,
+                        "y": 70
+                    }
+                ]
+            },
+            {
+                "step_description": "Feinte de corps vers la gauche",
+                "duration": 1.5,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 48,
+                        "y": 48,
+                        "team": "A",
+                        "label": "ATT"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 50,
+                        "y": 48
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 52,
+                        "y": 52,
+                        "team": "B",
+                        "label": "DEF"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 30,
+                        "y": 30
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 70,
+                        "y": 30
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 70,
+                        "y": 70
+                    },
+                    {
+                        "id": "c4",
+                        "type": "cone",
+                        "x": 30,
+                        "y": 70
+                    }
+                ]
+            },
+            {
+                "step_description": "Accélération explosive vers la droite et sortie",
+                "duration": 1.5,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 72,
+                        "y": 50,
+                        "team": "A",
+                        "label": "ATT"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 74,
+                        "y": 50
+                    },
+                    {
+                        "id": "a1",
+                        "type": "arrow",
+                        "x": 50,
+                        "y": 48,
+                        "endX": 72,
+                        "endY": 50,
+                        "curve": 10
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 60,
+                        "y": 55,
+                        "team": "B",
+                        "label": "DEF"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 30,
+                        "y": 30
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 70,
+                        "y": 30
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 70,
+                        "y": 70
+                    },
+                    {
+                        "id": "c4",
+                        "type": "cone",
+                        "x": 30,
+                        "y": 70
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex_premium_002",
+        "title": "La Passe Laser",
+        "theme": "Passes",
+        "game_format": "Groupes de 3",
+        "motor_skills_focus": "Précision des passes",
+        "fun_rating": 4,
+        "duration_minutes": 12,
+        "setup_instructions": {
+            "field_dimensions": "Triangle de 8m de côté",
+            "equipment": [
+                "3 cônes pour les sommets du triangle",
+                "1 ballon par triangle",
+                "3 mini-cônes en option pour cibler les passes"
+            ],
+            "player_arrangement": "3 joueurs aux sommets du triangle"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "Les joueurs se positionnent aux 3 sommets du triangle (A, B, C).",
+                "A passe à B, B contrôle et passe à C, C contrôle et passe à A.",
+                "La passe doit être au sol, précise, et arriver entre les pieds du partenaire.",
+                "Progression : 1 toucher pour contrôler, 1 pour passer → puis une seule touche (contrôle orienté).",
+                "Variante compétition : compter le nombre de passes réussies en 2 minutes."
+            ],
+            "scoring_system": "1 point par passe réussie qui arrive entre les pieds du partenaire (tolérance 1m). Objectif : 50 passes en 2 minutes."
+        },
+        "variants": [
+            {
+                "name": "Débutant - Grand Triangle",
+                "description": "Triangle de 10m de côté, 2 touches autorisées."
+            },
+            {
+                "name": "Intermédiaire - Triangle Standard",
+                "description": "8m de côté, 1 toucher pour contrôler + 1 pour passer."
+            },
+            {
+                "name": "Avancé - Une Touche Obligatoire",
+                "description": "6m de côté, contrôle orienté + passe en une seule touche."
+            },
+            {
+                "name": "Expert - Passes en Mouvement",
+                "description": "Après chaque passe, le passeur sprin te au sommet opposé. Triangle dynamique."
+            }
+        ],
+        "success_criteria": [
+            "La passe arrive au pied du partenaire (ne roule pas trop loin)",
+            "La vitesse de passe est adaptée (ni trop molle, ni trop forte)",
+            "Le contrôle orienté se fait vers le prochain receveur",
+            "La surface de passe utilisée est correcte (intérieur du pied)"
+        ],
+        "safety_notes": [
+            "S'assurer que les triangles sont espacés d'au moins 5m pour éviter les collisions de ballons",
+            "Vérifier que les joueurs ne se mettent pas dans l'axe de passe d'un autre groupe",
+            "Commencer doucement pour échauffer les chevilles et genoux"
+        ],
+        "coaching_questions": [
+            "Quelle partie du pied utilises-tu pour la passe ? Pourquoi ?",
+            "Comment te positionnes-tu pour recevoir le ballon ?",
+            "Regardes-tu ton partenaire avant de passer ?"
+        ],
+        "tags": [
+            "Passes",
+            "Précision",
+            "Technique",
+            "Contrôle orienté"
+        ],
+        "animation": [
+            {
+                "step_description": "Position initiale - Triangle A, B, C",
+                "duration": 1,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 30,
+                        "y": 50,
+                        "team": "A",
+                        "label": "A"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 32,
+                        "y": 50
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 50,
+                        "y": 30,
+                        "team": "A",
+                        "label": "B"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 70,
+                        "y": 50,
+                        "team": "A",
+                        "label": "C"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 30,
+                        "y": 50
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 30
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 70,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "step_description": "A passe à B (passe laser précise)",
+                "duration": 1.5,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 30,
+                        "y": 50,
+                        "team": "A",
+                        "label": "A"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 45,
+                        "y": 38
+                    },
+                    {
+                        "id": "a1",
+                        "type": "arrow",
+                        "x": 30,
+                        "y": 50,
+                        "endX": 50,
+                        "endY": 30,
+                        "curve": 0
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 50,
+                        "y": 30,
+                        "team": "A",
+                        "label": "B"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 70,
+                        "y": 50,
+                        "team": "A",
+                        "label": "C"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 30,
+                        "y": 50
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 30
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 70,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "step_description": "B contrôle orienté vers C et passe",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 30,
+                        "y": 50,
+                        "team": "A",
+                        "label": "A"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 50,
+                        "y": 30,
+                        "team": "A",
+                        "label": "B"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 62,
+                        "y": 42
+                    },
+                    {
+                        "id": "a1",
+                        "type": "arrow",
+                        "x": 50,
+                        "y": 30,
+                        "endX": 70,
+                        "endY": 50,
+                        "curve": 0
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 70,
+                        "y": 50,
+                        "team": "A",
+                        "label": "C"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 30,
+                        "y": 50
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 30
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 70,
+                        "y": 50
+                    }
+                ]
+            }
+        ]
+    }
+]

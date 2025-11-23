@@ -17,31 +17,35 @@ export function Layout({ children, currentView, onViewChange }) {
                     <button
                         onClick={() => onViewChange?.('exercises')}
                         className={`w-full flex items-center gap-3 px-4 py-3 ${currentView === 'exercises'
-                                ? 'bg-blue-600/90 shadow-lg shadow-blue-900/20'
-                                : 'text-slate-400 hover:text-white hover:bg-white/5'
+                            ? 'bg-blue-600/90 shadow-lg shadow-blue-900/20'
+                            : 'text-slate-400 hover:text-white hover:bg-white/5'
                             } rounded-xl font-medium backdrop-blur-sm transition-all`}
                     >
                         <LayoutDashboard className="w-5 h-5" />
                         Exercices
                     </button>
+
                     <button
                         onClick={() => onViewChange?.('statistics')}
                         className={`w-full flex items-center gap-3 px-4 py-3 ${currentView === 'statistics'
-                                ? 'bg-indigo-600/90 shadow-lg shadow-indigo-900/20'
-                                : 'text-slate-400 hover:text-white hover:bg-white/5'
+                            ? 'bg-blue-600/90 shadow-lg shadow-blue-900/20'
+                            : 'text-slate-400 hover:text-white hover:bg-white/5'
                             } rounded-xl font-medium backdrop-blur-sm transition-all`}
                     >
                         <BarChart3 className="w-5 h-5" />
                         Statistiques
                     </button>
-                    <a href="#" className="flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-white hover:bg-white/5 rounded-xl transition-all">
+
+                    <button
+                        onClick={() => onViewChange?.('planner')}
+                        className={`w-full flex items-center gap-3 px-4 py-3 ${currentView === 'planner'
+                            ? 'bg-blue-600/90 shadow-lg shadow-blue-900/20'
+                            : 'text-slate-400 hover:text-white hover:bg-white/5'
+                            } rounded-xl font-medium backdrop-blur-sm transition-all`}
+                    >
                         <Calendar className="w-5 h-5" />
-                        Séances
-                    </a>
-                    <a href="#" className="flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-white hover:bg-white/5 rounded-xl transition-all">
-                        <Settings className="w-5 h-5" />
-                        Paramètres
-                    </a>
+                        Planificateur
+                    </button>
                 </nav>
 
                 <div className="p-4 border-t border-slate-800/50">
