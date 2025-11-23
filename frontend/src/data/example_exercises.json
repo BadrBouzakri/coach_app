@@ -1,0 +1,605 @@
+﻿[
+    {
+        "id": "ex_001",
+        "title": "Le Labyrinthe Magique (Conduite & Vision)",
+        "theme": "Prise d'information",
+        "game_format": "Individuel dans une zone partag�e",
+        "motor_skills_focus": "Dissociation",
+        "fun_rating": 5,
+        "setup_instructions": {
+            "field_dimensions": "20x20m",
+            "equipment": [
+                "20 c�nes de 4 couleurs diff�rentes",
+                "1 ballon par joueur"
+            ],
+            "player_arrangement": "Tous les joueurs dans le carr� avec un ballon"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "Conduire le ballon sans toucher les autres ni les c�nes.",
+                "Au signal 'ROUGE', toucher un c�ne rouge le plus vite possible.",
+                "Au signal 'STOP', s'arr�ter semelle sur le ballon."
+            ],
+            "scoring_system": "Le dernier � toucher la couleur a un gage (faire l'avion). 1 point pour les 3 premiers."
+        },
+        "coaching_questions": [
+            "Comment faire pour ne pas foncer dans les copains ?",
+            "Est-ce que tu regardes ton ballon ou les espaces libres ?",
+            "Si je l�ve la t�te, est-ce que je vais plus ou moins vite ?"
+        ],
+        "tags": [
+            "Conduite",
+            "Vision",
+            "Ludique"
+        ],
+        "animation": [
+            {
+                "step_description": "Conduite libre dans l'espace",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 20,
+                        "y": 30,
+                        "team": "A",
+                        "label": "P1"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 22,
+                        "y": 32
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 80,
+                        "y": 70,
+                        "team": "A",
+                        "label": "P2"
+                    },
+                    {
+                        "id": "b2",
+                        "type": "ball",
+                        "x": 78,
+                        "y": 72
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 10,
+                        "y": 10
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 90,
+                        "y": 10
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 10,
+                        "y": 90
+                    },
+                    {
+                        "id": "c4",
+                        "type": "cone",
+                        "x": 90,
+                        "y": 90
+                    }
+                ]
+            },
+            {
+                "step_description": "Signal ROUGE ! Tout le monde vers un c�ne rouge",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 15,
+                        "y": 15,
+                        "team": "A",
+                        "label": "P1"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 12,
+                        "y": 12
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 85,
+                        "y": 15,
+                        "team": "A",
+                        "label": "P2"
+                    },
+                    {
+                        "id": "b2",
+                        "type": "ball",
+                        "x": 88,
+                        "y": 12
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 10,
+                        "y": 10
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 90,
+                        "y": 10
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 10,
+                        "y": 90
+                    },
+                    {
+                        "id": "c4",
+                        "type": "cone",
+                        "x": 90,
+                        "y": 90
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex_002",
+        "title": "L'Attaque du Ch�teau (2 contre 1)",
+        "theme": "D�s�quilibre",
+        "game_format": "2 attaquants vs 1 d�fenseur + Gardien",
+        "motor_skills_focus": "Vitesse de r�action",
+        "fun_rating": 4,
+        "setup_instructions": {
+            "field_dimensions": "25x15m",
+            "equipment": [
+                "1 but",
+                "3 coupelles de d�part"
+            ],
+            "player_arrangement": "2 files d'attaquants, 1 file de d�fenseurs"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "L'attaquant part balle au pied, son partenaire l'accompagne.",
+                "Le d�fenseur part d�s la premi�re touche de balle.",
+                "Hors-jeu compt� (ligne de la surface)."
+            ],
+            "scoring_system": "But = 100 points. Si le d�fenseur r�cup�re et sort en conduite = 50 points."
+        },
+        "coaching_questions": [
+            "Quand dois-tu faire la passe � ton copain ?",
+            "Si le d�fenseur vient sur toi, que fais-tu ?",
+            "Si le d�fenseur va sur ton copain, que fais-tu ?"
+        ],
+        "tags": [
+            "Duel",
+            "Finition",
+            "Choix"
+        ],
+        "animation": [
+            {
+                "step_description": "D�part: 2 Attaquants vs 1 D�fenseur",
+                "duration": 1,
+                "entities": [
+                    {
+                        "id": "a1",
+                        "type": "player",
+                        "x": 40,
+                        "y": 80,
+                        "team": "A",
+                        "label": "A1"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 40,
+                        "y": 75
+                    },
+                    {
+                        "id": "a2",
+                        "type": "player",
+                        "x": 60,
+                        "y": 80,
+                        "team": "A",
+                        "label": "A2"
+                    },
+                    {
+                        "id": "d1",
+                        "type": "player",
+                        "x": 50,
+                        "y": 30,
+                        "team": "B",
+                        "label": "D1"
+                    },
+                    {
+                        "id": "g1",
+                        "type": "player",
+                        "x": 50,
+                        "y": 5,
+                        "team": "neutral",
+                        "label": "GB"
+                    },
+                    {
+                        "id": "goal",
+                        "type": "goal",
+                        "x": 50,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "step_description": "Fixation: Le d�fenseur sort sur le porteur",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "a1",
+                        "type": "player",
+                        "x": 45,
+                        "y": 50,
+                        "team": "A",
+                        "label": "A1"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 45,
+                        "y": 45
+                    },
+                    {
+                        "id": "a2",
+                        "type": "player",
+                        "x": 70,
+                        "y": 40,
+                        "team": "A",
+                        "label": "A2"
+                    },
+                    {
+                        "id": "d1",
+                        "type": "player",
+                        "x": 48,
+                        "y": 40,
+                        "team": "B",
+                        "label": "D1"
+                    },
+                    {
+                        "id": "g1",
+                        "type": "player",
+                        "x": 50,
+                        "y": 5,
+                        "team": "neutral",
+                        "label": "GB"
+                    },
+                    {
+                        "id": "goal",
+                        "type": "goal",
+                        "x": 50,
+                        "y": 0
+                    }
+                ]
+            },
+            {
+                "step_description": "Passe dans l'intervalle et Tir",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "a1",
+                        "type": "player",
+                        "x": 45,
+                        "y": 50,
+                        "team": "A",
+                        "label": "A1"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 68,
+                        "y": 38
+                    },
+                    {
+                        "id": "a2",
+                        "type": "player",
+                        "x": 70,
+                        "y": 40,
+                        "team": "A",
+                        "label": "A2"
+                    },
+                    {
+                        "id": "d1",
+                        "type": "player",
+                        "x": 45,
+                        "y": 45,
+                        "team": "B",
+                        "label": "D1"
+                    },
+                    {
+                        "id": "g1",
+                        "type": "player",
+                        "x": 60,
+                        "y": 5,
+                        "team": "neutral",
+                        "label": "GB"
+                    },
+                    {
+                        "id": "goal",
+                        "type": "goal",
+                        "x": 50,
+                        "y": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex_003",
+        "title": "Le Match des 4 Maisons",
+        "theme": "Transition",
+        "game_format": "4 �quipes de 3 joueurs",
+        "motor_skills_focus": "Rythme",
+        "fun_rating": 5,
+        "setup_instructions": {
+            "field_dimensions": "40x30m",
+            "equipment": [
+                "4 mini-buts aux 4 coins",
+                "Chasubles de 4 couleurs"
+            ],
+            "player_arrangement": "2 matchs simultan�s en travers (A vs B et C vs D)"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "2 ballons en jeu simultan�ment.",
+                "Au signal 'CHANGE', on change d'adversaire sans arr�ter le jeu (A joue contre C, B contre D).",
+                "Interdiction de rester immobile."
+            ],
+            "scoring_system": "L'�quipe qui marque le plus de buts au total gagne le Tournoi des Sorciers."
+        },
+        "coaching_questions": [
+            "D�s que �a change, o� est ton nouvel adversaire ?",
+            "Comment profiter de la confusion pour marquer vite ?",
+            "Est-ce qu'on attaque ou on d�fend l� tout de suite ?"
+        ],
+        "tags": [
+            "Jeu r�duit",
+            "Cognitif",
+            "Intensit�"
+        ],
+        "animation": [
+            {
+                "step_description": "2 Matchs simultan�s: A vs B et C vs D",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "a1",
+                        "type": "player",
+                        "x": 20,
+                        "y": 20,
+                        "team": "A",
+                        "label": "A1"
+                    },
+                    {
+                        "id": "a2",
+                        "type": "player",
+                        "x": 30,
+                        "y": 25,
+                        "team": "A",
+                        "label": "A2"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "player",
+                        "x": 20,
+                        "y": 40,
+                        "team": "B",
+                        "label": "B1"
+                    },
+                    {
+                        "id": "b2",
+                        "type": "player",
+                        "x": 30,
+                        "y": 35,
+                        "team": "B",
+                        "label": "B2"
+                    },
+                    {
+                        "id": "ball1",
+                        "type": "ball",
+                        "x": 25,
+                        "y": 30
+                    },
+                    {
+                        "id": "c1",
+                        "type": "player",
+                        "x": 70,
+                        "y": 20,
+                        "team": "A",
+                        "label": "C1"
+                    },
+                    {
+                        "id": "c2",
+                        "type": "player",
+                        "x": 80,
+                        "y": 25,
+                        "team": "A",
+                        "label": "C2"
+                    },
+                    {
+                        "id": "d1",
+                        "type": "player",
+                        "x": 70,
+                        "y": 40,
+                        "team": "B",
+                        "label": "D1"
+                    },
+                    {
+                        "id": "d2",
+                        "type": "player",
+                        "x": 80,
+                        "y": 35,
+                        "team": "B",
+                        "label": "D2"
+                    },
+                    {
+                        "id": "ball2",
+                        "type": "ball",
+                        "x": 75,
+                        "y": 30
+                    },
+                    {
+                        "id": "g1",
+                        "type": "goal",
+                        "x": 25,
+                        "y": 5,
+                        "rotation": 180
+                    },
+                    {
+                        "id": "g2",
+                        "type": "goal",
+                        "x": 25,
+                        "y": 55,
+                        "rotation": 0
+                    },
+                    {
+                        "id": "g3",
+                        "type": "goal",
+                        "x": 75,
+                        "y": 5,
+                        "rotation": 180
+                    },
+                    {
+                        "id": "g4",
+                        "type": "goal",
+                        "x": 75,
+                        "y": 55,
+                        "rotation": 0
+                    }
+                ]
+            },
+            {
+                "step_description": "CHANGE ! Rotation des adversaires",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "a1",
+                        "type": "player",
+                        "x": 70,
+                        "y": 20,
+                        "team": "A",
+                        "label": "A1"
+                    },
+                    {
+                        "id": "a2",
+                        "type": "player",
+                        "x": 80,
+                        "y": 25,
+                        "team": "A",
+                        "label": "A2"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "player",
+                        "x": 20,
+                        "y": 40,
+                        "team": "B",
+                        "label": "B1"
+                    },
+                    {
+                        "id": "b2",
+                        "type": "player",
+                        "x": 30,
+                        "y": 35,
+                        "team": "B",
+                        "label": "B2"
+                    },
+                    {
+                        "id": "ball1",
+                        "type": "ball",
+                        "x": 75,
+                        "y": 30
+                    },
+                    {
+                        "id": "c1",
+                        "type": "player",
+                        "x": 20,
+                        "y": 20,
+                        "team": "A",
+                        "label": "C1"
+                    },
+                    {
+                        "id": "c2",
+                        "type": "player",
+                        "x": 30,
+                        "y": 25,
+                        "team": "A",
+                        "label": "C2"
+                    },
+                    {
+                        "id": "d1",
+                        "type": "player",
+                        "x": 70,
+                        "y": 40,
+                        "team": "B",
+                        "label": "D1"
+                    },
+                    {
+                        "id": "d2",
+                        "type": "player",
+                        "x": 80,
+                        "y": 35,
+                        "team": "B",
+                        "label": "D2"
+                    },
+                    {
+                        "id": "ball2",
+                        "type": "ball",
+                        "x": 25,
+                        "y": 30
+                    },
+                    {
+                        "id": "g1",
+                        "type": "goal",
+                        "x": 25,
+                        "y": 5,
+                        "rotation": 180
+                    },
+                    {
+                        "id": "g2",
+                        "type": "goal",
+                        "x": 25,
+                        "y": 55,
+                        "rotation": 0
+                    },
+                    {
+                        "id": "g3",
+                        "type": "goal",
+                        "x": 75,
+                        "y": 5,
+                        "rotation": 180
+                    },
+                    {
+                        "id": "g4",
+                        "type": "goal",
+                        "x": 75,
+                        "y": 55,
+                        "rotation": 0
+                    },
+                    {
+                        "id": "arr1",
+                        "type": "arrow",
+                        "x": 25,
+                        "y": 30,
+                        "endX": 75,
+                        "endY": 30,
+                        "curve": -20
+                    }
+                ]
+            }
+        ]
+    }
+]

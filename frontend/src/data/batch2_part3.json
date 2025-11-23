@@ -1,0 +1,532 @@
+[
+    {
+        "id": "ex_031",
+        "title": "Le Serpent qui Bouge",
+        "theme": "Coordination",
+        "game_format": "Fil indienne (6-8 joueurs)",
+        "motor_skills_focus": "Coordination",
+        "fun_rating": 4,
+        "setup_instructions": {
+            "field_dimensions": "10x10m",
+            "equipment": [
+                "1 ballon par joueur"
+            ],
+            "player_arrangement": "File indienne"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "Le premier joueur se déplace avec le ballon.",
+                "Tous les autres suivent en imitant exactement ses mouvements.",
+                "Change de leader toutes les 30 secondes."
+            ],
+            "scoring_system": "Pas de score, focus sur la synchronisation."
+        },
+        "coaching_questions": [
+            "Arrives-tu à suivre les changements de direction ?",
+            "Comment anticiper le prochain mouvement ?"
+        ],
+        "tags": [
+            "Coordination",
+            "Imitation",
+            "Collectif"
+        ],
+        "animation": [
+            {
+                "step_description": "Départ - Le leader commence",
+                "duration": 1.5,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 20,
+                        "y": 50,
+                        "team": "A",
+                        "label": "L"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 22,
+                        "y": 50
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 30,
+                        "y": 50,
+                        "team": "A",
+                        "label": "2"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 40,
+                        "y": 50,
+                        "team": "A",
+                        "label": "3"
+                    },
+                    {
+                        "id": "p4",
+                        "type": "player",
+                        "x": 50,
+                        "y": 50,
+                        "team": "A",
+                        "label": "4"
+                    }
+                ]
+            },
+            {
+                "step_description": "Le serpent ondule vers la droite",
+                "duration": 2.5,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 40,
+                        "y": 35,
+                        "team": "A",
+                        "label": "L"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 42,
+                        "y": 35
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 33,
+                        "y": 42,
+                        "team": "A",
+                        "label": "2"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 26,
+                        "y": 49,
+                        "team": "A",
+                        "label": "3"
+                    },
+                    {
+                        "id": "p4",
+                        "type": "player",
+                        "x": 35,
+                        "y": 50,
+                        "team": "A",
+                        "label": "4"
+                    }
+                ]
+            },
+            {
+                "step_description": "Retour au centre",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 60,
+                        "y": 50,
+                        "team": "A",
+                        "label": "L"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 62,
+                        "y": 50
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 50,
+                        "y": 45,
+                        "team": "A",
+                        "label": "2"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 40,
+                        "y": 40,
+                        "team": "A",
+                        "label": "3"
+                    },
+                    {
+                        "id": "p4",
+                        "type": "player",
+                        "x": 30,
+                        "y": 48,
+                        "team": "A",
+                        "label": "4"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex_032",
+        "title": "La Ruche en Folie",
+        "theme": "Vision de jeu",
+        "game_format": "10-12 joueurs",
+        "motor_skills_focus": "Vision périphérique",
+        "fun_rating": 5,
+        "setup_instructions": {
+            "field_dimensions": "15x15m carré",
+            "equipment": [
+                "1 ballon par joueur",
+                "4 cônes d'angle"
+            ],
+            "player_arrangement": "Tous dispersés aléatoirement"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "Tout le monde se déplace en conduisant son ballon sans sortir du carré.",
+                "Éviter les collisions entre joueurs.",
+                "Au signal, changer de direction immédiatement."
+            ],
+            "scoring_system": "1 point perdu par collision."
+        },
+        "coaching_questions": [
+            "Utilises-tu ta vision périphérique ?",
+            "Comment éviter les autres joueurs ?"
+        ],
+        "tags": [
+            "Vision",
+            "Chaos contrôlé",
+            "Dribble"
+        ],
+        "animation": [
+            {
+                "step_description": "Tous se déplacent librement",
+                "duration": 1,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 25,
+                        "y": 30,
+                        "team": "A",
+                        "label": "1"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 40,
+                        "y": 60,
+                        "team": "A",
+                        "label": "2"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 60,
+                        "y": 35,
+                        "team": "A",
+                        "label": "3"
+                    },
+                    {
+                        "id": "p4",
+                        "type": "player",
+                        "x": 50,
+                        "y": 70,
+                        "team": "A",
+                        "label": "4"
+                    },
+                    {
+                        "id": "p5",
+                        "type": "player",
+                        "x": 70,
+                        "y": 50,
+                        "team": "A",
+                        "label": "5"
+                    }
+                ]
+            },
+            {
+                "step_description": "Mouvement chaotique - Éviter les collisions !",
+                "duration": 3,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 45,
+                        "y": 45,
+                        "team": "A",
+                        "label": "1"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 55,
+                        "y": 40,
+                        "team": "A",
+                        "label": "2"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 35,
+                        "y": 55,
+                        "team": "A",
+                        "label": "3"
+                    },
+                    {
+                        "id": "p4",
+                        "type": "player",
+                        "x": 65,
+                        "y": 60,
+                        "team": "A",
+                        "label": "4"
+                    },
+                    {
+                        "id": "p5",
+                        "type": "player",
+                        "x": 50,
+                        "y": 65,
+                        "team": "A",
+                        "label": "5"
+                    }
+                ]
+            },
+            {
+                "step_description": "Changement de direction au signal",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 70,
+                        "y": 30,
+                        "team": "A",
+                        "label": "1"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 30,
+                        "y": 45,
+                        "team": "A",
+                        "label": "2"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 50,
+                        "y": 25,
+                        "team": "A",
+                        "label": "3"
+                    },
+                    {
+                        "id": "p4",
+                        "type": "player",
+                        "x": 40,
+                        "y": 70,
+                        "team": "A",
+                        "label": "4"
+                    },
+                    {
+                        "id": "p5",
+                        "type": "player",
+                        "x": 60,
+                        "y": 55,
+                        "team": "A",
+                        "label": "5"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex_033",
+        "title": "Le Roi du Cercle",
+        "theme": "Duel",
+        "game_format": "1v1 tournant",
+        "motor_skills_focus": "Déséquilibre",
+        "fun_rating": 5,
+        "setup_instructions": {
+            "field_dimensions": "Cercle de 8m de diamètre",
+            "equipment": [
+                "1 ballon",
+                "Cônes pour cercle"
+            ],
+            "player_arrangement": "2 joueurs dans le cercle, les autres autour"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "2 joueurs en duel dans le cercle.",
+                "Le but : sortir l'adversaire du cercle avec le ballon.",
+                "30 secondes par duel, puis rotation."
+            ],
+            "scoring_system": "Le gagnant devient le 'Roi' et affronte le suivant."
+        },
+        "coaching_questions": [
+            "Comment déséquilibrer ton adversaire ?",
+            "Utilises-tu des feintes ?"
+        ],
+        "tags": [
+            "Duel",
+            "1v1",
+            "Déséquilibre"
+        ],
+        "animation": [
+            {
+                "step_description": "Face à face au centre",
+                "duration": 1,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 45,
+                        "y": 50,
+                        "team": "A",
+                        "label": "A"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 50,
+                        "y": 50
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 55,
+                        "y": 50,
+                        "team": "B",
+                        "label": "D"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 25
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 75,
+                        "y": 50
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 75
+                    },
+                    {
+                        "id": "c4",
+                        "type": "cone",
+                        "x": 25,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "step_description": "L'attaquant feinte vers la droite",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 58,
+                        "y": 48,
+                        "team": "A",
+                        "label": "A"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 60,
+                        "y": 48
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 62,
+                        "y": 52,
+                        "team": "B",
+                        "label": "D"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 25
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 75,
+                        "y": 50
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 75
+                    },
+                    {
+                        "id": "c4",
+                        "type": "cone",
+                        "x": 25,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "step_description": "Tentative de sortie du cercle",
+                "duration": 1.5,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 70,
+                        "y": 50,
+                        "team": "A",
+                        "label": "A"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 72,
+                        "y": 50
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 68,
+                        "y": 55,
+                        "team": "B",
+                        "label": "D"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 25
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 75,
+                        "y": 50
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 75
+                    },
+                    {
+                        "id": "c4",
+                        "type": "cone",
+                        "x": 25,
+                        "y": 50
+                    }
+                ]
+            }
+        ]
+    }
+]

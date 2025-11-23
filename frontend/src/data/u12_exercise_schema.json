@@ -1,0 +1,207 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "U12 Football Exercise",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the exercise"
+    },
+    "title": {
+      "type": "string",
+      "description": "Fun and engaging title for U12 players"
+    },
+    "theme": {
+      "type": "string",
+      "enum": [
+        "Conservation",
+        "Déséquilibre",
+        "Finition",
+        "Défense",
+        "Transition",
+        "Prise d'information",
+        "Duel",
+        "Jeu de tête",
+        "Pied faible",
+        "Occupation largeur/profondeur"
+      ],
+      "description": "Main football theme of the exercise"
+    },
+    "game_format": {
+      "type": "string",
+      "description": "Format of the game, e.g., '4 contre 4 + 2 Jokers'"
+    },
+    "motor_skills_focus": {
+      "type": "string",
+      "enum": [
+        "Coordination",
+        "Fréquence d'appuis",
+        "Vitesse de réaction",
+        "Équilibre",
+        "Dissociation",
+        "Rythme"
+      ],
+      "description": "Specific motor skill focus, crucial for U12"
+    },
+    "fun_rating": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Level of gamification/fun (1-5)"
+    },
+    "setup_instructions": {
+      "type": "object",
+      "properties": {
+        "field_dimensions": {
+          "type": "string",
+          "description": "Dimensions adapted for U12 (e.g., '30x20m')"
+        },
+        "equipment": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of equipment needed"
+        },
+        "player_arrangement": {
+          "type": "string",
+          "description": "How to position players initially"
+        }
+      },
+      "required": [
+        "field_dimensions",
+        "equipment",
+        "player_arrangement"
+      ]
+    },
+    "rules_and_scoring": {
+      "type": "object",
+      "properties": {
+        "rules": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Rules of the exercise"
+        },
+        "scoring_system": {
+          "type": "string",
+          "description": "How points are scored to motivate players"
+        }
+      },
+      "required": [
+        "rules",
+        "scoring_system"
+      ]
+    },
+    "coaching_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Questions to ask players to guide discovery instead of giving answers"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Keywords like 'Jeu de tête', 'Pied faible', etc."
+    },
+    "animation": {
+      "type": "array",
+      "description": "Keyframes for the tactical board animation",
+      "items": {
+        "type": "object",
+        "properties": {
+          "step_description": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "number",
+            "default": 2
+          },
+          "entities": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "player",
+                    "ball",
+                    "cone",
+                    "ladder",
+                    "goal",
+                    "flag",
+                    "target",
+                    "arrow"
+                  ]
+                },
+                "x": {
+                  "type": "number",
+                  "description": "Percentage 0-100 (Start X for arrow)"
+                },
+                "y": {
+                  "type": "number",
+                  "description": "Percentage 0-100 (Start Y for arrow)"
+                },
+                "endX": {
+                  "type": "number",
+                  "description": "End X for arrow"
+                },
+                "endY": {
+                  "type": "number",
+                  "description": "End Y for arrow"
+                },
+                "curve": {
+                  "type": "number",
+                  "description": "Curvature for arrow (-50 to 50)"
+                },
+                "team": {
+                  "type": "string",
+                  "enum": [
+                    "A",
+                    "B",
+                    "neutral"
+                  ]
+                },
+                "label": {
+                  "type": "string"
+                },
+                "rotation": {
+                  "type": "number",
+                  "default": 0
+                }
+              },
+              "required": [
+                "id",
+                "type",
+                "x",
+                "y"
+              ]
+            }
+          }
+        },
+        "required": [
+          "entities"
+        ]
+      }
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "theme",
+    "game_format",
+    "motor_skills_focus",
+    "fun_rating",
+    "setup_instructions",
+    "rules_and_scoring",
+    "coaching_questions"
+  ]
+}

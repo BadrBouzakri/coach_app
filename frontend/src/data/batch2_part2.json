@@ -1,0 +1,881 @@
+[
+    {
+        "id": "ex_026",
+        "title": "La Course aux Couleurs",
+        "theme": "Vitesse",
+        "game_format": "Équipes de 4",
+        "motor_skills_focus": "Réactivité",
+        "fun_rating": 5,
+        "setup_instructions": {
+            "field_dimensions": "20x20m",
+            "equipment": [
+                "4 cônes rouges",
+                "4 cônes bleus",
+                "4 cônes jaunes"
+            ],
+            "player_arrangement": "4 groupes aux coins"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "Au signal couleur, sprint vers le cône correspondant.",
+                "Premier arrivé = 3 points, 2ème = 2 points, 3ème = 1 point."
+            ],
+            "scoring_system": "Total des points après 10 tours."
+        },
+        "coaching_questions": [
+            "Comment anticiper le départ ?",
+            "Quelle est ta position de départ idéale ?"
+        ],
+        "tags": [
+            "Réactivité",
+            "Sprint",
+            "Fun"
+        ],
+        "animation": [
+            {
+                "step_description": "Position de départ - Tous aux coins",
+                "duration": 1.5,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 15,
+                        "y": 15,
+                        "team": "A",
+                        "label": "1"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 85,
+                        "y": 15,
+                        "team": "B",
+                        "label": "2"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 85,
+                        "y": 85,
+                        "team": "A",
+                        "label": "3"
+                    },
+                    {
+                        "id": "p4",
+                        "type": "player",
+                        "x": 15,
+                        "y": 85,
+                        "team": "B",
+                        "label": "4"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 20
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 80,
+                        "y": 50
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 80
+                    }
+                ]
+            },
+            {
+                "step_description": "Sprint vers le cône central au signal !",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 45,
+                        "y": 25,
+                        "team": "A",
+                        "label": "1"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 75,
+                        "y": 30,
+                        "team": "B",
+                        "label": "2"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 60,
+                        "y": 70,
+                        "team": "A",
+                        "label": "3"
+                    },
+                    {
+                        "id": "p4",
+                        "type": "player",
+                        "x": 30,
+                        "y": 65,
+                        "team": "B",
+                        "label": "4"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 20
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 80,
+                        "y": 50
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 80
+                    }
+                ]
+            },
+            {
+                "step_description": "Arrivée ! Qui est le plus rapide ?",
+                "duration": 1,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 50,
+                        "y": 18,
+                        "team": "A",
+                        "label": "1"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 52,
+                        "y": 22,
+                        "team": "B",
+                        "label": "2"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 48,
+                        "y": 20,
+                        "team": "A",
+                        "label": "3"
+                    },
+                    {
+                        "id": "p4",
+                        "type": "player",
+                        "x": 54,
+                        "y": 24,
+                        "team": "B",
+                        "label": "4"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 20
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 80,
+                        "y": 50
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 80
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex_027",
+        "title": "Le Miroir Magique",
+        "theme": "Coordination",
+        "game_format": "Binômes",
+        "motor_skills_focus": "Coordination",
+        "fun_rating": 4,
+        "setup_instructions": {
+            "field_dimensions": "10x10m",
+            "equipment": [
+                "Aucun"
+            ],
+            "player_arrangement": "Face à face par 2"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "Un joueur fait des mouvements, l'autre imite comme un miroir.",
+                "Changement de rôle toutes les 30 secondes."
+            ],
+            "scoring_system": "Pas de score, focus sur la qualité."
+        },
+        "coaching_questions": [
+            "Comment rester synchronisé ?",
+            "Regardes-tu tes mains ou ton partenaire ?"
+        ],
+        "tags": [
+            "Coordination",
+            "Binôme",
+            "Concentration"
+        ],
+        "animation": [
+            {
+                "step_description": "Position initiale - Face à face",
+                "duration": 1,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 35,
+                        "y": 50,
+                        "team": "A",
+                        "label": "L"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 65,
+                        "y": 50,
+                        "team": "B",
+                        "label": "M"
+                    }
+                ]
+            },
+            {
+                "step_description": "Le leader lève le bras droit, le miroir suit",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 35,
+                        "y": 50,
+                        "team": "A",
+                        "label": "L"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 65,
+                        "y": 50,
+                        "team": "B",
+                        "label": "M"
+                    }
+                ]
+            },
+            {
+                "step_description": "Changement de rôle",
+                "duration": 1.5,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 35,
+                        "y": 50,
+                        "team": "B",
+                        "label": "M"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 65,
+                        "y": 50,
+                        "team": "A",
+                        "label": "L"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex_028",
+        "title": "Le Gardien du Trésor",
+        "theme": "Dribble",
+        "game_format": "1v1",
+        "motor_skills_focus": "Dribble sous pression",
+        "fun_rating": 5,
+        "setup_instructions": {
+            "field_dimensions": "10x10m",
+            "equipment": [
+                "1 ballon par binôme",
+                "4 cônes pour délimiter"
+            ],
+            "player_arrangement": "Binômes dans une zone carrée"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "Un joueur protège son ballon (le trésor).",
+                "L'autre essaye de le lui voler.",
+                "30 secondes puis on inverse."
+            ],
+            "scoring_system": "1 point par ballon volé."
+        },
+        "coaching_questions": [
+            "Comment protéger ton ballon ?",
+            "Utilises-tu ton corps comme bouclier ?"
+        ],
+        "tags": [
+            "Dribble",
+            "1v1",
+            "Protection de balle"
+        ],
+        "animation": [
+            {
+                "step_description": "Départ - Le gardien protège son trésor",
+                "duration": 1,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 50,
+                        "y": 50,
+                        "team": "A",
+                        "label": "G"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 52,
+                        "y": 50
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 70,
+                        "y": 50,
+                        "team": "B",
+                        "label": "A"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 20,
+                        "y": 20
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 80,
+                        "y": 20
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 80,
+                        "y": 80
+                    },
+                    {
+                        "id": "c4",
+                        "type": "cone",
+                        "x": 20,
+                        "y": 80
+                    }
+                ]
+            },
+            {
+                "step_description": "L'attaquant approche pour voler le ballon",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 48,
+                        "y": 48,
+                        "team": "A",
+                        "label": "G"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 50,
+                        "y": 48
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 55,
+                        "y": 52,
+                        "team": "B",
+                        "label": "A"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 20,
+                        "y": 20
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 80,
+                        "y": 20
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 80,
+                        "y": 80
+                    },
+                    {
+                        "id": "c4",
+                        "type": "cone",
+                        "x": 20,
+                        "y": 80
+                    }
+                ]
+            },
+            {
+                "step_description": "Le gardien se déplace pour protéger",
+                "duration": 1.5,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 42,
+                        "y": 55,
+                        "team": "A",
+                        "label": "G"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 40,
+                        "y": 55
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 48,
+                        "y": 58,
+                        "team": "B",
+                        "label": "A"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 20,
+                        "y": 20
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 80,
+                        "y": 20
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 80,
+                        "y": 80
+                    },
+                    {
+                        "id": "c4",
+                        "type": "cone",
+                        "x": 20,
+                        "y": 80
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex_029",
+        "title": "La Tornade",
+        "theme": "Endurance",
+        "game_format": "Groupe",
+        "motor_skills_focus": "Endurance",
+        "fun_rating": 3,
+        "setup_instructions": {
+            "field_dimensions": "Cercle de 15m de diamètre",
+            "equipment": [
+                "6 cônes pour marquer le cercle"
+            ],
+            "player_arrangement": "Tous en cercle"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "Course en cercle à vitesse progressive.",
+                "Chaque tour, un joueur devient leader et accélère.",
+                "Les autres suivent."
+            ],
+            "scoring_system": "Durée totale : 3 minutes."
+        },
+        "coaching_questions": [
+            "Comment gérer ton effort ?",
+            "Respires-tu bien ?"
+        ],
+        "tags": [
+            "Endurance",
+            "Groupe",
+            "Cardio"
+        ],
+        "animation": [
+            {
+                "step_description": "Départ - Course en cercle",
+                "duration": 1,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 50,
+                        "y": 20,
+                        "team": "A",
+                        "label": "1"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 75,
+                        "y": 35,
+                        "team": "A",
+                        "label": "2"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 75,
+                        "y": 65,
+                        "team": "A",
+                        "label": "3"
+                    },
+                    {
+                        "id": "p4",
+                        "type": "player",
+                        "x": 50,
+                        "y": 80,
+                        "team": "A",
+                        "label": "4"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 15
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 85,
+                        "y": 50
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 15,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "step_description": "Le leader accélère !",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 75,
+                        "y": 30,
+                        "team": "A",
+                        "label": "1"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 80,
+                        "y": 60,
+                        "team": "A",
+                        "label": "2"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 45,
+                        "y": 80,
+                        "team": "A",
+                        "label": "3"
+                    },
+                    {
+                        "id": "p4",
+                        "type": "player",
+                        "x": 25,
+                        "y": 60,
+                        "team": "A",
+                        "label": "4"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 15
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 85,
+                        "y": 50
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 15,
+                        "y": 50
+                    }
+                ]
+            },
+            {
+                "step_description": "Ralentissement - Récupération",
+                "duration": 1.5,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 50,
+                        "y": 80,
+                        "team": "A",
+                        "label": "1"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 25,
+                        "y": 50,
+                        "team": "A",
+                        "label": "2"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 50,
+                        "y": 20,
+                        "team": "A",
+                        "label": "3"
+                    },
+                    {
+                        "id": "p4",
+                        "type": "player",
+                        "x": 75,
+                        "y": 50,
+                        "team": "A",
+                        "label": "4"
+                    },
+                    {
+                        "id": "c1",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 15
+                    },
+                    {
+                        "id": "c2",
+                        "type": "cone",
+                        "x": 85,
+                        "y": 50
+                    },
+                    {
+                        "id": "c3",
+                        "type": "cone",
+                        "x": 15,
+                        "y": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ex_030",
+        "title": "Passe et Va",
+        "theme": "Passes",
+        "game_format": "4v4",
+        "motor_skills_focus": "Vision de jeu",
+        "fun_rating": 4,
+        "setup_instructions": {
+            "field_dimensions": "20x15m",
+            "equipment": [
+                "1 ballon",
+                "4 cônes"
+            ],
+            "player_arrangement": "2 équipes de 4"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "10 passes consécutives = 1 point.",
+                "Après chaque passe, le joueur doit sprinter vers un cone et revenir."
+            ],
+            "scoring_system": "Première équipe à 5 points gagne."
+        },
+        "coaching_questions": [
+            "Où te positionnes-tu après la passe ?",
+            "Comment créer des espaces ?"
+        ],
+        "tags": [
+            "Passes",
+            "Mouvement",
+            "Collectif"
+        ],
+        "animation": [
+            {
+                "step_description": "Formation initiale",
+                "duration": 1,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 20,
+                        "y": 30,
+                        "team": "A",
+                        "label": "1"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 40,
+                        "y": 50,
+                        "team": "A",
+                        "label": "2"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 60,
+                        "y": 30,
+                        "team": "B",
+                        "label": "3"
+                    },
+                    {
+                        "id": "p4",
+                        "type": "player",
+                        "x": 80,
+                        "y": 50,
+                        "team": "B",
+                        "label": "4"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 22,
+                        "y": 30
+                    }
+                ]
+            },
+            {
+                "step_description": "Passe de P1 à P2, P1 sprinte",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 20,
+                        "y": 70,
+                        "team": "A",
+                        "label": "1"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 40,
+                        "y": 50,
+                        "team": "A",
+                        "label": "2"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 60,
+                        "y": 30,
+                        "team": "B",
+                        "label": "3"
+                    },
+                    {
+                        "id": "p4",
+                        "type": "player",
+                        "x": 80,
+                        "y": 50,
+                        "team": "B",
+                        "label": "4"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 42,
+                        "y": 50
+                    },
+                    {
+                        "id": "a1",
+                        "type": "arrow",
+                        "x": 20,
+                        "y": 30,
+                        "endX": 40,
+                        "endY": 50,
+                        "curve": 0
+                    }
+                ]
+            },
+            {
+                "step_description": "P2 passe, P1 revient en jeu",
+                "duration": 1.5,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 25,
+                        "y": 55,
+                        "team": "A",
+                        "label": "1"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 45,
+                        "y": 70,
+                        "team": "A",
+                        "label": "2"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 60,
+                        "y": 30,
+                        "team": "B",
+                        "label": "3"
+                    },
+                    {
+                        "id": "p4",
+                        "type": "player",
+                        "x": 75,
+                        "y": 50,
+                        "team": "B",
+                        "label": "4"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 62,
+                        "y": 30
+                    },
+                    {
+                        "id": "a1",
+                        "type": "arrow",
+                        "x": 40,
+                        "y": 50,
+                        "endX": 60,
+                        "endY": 30,
+                        "curve": 10
+                    }
+                ]
+            }
+        ]
+    }
+]
