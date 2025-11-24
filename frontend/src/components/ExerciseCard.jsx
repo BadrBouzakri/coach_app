@@ -18,8 +18,13 @@ const themeColors = {
     default: { from: '#6366f1', to: '#4f46e5', glow: 'rgba(99, 102, 241, 0.3)' }
 };
 
-export function ExerciseCard({ exercise, onClick }) {
+export function ExerciseCard({ exercise, onClick, isFavorite = false, onToggleFavorite }) {
     const colors = themeColors[exercise.theme] || themeColors.default;
+
+    const handleFavoriteClick = (e) => {
+        e.stopPropagation();
+        onToggleFavorite?.();
+    };
 
     return (
         <motion.div
@@ -84,10 +89,26 @@ export function ExerciseCard({ exercise, onClick }) {
                     </motion.div>
                 </div>
 
-                {/* Title with Gradient */}
-                <h3 className="text-xl font-bold mb-2 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent group-hover:from-white group-hover:to-white transition-all duration-300">
-                    {exercise.title}
-                </h3>
+                {/* Title with Favorite Star */}
+                <div className="flex items-start justify-between gap-2 mb-2">
+                    <h3 className="text-xl font-bold bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent group-hover:from-white group-hover:to-white transition-all duration-300 flex-1">
+                        {exercise.title}
+                    </h3>
+                    {onToggleFavorite && (
+                        <button
+                            onClick={handleFavoriteClick}
+                            className="p-1.5 hover:bg-white/10 rounded-lg transition-all flex-shrink-0"
+                            aria-label={isFavorite ? "Retirer des favoris" : "Ajouter aux favoris"}
+                        >
+                            <Star
+                                className={`w-5 h-5 transition-all ${isFavorite
+                                        ? 'fill-yellow-400 text-yellow-400'
+                                        : 'text-slate-400 hover:text-yellow-400'
+                                    }`}
+                            />
+                        </button>
+                    )}
+                </div>
 
                 {/* Subtitle Info */}
                 <div className="flex items-center gap-4 text-sm text-slate-400">

@@ -14,7 +14,7 @@ import examples from './data/example_exercises.json';
 import { Search, Filter, Star } from 'lucide-react';
 
 function App() {
-  const [exercises] = useState([...examples, ...batch1, ...batch2, ...batch3, ...batchWarmup, ...premiumExercises]);
+  const [exercises] = useState([...examples, ...batch1, ...batch2, ...batch3, ...batchWarmup]);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTheme, setSelectedTheme] = useState("All");
   const [selectedExercise, setSelectedExercise] = useState(null);
@@ -51,7 +51,7 @@ function App() {
           {currentView === 'exercises' && (
             <>
               <div className="mb-8">
-                <h1 className="text-3xl font-bold text-white mb-2 drop-shadow-lg">Bibliothèque d'Exercices U12</h1>
+                <h1 className="text-3xl font-bold mb-2 drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-white to-red-500">Bibliothèque d'Exercices Wattrelos FC</h1>
                 <p className="text-slate-400 text-lg">Plus de {exercises.length} exercices adaptés pour les 10-11 ans.</p>
               </div>
 
@@ -73,8 +73,8 @@ function App() {
                     <button
                       onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
                       className={`px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap transition-all border flex items-center gap-2 ${showFavoritesOnly
-                        ? 'bg-yellow-600 text-white border-yellow-500 shadow-lg shadow-yellow-900/20'
-                        : 'bg-slate-800/50 text-slate-400 border-slate-700 hover:bg-slate-700 hover:text-white'
+                        ? 'bg-gradient-to-r from-red-600 to-red-700 text-white border-red-500 shadow-lg shadow-red-900/30'
+                        : 'bg-slate-800/50 text-slate-400 border-slate-700 hover:bg-red-600/20 hover:text-white'
                         }`}
                     >
                       <Star className={`w-4 h-4 ${showFavoritesOnly ? 'fill-white' : ''}`} />
@@ -85,8 +85,8 @@ function App() {
                         key={theme}
                         onClick={() => setSelectedTheme(theme)}
                         className={`px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap transition-all border ${selectedTheme === theme
-                          ? 'bg-blue-600 text-white border-blue-500 shadow-lg shadow-blue-900/20'
-                          : 'bg-slate-800/50 text-slate-400 border-slate-700 hover:bg-slate-700 hover:text-white'
+                          ? 'bg-gradient-to-r from-emerald-600 to-emerald-700 text-white border-emerald-500 shadow-lg shadow-emerald-900/30'
+                          : 'bg-slate-800/50 text-slate-400 border-slate-700 hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-red-600/20 hover:text-white'
                           }`}
                       >
                         {theme}

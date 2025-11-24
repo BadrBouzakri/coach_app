@@ -1,0 +1,560 @@
+﻿[
+    {
+        "id": "ex_001",
+        "title": "Le Labyrinthe Magique (Conduite & Vision)",
+        "theme": "Prise d'information",
+        "game_format": "Individuel dans une zone partagée",
+        "motor_skills_focus": "Dissociation",
+        "fun_rating": 5,
+        "duration_minutes": 12,
+        "setup_instructions": {
+            "field_dimensions": "Carré de 20m x 20m",
+            "equipment": [
+                "20 cônes de 4 couleurs différentes (5 rouges, 5 bleus, 5 jaunes, 5 verts)",
+                "1 ballon par joueur",
+                "Chasubles si besoin"
+            ],
+            "player_arrangement": "Tous les joueurs répartis dans le carré, chacun avec son ballon"
+        },
+        "rules_and_scoring": {
+            "rules": [
+                "PHASE 1 - Conduite libre : Conduis ton ballon partout dans le carré SANS toucher les autres joueurs NI les cônes. Tête HAUTE pour voir où tu vas !",
+                "PHASE 2 - Réaction aux couleurs : Le coach annonce une couleur (exemple : 'ROUGE !'). Tu dois IMMÉDIATEMENT toucher un cône de cette couleur avec ta main TOUT EN CONTRÔLANT ton ballon avec ton pied.",
+                "PHASE 3 - Signal STOP : Quand le coach crie 'STOP', tu dois t'arrêter SEMELLE SUR LE BALLON en moins de 2 secondes. Le ballon ne doit PLUS BOUGER.",
+                "RÈGLE IMPORTANTE : Si tu touches un autre joueur ou un cône pendant la conduite libre, tu dois faire 3 montées de genoux sur place avant de continuer."
+            ],
+            "scoring_system": "Le dernier joueur à toucher la bonne couleur fait un GAGE RIGOLO (faire l'avion, sauter sur un pied, etc.). Les 3 premiers gagnent 1 point chacun. Premier à 5 points = CHAMPION DU LABYRINTHE !",
+            "winning_condition": "Premier joueur à marquer 5 points sur plusieurs tours."
+        },
+        "variants": [
+            {
+                "name": "Facile - Gros Espace",
+                "description": "Carré de 25x25m, seulement 8 joueurs maximum, conduite lente autorisée."
+            },
+            {
+                "name": "Moyen - Standard",
+                "description": "20x20m, rythme normal, 12 joueurs maximum."
+            },
+            {
+                "name": "Difficile - Mini Labyrinthe",
+                "description": "Carré de 15x15m, conduite rapide obligatoire, 15 joueurs."
+            },
+            {
+                "name": "Expert - Couleur Inversée",
+                "description": "Si le coach dit 'ROUGE', tu dois toucher TOUTES LES COULEURS SAUF LE ROUGE !"
+            }
+        ],
+        "success_criteria": [
+            "Le joueur regarde DEVANT lui (pas son ballon) pendant la conduite",
+            "Il contrôle le ballon avec de petites touches fréquentes",
+            "Il s'arrête rapidement au signal (ballon immobile en 2 secondes)",
+            "Il évite les collisions avec les autres joueurs",
+            "Il réagit vite à l'annonce des couleurs (moins de 3 secondes)"
+        ],
+        "safety_notes": [
+            "Vérifier que le terrain est plat et sans obstacle dangereux",
+            "Espacer suffisamment les cônes pour éviter les chutes",
+            "Limiter le nombre de joueurs selon la taille du carré",
+            "Rappeler aux joueurs de lever la tête pour éviter les collisions"
+        ],
+        "coaching_questions": [
+            "Comment fais-tu pour ne PAS foncer dans tes copains ? (Réponse attendue : Je lève la tête, je regarde autour de moi)",
+            "Regardes-tu ton ballon ou les espaces libres ? (Réponse attendue : Les espaces libres)",
+            "Si tu lèves la tête, vas-tu plus vite ou moins vite ? (Réponse attendue : Plus vite car je vois mieux où aller)",
+            "Quelle partie du pied utilises-tu pour de petites touches ? (Réponse attendue : L'intérieur ou l'extérieur du pied)"
+        ],
+        "tags": [
+            "Conduite",
+            "Vision",
+            "Ludique",
+            "Coordination",
+            "Vitesse de réaction"
+        ],
+        "animation": [
+            {
+                "step": 1,
+                "title": "Position initiale - Dispersion",
+                "description": "Les joueurs sont dispersés dans le carré avec leur ballon. Les cônes de 4 couleurs sont placés aléatoirement dans l'espace.",
+                "duration": 1,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 20,
+                        "y": 30,
+                        "team": "A",
+                        "label": "J1"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 22,
+                        "y": 32
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 80,
+                        "y": 70,
+                        "team": "A",
+                        "label": "J2"
+                    },
+                    {
+                        "id": "b2",
+                        "type": "ball",
+                        "x": 78,
+                        "y": 72
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 50,
+                        "y": 50,
+                        "team": "A",
+                        "label": "J3"
+                    },
+                    {
+                        "id": "b3",
+                        "type": "ball",
+                        "x": 48,
+                        "y": 50
+                    },
+                    {
+                        "id": "c_red1",
+                        "type": "cone",
+                        "x": 15,
+                        "y": 15,
+                        "color": "red"
+                    },
+                    {
+                        "id": "c_blue1",
+                        "type": "cone",
+                        "x": 85,
+                        "y": 15,
+                        "color": "blue"
+                    },
+                    {
+                        "id": "c_yellow1",
+                        "type": "cone",
+                        "x": 15,
+                        "y": 85,
+                        "color": "yellow"
+                    },
+                    {
+                        "id": "c_green1",
+                        "type": "cone",
+                        "x": 85,
+                        "y": 85,
+                        "color": "green"
+                    },
+                    {
+                        "id": "c_red2",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 20,
+                        "color": "red"
+                    },
+                    {
+                        "id": "c_blue2",
+                        "type": "cone",
+                        "x": 70,
+                        "y": 40,
+                        "color": "blue"
+                    }
+                ]
+            },
+            {
+                "step": 2,
+                "title": "Conduite libre - Tête haute",
+                "description": "Les joueurs conduisent leur ballon librement dans l'espace en levant la tête pour éviter les autres. Touches de ballon fréquentes et légères.",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 35,
+                        "y": 45,
+                        "team": "A",
+                        "label": "J1"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 37,
+                        "y": 47
+                    },
+                    {
+                        "id": "a1",
+                        "type": "arrow",
+                        "x": 20,
+                        "y": 30,
+                        "endX": 35,
+                        "endY": 45,
+                        "curve": 10
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 65,
+                        "y": 60,
+                        "team": "A",
+                        "label": "J2"
+                    },
+                    {
+                        "id": "b2",
+                        "type": "ball",
+                        "x": 63,
+                        "y": 60
+                    },
+                    {
+                        "id": "a2",
+                        "type": "arrow",
+                        "x": 80,
+                        "y": 70,
+                        "endX": 65,
+                        "endY": 60,
+                        "curve": -10
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 45,
+                        "y": 70,
+                        "team": "A",
+                        "label": "J3"
+                    },
+                    {
+                        "id": "b3",
+                        "type": "ball",
+                        "x": 43,
+                        "y": 70
+                    },
+                    {
+                        "id": "a3",
+                        "type": "arrow",
+                        "x": 50,
+                        "y": 50,
+                        "endX": 45,
+                        "endY": 70,
+                        "curve": 0
+                    },
+                    {
+                        "id": "c_red1",
+                        "type": "cone",
+                        "x": 15,
+                        "y": 15,
+                        "color": "red"
+                    },
+                    {
+                        "id": "c_blue1",
+                        "type": "cone",
+                        "x": 85,
+                        "y": 15,
+                        "color": "blue"
+                    },
+                    {
+                        "id": "c_yellow1",
+                        "type": "cone",
+                        "x": 15,
+                        "y": 85,
+                        "color": "yellow"
+                    },
+                    {
+                        "id": "c_green1",
+                        "type": "cone",
+                        "x": 85,
+                        "y": 85,
+                        "color": "green"
+                    }
+                ]
+            },
+            {
+                "step": 3,
+                "title": "Signal ROUGE ! - Sprint vers les cônes rouges",
+                "description": "Le coach crie 'ROUGE !'. Tous les joueurs sprintent vers le cône rouge le plus proche tout en contrôlant leur ballon.",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 18,
+                        "y": 18,
+                        "team": "A",
+                        "label": "J1"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 16,
+                        "y": 18
+                    },
+                    {
+                        "id": "a1",
+                        "type": "arrow",
+                        "x": 35,
+                        "y": 45,
+                        "endX": 18,
+                        "endY": 18,
+                        "curve": 0,
+                        "color": "red"
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 52,
+                        "y": 22,
+                        "team": "A",
+                        "label": "J2"
+                    },
+                    {
+                        "id": "b2",
+                        "type": "ball",
+                        "x": 50,
+                        "y": 22
+                    },
+                    {
+                        "id": "a2",
+                        "type": "arrow",
+                        "x": 65,
+                        "y": 60,
+                        "endX": 52,
+                        "endY": 22,
+                        "curve": 0,
+                        "color": "red"
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 48,
+                        "y": 25,
+                        "team": "A",
+                        "label": "J3"
+                    },
+                    {
+                        "id": "b3",
+                        "type": "ball",
+                        "x": 46,
+                        "y": 25
+                    },
+                    {
+                        "id": "a3",
+                        "type": "arrow",
+                        "x": 45,
+                        "y": 70,
+                        "endX": 48,
+                        "endY": 25,
+                        "curve": 0,
+                        "color": "red"
+                    },
+                    {
+                        "id": "c_red1",
+                        "type": "cone",
+                        "x": 15,
+                        "y": 15,
+                        "color": "red"
+                    },
+                    {
+                        "id": "c_blue1",
+                        "type": "cone",
+                        "x": 85,
+                        "y": 15,
+                        "color": "blue"
+                    },
+                    {
+                        "id": "c_yellow1",
+                        "type": "cone",
+                        "x": 15,
+                        "y": 85,
+                        "color": "yellow"
+                    },
+                    {
+                        "id": "c_green1",
+                        "type": "cone",
+                        "x": 85,
+                        "y": 85,
+                        "color": "green"
+                    },
+                    {
+                        "id": "c_red2",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 20,
+                        "color": "red"
+                    }
+                ]
+            },
+            {
+                "step": 4,
+                "title": "Signal STOP ! - Arrêt semelle",
+                "description": "Le coach crie 'STOP !'. Tous les joueurs doivent immédiatement bloquer leur ballon avec la semelle. Le ballon doit être IMMOBILE.",
+                "duration": 1.5,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 18,
+                        "y": 18,
+                        "team": "A",
+                        "label": "J1"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 18,
+                        "y": 18
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 52,
+                        "y": 22,
+                        "team": "A",
+                        "label": "J2"
+                    },
+                    {
+                        "id": "b2",
+                        "type": "ball",
+                        "x": 52,
+                        "y": 22
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 48,
+                        "y": 25,
+                        "team": "A",
+                        "label": "J3"
+                    },
+                    {
+                        "id": "b3",
+                        "type": "ball",
+                        "x": 48,
+                        "y": 25
+                    },
+                    {
+                        "id": "c_red1",
+                        "type": "cone",
+                        "x": 15,
+                        "y": 15,
+                        "color": "red"
+                    },
+                    {
+                        "id": "c_blue1",
+                        "type": "cone",
+                        "x": 85,
+                        "y": 15,
+                        "color": "blue"
+                    },
+                    {
+                        "id": "c_yellow1",
+                        "type": "cone",
+                        "x": 15,
+                        "y": 85,
+                        "color": "yellow"
+                    },
+                    {
+                        "id": "c_green1",
+                        "type": "cone",
+                        "x": 85,
+                        "y": 85,
+                        "color": "green"
+                    },
+                    {
+                        "id": "c_red2",
+                        "type": "cone",
+                        "x": 50,
+                        "y": 20,
+                        "color": "red"
+                    }
+                ]
+            },
+            {
+                "step": 5,
+                "title": "Reprise - Retour vers le centre",
+                "description": "Les joueurs repartent en conduite libre vers le centre du carré pour un nouveau tour. Le jeu continue avec d'autres couleurs.",
+                "duration": 2,
+                "entities": [
+                    {
+                        "id": "p1",
+                        "type": "player",
+                        "x": 40,
+                        "y": 40,
+                        "team": "A",
+                        "label": "J1"
+                    },
+                    {
+                        "id": "b1",
+                        "type": "ball",
+                        "x": 42,
+                        "y": 40
+                    },
+                    {
+                        "id": "a1",
+                        "type": "arrow",
+                        "x": 18,
+                        "y": 18,
+                        "endX": 40,
+                        "endY": 40,
+                        "curve": 5
+                    },
+                    {
+                        "id": "p2",
+                        "type": "player",
+                        "x": 60,
+                        "y": 50,
+                        "team": "A",
+                        "label": "J2"
+                    },
+                    {
+                        "id": "b2",
+                        "type": "ball",
+                        "x": 58,
+                        "y": 50
+                    },
+                    {
+                        "id": "p3",
+                        "type": "player",
+                        "x": 50,
+                        "y": 60,
+                        "team": "A",
+                        "label": "J3"
+                    },
+                    {
+                        "id": "b3",
+                        "type": "ball",
+                        "x": 48,
+                        "y": 60
+                    },
+                    {
+                        "id": "c_red1",
+                        "type": "cone",
+                        "x": 15,
+                        "y": 15,
+                        "color": "red"
+                    },
+                    {
+                        "id": "c_blue1",
+                        "type": "cone",
+                        "x": 85,
+                        "y": 15,
+                        "color": "blue"
+                    },
+                    {
+                        "id": "c_yellow1",
+                        "type": "cone",
+                        "x": 15,
+                        "y": 85,
+                        "color": "yellow"
+                    },
+                    {
+                        "id": "c_green1",
+                        "type": "cone",
+                        "x": 85,
+                        "y": 85,
+                        "color": "green"
+                    }
+                ]
+            }
+        ]
+    }
+]
