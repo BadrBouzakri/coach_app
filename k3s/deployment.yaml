@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: coach-app
+  namespace: coach-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: coach-app
+  template:
+    metadata:
+      labels:
+        app: coach-app
+    spec:
+      containers:
+      - name: coach-app
+        image: badrbouzakri/coach-app:latest
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "200m"
