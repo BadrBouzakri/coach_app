@@ -1,26 +1,26 @@
-[
+﻿[
     {
         "id": "ex_034",
         "title": "Le Porteur de Ballon Fou",
         "theme": "Vitesse",
-        "game_format": "Équipes de 4-5",
+        "game_format": "Ã‰quipes de 4-5",
         "motor_skills_focus": "Vitesse avec ballon",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "30x20m",
             "equipment": [
-                "1 ballon par équipe",
-                "2 cônes par équipe"
+                "1 ballon par Ã©quipe",
+                "2 cÃ´nes par Ã©quipe"
             ],
-            "player_arrangement": "Relais par équipes"
+            "player_arrangement": "Relais par Ã©quipes"
         },
         "rules_and_scoring": {
             "rules": [
-                "Le porteur court avec le ballon en main jusqu'au cône.",
-                "Fait le tour du cône et revient.",
-                "Passe le ballon au suivant qui repart immédiatement."
+                "Le porteur court avec le ballon en main jusqu'au cÃ´ne.",
+                "Fait le tour du cÃ´ne et revient.",
+                "Passe le ballon au suivant qui repart immÃ©diatement."
             ],
-            "scoring_system": "Première équipe à terminer gagne."
+            "scoring_system": "PremiÃ¨re Ã©quipe Ã  terminer gagne."
         },
         "coaching_questions": [
             "Comment tenir le ballon en courant vite ?",
@@ -67,7 +67,7 @@
                 ]
             },
             {
-                "step_description": "Sprint vers le cône !",
+                "step_description": "Sprint vers le cÃ´ne !",
                 "duration": 2,
                 "entities": [
                     {
@@ -138,28 +138,28 @@
     },
     {
         "id": "ex_035",
-        "title": "La Chaîne Humaine",
+        "title": "La ChaÃ®ne Humaine",
         "theme": "Passes",
         "game_format": "6-10 joueurs",
-        "motor_skills_focus": "Précision des passes",
+        "motor_skills_focus": "PrÃ©cision des passes",
         "fun_rating": 4,
         "setup_instructions": {
             "field_dimensions": "20x15m",
             "equipment": [
                 "2 ballons"
             ],
-            "player_arrangement": "Cercle de 10m de diamètre"
+            "player_arrangement": "Cercle de 10m de diamÃ¨tre"
         },
         "rules_and_scoring": {
             "rules": [
-                "Tous en cercle, espacés de 2-3m.",
-                "2 ballons en jeu simultanément.",
+                "Tous en cercle, espacÃ©s de 2-3m.",
+                "2 ballons en jeu simultanÃ©ment.",
                 "Faire le maximum de passes en 2 minutes sans que les ballons se touchent."
             ],
-            "scoring_system": "Nombre de passes réussies."
+            "scoring_system": "Nombre de passes rÃ©ussies."
         },
         "coaching_questions": [
-            "Comment anticiper l'arrivée des 2 ballons ?",
+            "Comment anticiper l'arrivÃ©e des 2 ballons ?",
             "Regardes-tu le ballon ou le prochain receveur ?"
         ],
         "tags": [
@@ -169,7 +169,7 @@
         ],
         "animation": [
             {
-                "step_description": "Position initiale - 2 ballons opposés",
+                "step_description": "Position initiale - 2 ballons opposÃ©s",
                 "duration": 1,
                 "entities": [
                     {
@@ -301,7 +301,7 @@
                 ]
             },
             {
-                "step_description": "Rythme accéléré !",
+                "step_description": "Rythme accÃ©lÃ©rÃ© !",
                 "duration": 1.5,
                 "entities": [
                     {
@@ -373,36 +373,36 @@
         "title": "Le Tunnel Infernal",
         "theme": "Coordination",
         "game_format": "Groupes de 6",
-        "motor_skills_focus": "Agilité",
+        "motor_skills_focus": "AgilitÃ©",
         "fun_rating": 4,
         "setup_instructions": {
             "field_dimensions": "15x10m",
             "equipment": [
-                "Aucun équipement nécessaire"
+                "Aucun Ã©quipement nÃ©cessaire"
             ],
             "player_arrangement": "File indienne en position tunnel"
         },
         "rules_and_scoring": {
             "rules": [
-                "5 joueurs en position écartée (jambes écartées).",
+                "5 joueurs en position Ã©cartÃ©e (jambes Ã©cartÃ©es).",
                 "Le dernier passe sous les jambes de tous en rampant.",
                 "Arrive devant et refait un tunnel.",
-                "Continue jusqu'à la ligne d'arrivée."
+                "Continue jusqu'Ã  la ligne d'arrivÃ©e."
             ],
-            "scoring_system": "Durée totale pour parcourir 15m."
+            "scoring_system": "DurÃ©e totale pour parcourir 15m."
         },
         "coaching_questions": [
             "Comment ramper le plus vite possible ?",
             "Comment se replacer rapidement ?"
         ],
         "tags": [
-            "Agilité",
+            "AgilitÃ©",
             "Coordination",
             "Relais"
         ],
         "animation": [
             {
-                "step_description": "Position de départ - Tunnels formés",
+                "step_description": "Position de dÃ©part - Tunnels formÃ©s",
                 "duration": 1,
                 "entities": [
                     {
@@ -494,7 +494,7 @@
                 ]
             },
             {
-                "step_description": "Se relève et forme un nouveau tunnel",
+                "step_description": "Se relÃ¨ve et forme un nouveau tunnel",
                 "duration": 1.5,
                 "entities": [
                     {

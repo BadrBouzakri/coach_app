@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "U12 Football Exercise",
   "type": "object",
@@ -15,13 +15,13 @@
       "type": "string",
       "enum": [
         "Conservation",
-        "Déséquilibre",
+        "DÃ©sÃ©quilibre",
         "Finition",
-        "Défense",
+        "DÃ©fense",
         "Transition",
         "Prise d'information",
         "Duel",
-        "Jeu de tête",
+        "Jeu de tÃªte",
         "Pied faible",
         "Occupation largeur/profondeur"
       ],
@@ -35,9 +35,9 @@
       "type": "string",
       "enum": [
         "Coordination",
-        "Fréquence d'appuis",
-        "Vitesse de réaction",
-        "Équilibre",
+        "FrÃ©quence d'appuis",
+        "Vitesse de rÃ©action",
+        "Ã‰quilibre",
         "Dissociation",
         "Rythme"
       ],
@@ -106,7 +106,7 @@
       "items": {
         "type": "string"
       },
-      "description": "Keywords like 'Jeu de tête', 'Pied faible', etc."
+      "description": "Keywords like 'Jeu de tÃªte', 'Pied faible', etc."
     },
     "animation": {
       "type": "array",

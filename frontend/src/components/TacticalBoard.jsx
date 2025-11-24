@@ -73,7 +73,7 @@ const Goal = ({ rotation }) => (
     </div>
 );
 
-const Arrow = ({ start, end, curve = 0 }) => {
+const Arrow = ({ start, end, curve = 0, color = "white", dashed = false }) => {
     const midX = (start.x + end.x) / 2;
     const midY = (start.y + end.y) / 2;
 
@@ -91,19 +91,41 @@ const Arrow = ({ start, end, curve = 0 }) => {
     return (
         <svg className="absolute inset-0 w-full h-full pointer-events-none z-10 overflow-visible">
             <defs>
-                <marker id="arrowhead" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
-                    <polygon points="0 0, 6 2, 0 4" fill="rgba(255, 255, 255, 0.8)" />
+                <marker id={`arrowhead-${color}`} markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+                    <polygon points="0 0, 6 2, 0 4" fill={color} />
                 </marker>
             </defs>
+            {/* Glow effect */}
             <path
                 d={pathData}
                 fill="none"
-                stroke="rgba(255, 255, 255, 0.8)"
-                strokeWidth="2"
-                strokeDasharray="6,4"
-                markerEnd="url(#arrowhead)"
+                stroke={color}
+                strokeWidth="4"
+                opacity="0.3"
                 strokeLinecap="round"
+                filter="blur(2px)"
             />
+            {/* Main path */}
+            <path
+                d={pathData}
+                fill="none"
+                stroke={color}
+                strokeWidth="2"
+                strokeDasharray={dashed ? "6,4" : "none"}
+                markerEnd={`url(#arrowhead-${color})`}
+                strokeLinecap="round"
+                className={dashed ? "" : "animate-dash"} // Custom animation class
+            >
+                {!dashed && (
+                    <animate
+                        attributeName="stroke-dasharray"
+                        from="0, 1000"
+                        to="1000, 0"
+                        dur="1.5s"
+                        repeatCount="indefinite"
+                    />
+                )}
+            </path>
         </svg>
     );
 };
@@ -140,20 +162,25 @@ export function TacticalBoard({ setup, animation }) {
         <div className="flex flex-col gap-4">
             <div className="relative w-full aspect-[4/3] bg-[#1a472a] rounded-xl overflow-hidden shadow-2xl border-4 border-white/10 group">
 
-                {/* Realistic Field Texture */}
-                <div className="absolute inset-0 opacity-30"
+                {/* Realistic Field Texture - Improved */}
+                <div className="absolute inset-0 opacity-40"
                     style={{
                         backgroundImage: `
-                            repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(0,0,0,0.1) 50px, rgba(0,0,0,0.1) 100px),
-                            radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 0%, transparent 60%)
-                        `
+                            linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent),
+                            linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent),
+                            radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 0%, transparent 80%)
+                        `,
+                        backgroundSize: '50px 50px, 50px 50px, 100% 100%'
                     }}
                 />
+                {/* Grass Noise Texture */}
+                <div className="absolute inset-0 opacity-20 mix-blend-overlay" style={{ filter: 'url(#noise)' }}></div>
 
-                {/* Field Markings */}
-                <div className="absolute inset-4 border-2 border-white/60 rounded-sm pointer-events-none opacity-80" />
-                <div className="absolute top-1/2 left-4 right-4 h-px bg-white/60 -translate-y-1/2 pointer-events-none opacity-80" />
-                <div className="absolute top-1/2 left-1/2 w-24 h-24 border-2 border-white/60 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-80" />
+                {/* Field Markings - Sharper */}
+                <div className="absolute inset-4 border-2 border-white/70 rounded-sm pointer-events-none opacity-90 shadow-[0_0_10px_rgba(255,255,255,0.2)]" />
+                <div className="absolute top-1/2 left-4 right-4 h-0.5 bg-white/70 -translate-y-1/2 pointer-events-none opacity-90 shadow-[0_0_10px_rgba(255,255,255,0.2)]" />
+                <div className="absolute top-1/2 left-1/2 w-24 h-24 border-2 border-white/70 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-90 shadow-[0_0_10px_rgba(255,255,255,0.2)]" />
+                <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-white/70 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-90" />
 
                 {/* Entities Layer */}
                 <div className="absolute inset-0">

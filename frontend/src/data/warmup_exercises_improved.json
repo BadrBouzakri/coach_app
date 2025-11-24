@@ -2,58 +2,58 @@
     {
         "id": "warm_006",
         "title": "Le Miroir Magique",
-        "theme": "Échauffement",
-        "game_format": "Binômes",
-        "motor_skills_focus": "Coordination et mimétisme",
+        "theme": "Ã‰chauffement",
+        "game_format": "BinÃ´mes",
+        "motor_skills_focus": "Coordination et mimÃ©tisme",
         "fun_rating": 4,
         "setup_instructions": {
-            "field_dimensions": "Zone de 10m x 10m par binôme",
+            "field_dimensions": "Zone de 10m x 10m par binÃ´me",
             "equipment": [
-                "Aucun matériel spécifique",
-                "1 ballon par binôme (optionnel pour variante)"
+                "Aucun matÃ©riel spÃ©cifique",
+                "1 ballon par binÃ´me (optionnel pour variante)"
             ],
-            "player_arrangement": "Les joueurs sont face à face, à 2 mètres de distance."
+            "player_arrangement": "Les joueurs sont face Ã  face, Ã  2 mÃ¨tres de distance."
         },
         "rules_and_scoring": {
             "rules": [
-                "PHASE 1 - Le Miroir : Un joueur est le 'Guide', l'autre est le 'Miroir'. Le Guide fait des mouvements lents (lever les bras, sauter, pas chassés). Le Miroir doit copier EXACTEMENT et EN MÊME TEMPS.",
-                "PHASE 2 - Accélération : Le coach annonce 'Vitesse X2'. Le Guide bouge plus vite, le Miroir doit suivre sans se tromper.",
-                "PHASE 3 - Changement de rôle : Au coup de sifflet, on inverse immédiatement les rôles.",
-                "RÈGLE D'OR : Interdiction de toucher son partenaire. On reste toujours face à face."
+                "PHASE 1 - Le Miroir : Un joueur est le 'Guide', l'autre est le 'Miroir'. Le Guide fait des mouvements lents (lever les bras, sauter, pas chassÃ©s). Le Miroir doit copier EXACTEMENT et EN MÃŠME TEMPS.",
+                "PHASE 2 - AccÃ©lÃ©ration : Le coach annonce 'Vitesse X2'. Le Guide bouge plus vite, le Miroir doit suivre sans se tromper.",
+                "PHASE 3 - Changement de rÃ´le : Au coup de sifflet, on inverse immÃ©diatement les rÃ´les.",
+                "RÃˆGLE D'OR : Interdiction de toucher son partenaire. On reste toujours face Ã  face."
             ],
-            "scoring_system": "Le coach donne 1 point au binôme le plus synchronisé à chaque minute. Premier binôme à 3 points gagne.",
-            "winning_condition": "Être le binôme le plus synchronisé."
+            "scoring_system": "Le coach donne 1 point au binÃ´me le plus synchronisÃ© Ã  chaque minute. Premier binÃ´me Ã  3 points gagne.",
+            "winning_condition": "ÃŠtre le binÃ´me le plus synchronisÃ©."
         },
         "variants": [
             {
                 "name": "Miroir Ballon",
-                "description": "Avec un ballon chacun. Le Guide fait des gestes techniques (semelle, intérieur), le Miroir copie."
+                "description": "Avec un ballon chacun. Le Guide fait des gestes techniques (semelle, intÃ©rieur), le Miroir copie."
             },
             {
-                "name": "Miroir Inversé",
-                "description": "Si le Guide lève la main DROITE, le Miroir lève la main GAUCHE (effet miroir réel)."
+                "name": "Miroir InversÃ©",
+                "description": "Si le Guide lÃ¨ve la main DROITE, le Miroir lÃ¨ve la main GAUCHE (effet miroir rÃ©el)."
             },
             {
                 "name": "Le Chef d'Orchestre",
-                "description": "Par groupe de 4. Un chef devant, 3 miroirs qui doivent être parfaitement alignés."
+                "description": "Par groupe de 4. Un chef devant, 3 miroirs qui doivent Ãªtre parfaitement alignÃ©s."
             }
         ],
         "success_criteria": [
-            "Le regard est fixé sur le partenaire",
-            "Les mouvements sont fluides et non saccadés",
+            "Le regard est fixÃ© sur le partenaire",
+            "Les mouvements sont fluides et non saccadÃ©s",
             "La distance entre les deux joueurs reste constante",
-            "Réactivité immédiate au changement de rythme"
+            "RÃ©activitÃ© immÃ©diate au changement de rythme"
         ],
         "safety_notes": [
-            "Garder une distance de sécurité pour éviter les chocs de têtes",
+            "Garder une distance de sÃ©curitÃ© pour Ã©viter les chocs de tÃªtes",
             "Pas de mouvements brusques dangereux (coups de pied hauts)"
         ],
         "coaching_questions": [
-            "Regardes-tu les mains ou les yeux de ton partenaire ? (Réponse : Les yeux pour voir tout le corps)",
-            "Comment faire pour ne pas se faire surprendre ? (Réponse : Rester sur la pointe des pieds, prêt à bouger)"
+            "Regardes-tu les mains ou les yeux de ton partenaire ? (RÃ©ponse : Les yeux pour voir tout le corps)",
+            "Comment faire pour ne pas se faire surprendre ? (RÃ©ponse : Rester sur la pointe des pieds, prÃªt Ã  bouger)"
         ],
         "tags": [
-            "Échauffement",
+            "Ã‰chauffement",
             "Coordination",
             "Ludique",
             "U10-U13"
@@ -62,7 +62,7 @@
             {
                 "step": 1,
                 "title": "Mise en place",
-                "description": "Les joueurs se mettent face à face. Le joueur A (Guide) commence un mouvement.",
+                "description": "Les joueurs se mettent face Ã  face. Le joueur A (Guide) commence un mouvement.",
                 "duration": 2,
                 "entities": [
                     {
@@ -95,7 +95,7 @@
             {
                 "step": 2,
                 "title": "Imitation",
-                "description": "Le joueur B (Miroir) reproduit le mouvement simultanément.",
+                "description": "Le joueur B (Miroir) reproduit le mouvement simultanÃ©ment.",
                 "duration": 2,
                 "entities": [
                     {
@@ -130,24 +130,24 @@
     {
         "id": "warm_007",
         "title": "La Montagne Russe (Cardio Ludique)",
-        "theme": "Échauffement",
+        "theme": "Ã‰chauffement",
         "game_format": "Individuel",
         "motor_skills_focus": "Cardio progressif et gestion de l'effort",
         "fun_rating": 4,
         "setup_instructions": {
-            "field_dimensions": "Circuit circulaire ou carré de 30m x 30m",
+            "field_dimensions": "Circuit circulaire ou carrÃ© de 30m x 30m",
             "equipment": [
-                "4 cônes de couleurs différentes aux coins",
+                "4 cÃ´nes de couleurs diffÃ©rentes aux coins",
                 "1 ballon par joueur (pour la variante)"
             ],
-            "player_arrangement": "Les joueurs sont répartis sur tout le tracé, espacés de 2m."
+            "player_arrangement": "Les joueurs sont rÃ©partis sur tout le tracÃ©, espacÃ©s de 2m."
         },
         "rules_and_scoring": {
             "rules": [
-                "PHASE 1 - La Montée (Lent) : Au signal 'MONTÉE', tout le monde trottine très lentement, genoux hauts, comme si c'était dur.",
-                "PHASE 2 - Le Plat (Moyen) : Au signal 'PLAT', course normale, rythme régulier.",
-                "PHASE 3 - La Descente (Vite) : Au signal 'DESCENTE', accélération rapide (sprint à 80%) pendant 5 secondes !",
-                "PHASE 4 - Le Looping : Au signal 'LOOPING', tout le monde fait un tour sur soi-même en sautant puis repart."
+                "PHASE 1 - La MontÃ©e (Lent) : Au signal 'MONTÃ‰E', tout le monde trottine trÃ¨s lentement, genoux hauts, comme si c'Ã©tait dur.",
+                "PHASE 2 - Le Plat (Moyen) : Au signal 'PLAT', course normale, rythme rÃ©gulier.",
+                "PHASE 3 - La Descente (Vite) : Au signal 'DESCENTE', accÃ©lÃ©ration rapide (sprint Ã  80%) pendant 5 secondes !",
+                "PHASE 4 - Le Looping : Au signal 'LOOPING', tout le monde fait un tour sur soi-mÃªme en sautant puis repart."
             ],
             "scoring_system": "Celui qui se trompe de rythme fait 3 pompes. Le joueur qui respecte le mieux les rythmes est le 'Pilote'.",
             "winning_condition": "Ne pas se tromper de rythme pendant tout l'exercice."
@@ -155,16 +155,16 @@
         "variants": [
             {
                 "name": "Montagne Russe avec Ballon",
-                "description": "Même chose mais en conduisant le ballon. Montée = touches fréquentes, Descente = pousse ballon."
+                "description": "MÃªme chose mais en conduisant le ballon. MontÃ©e = touches frÃ©quentes, Descente = pousse ballon."
             },
             {
                 "name": "Le Tunnel",
-                "description": "Ajouter une zone où il faut passer accroupi (marche en canard)."
+                "description": "Ajouter une zone oÃ¹ il faut passer accroupi (marche en canard)."
             }
         ],
         "success_criteria": [
-            "Changement de rythme net et immédiat",
-            "Respect des distances de sécurité (ne pas doubler n'importe comment)",
+            "Changement de rythme net et immÃ©diat",
+            "Respect des distances de sÃ©curitÃ© (ne pas doubler n'importe comment)",
             "Bonne posture de course"
         ],
         "safety_notes": [
@@ -172,11 +172,11 @@
             "Interdiction de pousser les autres 'wagons' (joueurs)"
         ],
         "coaching_questions": [
-            "Respires-tu par le nez ou la bouche ? (Réponse : J'inspire nez, j'expire bouche)",
-            "Quand est-ce qu'on récupère ? (Réponse : Pendant la montée)"
+            "Respires-tu par le nez ou la bouche ? (RÃ©ponse : J'inspire nez, j'expire bouche)",
+            "Quand est-ce qu'on rÃ©cupÃ¨re ? (RÃ©ponse : Pendant la montÃ©e)"
         ],
         "tags": [
-            "Échauffement",
+            "Ã‰chauffement",
             "Cardio",
             "Vitesse",
             "Sans ballon"
@@ -184,7 +184,7 @@
         "animation": [
             {
                 "step": 1,
-                "title": "La Montée (Lent)",
+                "title": "La MontÃ©e (Lent)",
                 "description": "Les joueurs trottinent lentement en levant les genoux.",
                 "duration": 2,
                 "entities": [
@@ -218,7 +218,7 @@
             {
                 "step": 2,
                 "title": "La Descente (Vite)",
-                "description": "Accélération soudaine vers l'avant !",
+                "description": "AccÃ©lÃ©ration soudaine vers l'avant !",
                 "duration": 2,
                 "entities": [
                     {
@@ -254,54 +254,54 @@
     {
         "id": "warm_008",
         "title": "Le Ballon Prisonnier Doux (Esquive)",
-        "theme": "Échauffement",
-        "game_format": "2 équipes de 6 joueurs",
-        "motor_skills_focus": "Esquive, appuis et vision périphérique",
+        "theme": "Ã‰chauffement",
+        "game_format": "2 Ã©quipes de 6 joueurs",
+        "motor_skills_focus": "Esquive, appuis et vision pÃ©riphÃ©rique",
         "fun_rating": 5,
         "setup_instructions": {
-            "field_dimensions": "Terrain de 20m x 15m divisé en 2 camps",
+            "field_dimensions": "Terrain de 20m x 15m divisÃ© en 2 camps",
             "equipment": [
-                "2 ballons en mousse (OBLIGATOIRE pour sécurité)",
-                "Coupelles pour délimiter les camps"
+                "2 ballons en mousse (OBLIGATOIRE pour sÃ©curitÃ©)",
+                "Coupelles pour dÃ©limiter les camps"
             ],
-            "player_arrangement": "Chaque équipe dans son camp. Prison derrière le camp adverse."
+            "player_arrangement": "Chaque Ã©quipe dans son camp. Prison derriÃ¨re le camp adverse."
         },
         "rules_and_scoring": {
             "rules": [
-                "BUT DU JEU : Toucher les joueurs adverses avec le ballon (en dessous des épaules uniquement).",
-                "RÈGLE 1 : Si tu es touché, tu vas en prison (derrière le camp adverse).",
-                "RÈGLE 2 - Libération : Pour te libérer, tu dois récupérer un ballon qui sort du terrain et réussir une passe à un coéquipier encore en jeu.",
-                "RÈGLE 3 - Pas de blocage : On ne bloque pas le ballon, on l'esquive ! Si tu essaies de l'attraper et que tu le rates, tu es prisonnier.",
-                "RÈGLE 4 : Interdiction de traverser la ligne centrale."
+                "BUT DU JEU : Toucher les joueurs adverses avec le ballon (en dessous des Ã©paules uniquement).",
+                "RÃˆGLE 1 : Si tu es touchÃ©, tu vas en prison (derriÃ¨re le camp adverse).",
+                "RÃˆGLE 2 - LibÃ©ration : Pour te libÃ©rer, tu dois rÃ©cupÃ©rer un ballon qui sort du terrain et rÃ©ussir une passe Ã  un coÃ©quipier encore en jeu.",
+                "RÃˆGLE 3 - Pas de blocage : On ne bloque pas le ballon, on l'esquive ! Si tu essaies de l'attraper et que tu le rates, tu es prisonnier.",
+                "RÃˆGLE 4 : Interdiction de traverser la ligne centrale."
             ],
-            "scoring_system": "L'équipe qui a le plus de joueurs libres après 5 minutes gagne.",
-            "winning_condition": "Avoir éliminé tous les adversaires ou être en surnombre à la fin du temps."
+            "scoring_system": "L'Ã©quipe qui a le plus de joueurs libres aprÃ¨s 5 minutes gagne.",
+            "winning_condition": "Avoir Ã©liminÃ© tous les adversaires ou Ãªtre en surnombre Ã  la fin du temps."
         },
         "variants": [
             {
                 "name": "Mode Jedi",
-                "description": "On peut bloquer le ballon avec les mains. Si on le bloque, le tireur est éliminé !"
+                "description": "On peut bloquer le ballon avec les mains. Si on le bloque, le tireur est Ã©liminÃ© !"
             },
             {
                 "name": "Multiball",
-                "description": "Jouer avec 4 ballons en même temps pour augmenter la vigilance."
+                "description": "Jouer avec 4 ballons en mÃªme temps pour augmenter la vigilance."
             }
         ],
         "success_criteria": [
-            "Toujours en mouvement (jamais à l'arrêt)",
+            "Toujours en mouvement (jamais Ã  l'arrÃªt)",
             "Regard sur le ballon en permanence",
-            "Esquives latérales rapides"
+            "Esquives latÃ©rales rapides"
         ],
         "safety_notes": [
-            "Tirs interdits au visage (sinon le tireur est éliminé)",
+            "Tirs interdits au visage (sinon le tireur est Ã©liminÃ©)",
             "Utiliser uniquement des ballons mous/mousse"
         ],
         "coaching_questions": [
-            "Est-ce plus facile d'esquiver de face ou de profil ? (Réponse : De profil, moins de surface à toucher)",
-            "Que faire quand on n'a pas le ballon ? (Réponse : Se replacer, bouger, demander le ballon)"
+            "Est-ce plus facile d'esquiver de face ou de profil ? (RÃ©ponse : De profil, moins de surface Ã  toucher)",
+            "Que faire quand on n'a pas le ballon ? (RÃ©ponse : Se replacer, bouger, demander le ballon)"
         ],
         "tags": [
-            "Échauffement",
+            "Ã‰chauffement",
             "Jeu",
             "Esquive",
             "Groupe"
@@ -310,7 +310,7 @@
             {
                 "step": 1,
                 "title": "Tir et Esquive",
-                "description": "Le joueur A tire. Le joueur B esquive en pas chassés.",
+                "description": "Le joueur A tire. Le joueur B esquive en pas chassÃ©s.",
                 "duration": 2,
                 "entities": [
                     {
@@ -349,7 +349,7 @@
             {
                 "step": 2,
                 "title": "Prison",
-                "description": "Si touché, le joueur va en zone prison.",
+                "description": "Si touchÃ©, le joueur va en zone prison.",
                 "duration": 2,
                 "entities": [
                     {
@@ -358,7 +358,7 @@
                         "x": 70,
                         "y": 50,
                         "team": "B",
-                        "label": "Touché!"
+                        "label": "TouchÃ©!"
                     },
                     {
                         "id": "a2",
@@ -376,62 +376,62 @@
     },
     {
         "id": "warm_009",
-        "title": "Le Slalom Humain (Agilité)",
-        "theme": "Échauffement",
-        "game_format": "Par équipes de 5",
-        "motor_skills_focus": "Agilité, appuis courts et coordination",
+        "title": "Le Slalom Humain (AgilitÃ©)",
+        "theme": "Ã‰chauffement",
+        "game_format": "Par Ã©quipes de 5",
+        "motor_skills_focus": "AgilitÃ©, appuis courts et coordination",
         "fun_rating": 4,
         "setup_instructions": {
             "field_dimensions": "Couloir de 15m",
             "equipment": [
                 "Aucun (les joueurs sont les obstacles)"
             ],
-            "player_arrangement": "4 joueurs en file indienne écartés de 2m (jambes écartées ou en boule), 1 joueur au départ."
+            "player_arrangement": "4 joueurs en file indienne Ã©cartÃ©s de 2m (jambes Ã©cartÃ©es ou en boule), 1 joueur au dÃ©part."
         },
         "rules_and_scoring": {
             "rules": [
-                "PHASE 1 - Slalom : Les 4 joueurs 'obstacles' sont debout, jambes écartées. Le 5ème joueur doit passer entre leurs jambes en rampant (tunnel) ou en slalomant autour.",
-                "PHASE 2 - Saute-Mouton : Les obstacles sont en boule au sol. Le joueur doit sauter par-dessus (pieds joints ou écartés selon niveau).",
-                "PHASE 3 - Relais : Dès que le joueur a fini, il devient un obstacle au bout de la file, et le premier obstacle se lève pour devenir le coureur.",
-                "OBJECTIF : Faire passer toute l'équipe le plus vite possible."
+                "PHASE 1 - Slalom : Les 4 joueurs 'obstacles' sont debout, jambes Ã©cartÃ©es. Le 5Ã¨me joueur doit passer entre leurs jambes en rampant (tunnel) ou en slalomant autour.",
+                "PHASE 2 - Saute-Mouton : Les obstacles sont en boule au sol. Le joueur doit sauter par-dessus (pieds joints ou Ã©cartÃ©s selon niveau).",
+                "PHASE 3 - Relais : DÃ¨s que le joueur a fini, il devient un obstacle au bout de la file, et le premier obstacle se lÃ¨ve pour devenir le coureur.",
+                "OBJECTIF : Faire passer toute l'Ã©quipe le plus vite possible."
             ],
-            "scoring_system": "Chrono par équipe. L'équipe la plus rapide gagne.",
+            "scoring_system": "Chrono par Ã©quipe. L'Ã©quipe la plus rapide gagne.",
             "winning_condition": "Terminer le parcours complet sans toucher les obstacles."
         },
         "variants": [
             {
                 "name": "Slalom Ballon",
-                "description": "Slalomer balle au pied entre les copains (qui sont debout jambes serrées)."
+                "description": "Slalomer balle au pied entre les copains (qui sont debout jambes serrÃ©es)."
             },
             {
                 "name": "Mixte",
-                "description": "1er obstacle = tunnel, 2ème = saute-mouton, 3ème = tour complet."
+                "description": "1er obstacle = tunnel, 2Ã¨me = saute-mouton, 3Ã¨me = tour complet."
             }
         ],
         "success_criteria": [
-            "Ne pas toucher les coéquipiers obstacles",
-            "Rapidité d'exécution",
-            "Enchaînement fluide (pas d'arrêt)"
+            "Ne pas toucher les coÃ©quipiers obstacles",
+            "RapiditÃ© d'exÃ©cution",
+            "EnchaÃ®nement fluide (pas d'arrÃªt)"
         ],
         "safety_notes": [
-            "Pour le saute-mouton : bien rentrer la tête pour l'obstacle, bien pousser sur les jambes pour le sauteur.",
-            "Interdit de sauter si l'obstacle n'est pas prêt."
+            "Pour le saute-mouton : bien rentrer la tÃªte pour l'obstacle, bien pousser sur les jambes pour le sauteur.",
+            "Interdit de sauter si l'obstacle n'est pas prÃªt."
         ],
         "coaching_questions": [
-            "Comment aller plus vite au slalom ? (Réponse : Petits pas rapides, baisser le centre de gravité)",
-            "Est-ce qu'on regarde ses pieds ? (Réponse : Non, on regarde l'obstacle suivant)"
+            "Comment aller plus vite au slalom ? (RÃ©ponse : Petits pas rapides, baisser le centre de gravitÃ©)",
+            "Est-ce qu'on regarde ses pieds ? (RÃ©ponse : Non, on regarde l'obstacle suivant)"
         ],
         "tags": [
-            "Échauffement",
-            "Agilité",
-            "Coopération",
+            "Ã‰chauffement",
+            "AgilitÃ©",
+            "CoopÃ©ration",
             "Relais"
         ],
         "animation": [
             {
                 "step": 1,
                 "title": "Le Slalom",
-                "description": "Le joueur court en zigzag entre ses coéquipiers immobiles.",
+                "description": "Le joueur court en zigzag entre ses coÃ©quipiers immobiles.",
                 "duration": 2,
                 "entities": [
                     {
@@ -482,9 +482,9 @@
     },
     {
         "id": "warm_010",
-        "title": "La Chenille Géante (Coordination)",
-        "theme": "Échauffement",
-        "game_format": "Équipe entière",
+        "title": "La Chenille GÃ©ante (Coordination)",
+        "theme": "Ã‰chauffement",
+        "game_format": "Ã‰quipe entiÃ¨re",
         "motor_skills_focus": "Synchronisation collective",
         "fun_rating": 5,
         "setup_instructions": {
@@ -492,52 +492,52 @@
             "equipment": [
                 "Ballons (1 par joueur pour variante)"
             ],
-            "player_arrangement": "Tous les joueurs en file indienne, mains sur les épaules du précédent."
+            "player_arrangement": "Tous les joueurs en file indienne, mains sur les Ã©paules du prÃ©cÃ©dent."
         },
         "rules_and_scoring": {
             "rules": [
-                "PHASE 1 - La Balade : La chenille se déplace doucement. Si la chenille se casse (mains lâchées), tout le monde fait 5 squats.",
-                "PHASE 2 - Les Virages : Le premier joueur (la Tête) guide la chenille en faisant des virages serrés. La Queue ne doit pas décrocher.",
-                "PHASE 3 - Assis-Debout : Au signal, toute la chenille doit s'asseoir en même temps, puis se relever en même temps.",
-                "PHASE 4 - Le Tunnel : Les joueurs écartent les jambes. Le dernier passe sous les jambes de tout le monde pour devenir la Tête."
+                "PHASE 1 - La Balade : La chenille se dÃ©place doucement. Si la chenille se casse (mains lÃ¢chÃ©es), tout le monde fait 5 squats.",
+                "PHASE 2 - Les Virages : Le premier joueur (la TÃªte) guide la chenille en faisant des virages serrÃ©s. La Queue ne doit pas dÃ©crocher.",
+                "PHASE 3 - Assis-Debout : Au signal, toute la chenille doit s'asseoir en mÃªme temps, puis se relever en mÃªme temps.",
+                "PHASE 4 - Le Tunnel : Les joueurs Ã©cartent les jambes. Le dernier passe sous les jambes de tout le monde pour devenir la TÃªte."
             ],
             "scoring_system": "Tenir 2 minutes sans casser la chenille.",
-            "winning_condition": "Réussir le défi du Tunnel complet (tout le monde est passé une fois)."
+            "winning_condition": "RÃ©ussir le dÃ©fi du Tunnel complet (tout le monde est passÃ© une fois)."
         },
         "variants": [
             {
                 "name": "Chenille avec Ballon",
-                "description": "Chaque joueur tient un ballon entre son ventre et le dos du précédent. Interdit d'utiliser les mains !"
+                "description": "Chaque joueur tient un ballon entre son ventre et le dos du prÃ©cÃ©dent. Interdit d'utiliser les mains !"
             },
             {
                 "name": "Chenille Aveugle",
-                "description": "Tout le monde ferme les yeux sauf la Tête qui guide vocalement."
+                "description": "Tout le monde ferme les yeux sauf la TÃªte qui guide vocalement."
             }
         ],
         "success_criteria": [
             "Communication constante (gauche, droite, stop)",
-            "Pas de rupture de la chaîne",
+            "Pas de rupture de la chaÃ®ne",
             "Synchronisation des mouvements"
         ],
         "safety_notes": [
-            "Ne pas courir trop vite pour ne pas faire tomber ceux de derrière",
+            "Ne pas courir trop vite pour ne pas faire tomber ceux de derriÃ¨re",
             "Attention aux pieds des autres"
         ],
         "coaching_questions": [
-            "Qui est le plus important dans la chenille ? (Réponse : Tout le monde !)",
-            "Comment savoir où aller si on est derrière ? (Réponse : Sentir le mouvement des épaules du copain devant)"
+            "Qui est le plus important dans la chenille ? (RÃ©ponse : Tout le monde !)",
+            "Comment savoir oÃ¹ aller si on est derriÃ¨re ? (RÃ©ponse : Sentir le mouvement des Ã©paules du copain devant)"
         ],
         "tags": [
-            "Échauffement",
+            "Ã‰chauffement",
             "Collectif",
             "Fun",
-            "Esprit d'équipe"
+            "Esprit d'Ã©quipe"
         ],
         "animation": [
             {
                 "step": 1,
-                "title": "Déplacement Chenille",
-                "description": "Les joueurs avancent attachés les uns aux autres.",
+                "title": "DÃ©placement Chenille",
+                "description": "Les joueurs avancent attachÃ©s les uns aux autres.",
                 "duration": 2,
                 "entities": [
                     {

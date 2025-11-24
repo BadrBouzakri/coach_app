@@ -9,12 +9,20 @@ import batch1 from './data/batch1_exercises.json';
 import batch2 from './data/batch2_warmup.json';
 import batch3 from './data/batch3_generated.json';
 import batchWarmup from './data/batch_warmup_complete.json';
+import improvedWarmups from './data/warmup_exercises_improved.json';
 import premiumExercises from './data/premium_exercises_complete.json';
 import examples from './data/example_exercises.json';
 import { Search, Filter, Star } from 'lucide-react';
 
 function App() {
-  const [exercises] = useState([...examples, ...batch1, ...batch2, ...batch3, ...batchWarmup]);
+  const [exercises] = useState(() => {
+    // Merge improved warmups: replace original ones with improved versions
+    const warmupsMap = new Map(batchWarmup.map(ex => [ex.id, ex]));
+    improvedWarmups.forEach(ex => warmupsMap.set(ex.id, ex));
+    const mergedWarmups = Array.from(warmupsMap.values());
+
+    return [...examples, ...batch1, ...batch2, ...batch3, ...mergedWarmups];
+  });
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTheme, setSelectedTheme] = useState("All");
   const [selectedExercise, setSelectedExercise] = useState(null);

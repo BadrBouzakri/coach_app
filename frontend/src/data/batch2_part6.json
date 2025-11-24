@@ -1,39 +1,39 @@
-[
+﻿[
     {
         "id": "ex_040",
-        "title": "La Course à l'Aveugle",
+        "title": "La Course Ã  l'Aveugle",
         "theme": "Confiance",
-        "game_format": "Binômes",
-        "motor_skills_focus": "Équilibre et confiance",
+        "game_format": "BinÃ´mes",
+        "motor_skills_focus": "Ã‰quilibre et confiance",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "20x10m avec parcours d'obstacles",
             "equipment": [
-                "6 cônes",
+                "6 cÃ´nes",
                 "Bandeaux pour les yeux"
             ],
-            "player_arrangement": "Binômes : 1 guide + 1 aveugle"
+            "player_arrangement": "BinÃ´mes : 1 guide + 1 aveugle"
         },
         "rules_and_scoring": {
             "rules": [
-                "Un joueur a les yeux bandés, l'autre le guide avec des instructions vocales.",
-                "Parcourir le slalom sans toucher les cônes.",
-                "Inverser les rôles."
+                "Un joueur a les yeux bandÃ©s, l'autre le guide avec des instructions vocales.",
+                "Parcourir le slalom sans toucher les cÃ´nes.",
+                "Inverser les rÃ´les."
             ],
             "scoring_system": "Temps le plus rapide sans faute."
         },
         "coaching_questions": [
             "Comment donner des instructions claires ?",
-            "Fais-tu confiance à ton partenaire ?"
+            "Fais-tu confiance Ã  ton partenaire ?"
         ],
         "tags": [
             "Confiance",
             "Communication",
-            "Binôme"
+            "BinÃ´me"
         ],
         "animation": [
             {
-                "step_description": "Guide et aveugle au départ",
+                "step_description": "Guide et aveugle au dÃ©part",
                 "duration": 1,
                 "entities": [
                     {
@@ -73,7 +73,7 @@
                 ]
             },
             {
-                "step_description": "Navigation guidée à travers le slalom",
+                "step_description": "Navigation guidÃ©e Ã  travers le slalom",
                 "duration": 3,
                 "entities": [
                     {
@@ -113,7 +113,7 @@
                 ]
             },
             {
-                "step_description": "Arrivée réussie !",
+                "step_description": "ArrivÃ©e rÃ©ussie !",
                 "duration": 1.5,
                 "entities": [
                     {
@@ -157,38 +157,38 @@
     {
         "id": "ex_041",
         "title": "Le Ninja Silencieux",
-        "theme": "Agilité",
+        "theme": "AgilitÃ©",
         "game_format": "Individuel",
-        "motor_skills_focus": "Discrétion et agilité",
+        "motor_skills_focus": "DiscrÃ©tion et agilitÃ©",
         "fun_rating": 4,
         "setup_instructions": {
             "field_dimensions": "15x15m",
             "equipment": [
-                "10 cônes dispersés",
+                "10 cÃ´nes dispersÃ©s",
                 "1 ballon"
             ],
             "player_arrangement": "File indienne"
         },
         "rules_and_scoring": {
             "rules": [
-                "Se déplacer en silence entre les cônes avec le ballon.",
-                "Ne pas toucher les cônes.",
-                "Le coach a les yeux fermés et écoute."
+                "Se dÃ©placer en silence entre les cÃ´nes avec le ballon.",
+                "Ne pas toucher les cÃ´nes.",
+                "Le coach a les yeux fermÃ©s et Ã©coute."
             ],
             "scoring_system": "Si le coach t'entend, tu recommences."
         },
         "coaching_questions": [
-            "Comment te déplacer sans faire de bruit ?",
-            "Contrôles-tu bien ton ballon ?"
+            "Comment te dÃ©placer sans faire de bruit ?",
+            "ContrÃ´les-tu bien ton ballon ?"
         ],
         "tags": [
-            "Agilité",
-            "Discrétion",
+            "AgilitÃ©",
+            "DiscrÃ©tion",
             "Dribble"
         ],
         "animation": [
             {
-                "step_description": "Départ en silence",
+                "step_description": "DÃ©part en silence",
                 "duration": 1,
                 "entities": [
                     {
@@ -232,7 +232,7 @@
                 ]
             },
             {
-                "step_description": "Évite les cônes en douceur",
+                "step_description": "Ã‰vite les cÃ´nes en douceur",
                 "duration": 3,
                 "entities": [
                     {
@@ -276,7 +276,7 @@
                 ]
             },
             {
-                "step_description": "Arrivée au but sans bruit",
+                "step_description": "ArrivÃ©e au but sans bruit",
                 "duration": 1.5,
                 "entities": [
                     {
@@ -325,24 +325,24 @@
         "id": "ex_042",
         "title": "Le Relais des Champions",
         "theme": "Vitesse",
-        "game_format": "Équipes de 4",
+        "game_format": "Ã‰quipes de 4",
         "motor_skills_focus": "Vitesse explosive",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "40x20m",
             "equipment": [
-                "1 ballon par équipe",
-                "4 cônes"
+                "1 ballon par Ã©quipe",
+                "4 cÃ´nes"
             ],
-            "player_arrangement": "Équipes en colonnes"
+            "player_arrangement": "Ã‰quipes en colonnes"
         },
         "rules_and_scoring": {
             "rules": [
-                "Sprint avec ballon jusqu'au cône (20m).",
-                "Tour du cône et retour.",
-                "Passe au suivant qui repart immédiatement."
+                "Sprint avec ballon jusqu'au cÃ´ne (20m).",
+                "Tour du cÃ´ne et retour.",
+                "Passe au suivant qui repart immÃ©diatement."
             ],
-            "scoring_system": "Première équipe terminée gagne."
+            "scoring_system": "PremiÃ¨re Ã©quipe terminÃ©e gagne."
         },
         "coaching_questions": [
             "Comment transmettre le ballon rapidement ?",
@@ -351,11 +351,11 @@
         "tags": [
             "Relais",
             "Vitesse",
-            "Équipe"
+            "Ã‰quipe"
         ],
         "animation": [
             {
-                "step_description": "Premier coureur prêt",
+                "step_description": "Premier coureur prÃªt",
                 "duration": 1,
                 "entities": [
                     {
@@ -389,7 +389,7 @@
                 ]
             },
             {
-                "step_description": "Sprint explosif vers le cône",
+                "step_description": "Sprint explosif vers le cÃ´ne",
                 "duration": 2,
                 "entities": [
                     {
