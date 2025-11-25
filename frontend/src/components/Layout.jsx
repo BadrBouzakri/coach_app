@@ -1,12 +1,12 @@
 import React from 'react';
 import { Trophy, LayoutDashboard, Calendar, Settings, BarChart3 } from 'lucide-react';
 
-export function Layout({ children, currentView, onViewChange }) {
+export function Layout({ children, currentView, onViewChange, sidebarContent }) {
     return (
         <div className="min-h-screen flex">
             {/* Sidebar */}
-            <aside className="w-64 bg-slate-900/80 backdrop-blur-xl border-r border-slate-800 text-white hidden md:flex flex-col">
-                <div className="p-6 border-b border-slate-800/50">
+            <aside className="w-64 bg-slate-900/80 backdrop-blur-xl border-r border-slate-800 text-white hidden md:flex flex-col h-screen sticky top-0">
+                <div className="p-6 border-b border-slate-800/50 flex-shrink-0">
                     <div className="flex items-center gap-3">
                         <Trophy className="w-8 h-8 text-emerald-400 drop-shadow-[0_0_12px_rgba(52,211,153,0.6)]" />
                         <div className="flex flex-col">
@@ -16,7 +16,7 @@ export function Layout({ children, currentView, onViewChange }) {
                     </div>
                 </div>
 
-                <nav className="flex-1 p-4 space-y-2">
+                <nav className="p-4 space-y-2 flex-shrink-0">
                     <button
                         onClick={() => onViewChange?.('exercises')}
                         className={`w-full flex items-center gap-3 px-4 py-3 ${currentView === 'exercises'
@@ -50,6 +50,13 @@ export function Layout({ children, currentView, onViewChange }) {
                         Planificateur
                     </button>
                 </nav>
+
+                {/* Custom Sidebar Content (Filters) */}
+                {sidebarContent && (
+                    <div className="flex-1 overflow-y-auto px-4 py-2 space-y-4 border-t border-slate-800/50">
+                        {sidebarContent}
+                    </div>
+                )}
 
                 <div className="p-4 border-t border-slate-800/50">
                     <div className="flex items-center gap-3 px-4 py-2 bg-gradient-to-r from-emerald-900/30 to-red-900/30 rounded-xl border border-emerald-500/30">

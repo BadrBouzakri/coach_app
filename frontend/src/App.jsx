@@ -51,57 +51,74 @@ function App() {
     return matchesSearch && matchesTheme && matchesFavorites;
   });
 
+  const SidebarFilters = (
+    <div className="space-y-6">
+      {/* Search */}
+      <div className="space-y-2">
+        <label className="text-xs font-bold text-slate-500 uppercase tracking-wider">Recherche</label>
+        <div className="relative">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 w-4 h-4" />
+          <input
+            type="text"
+            placeholder="Exercice, tag..."
+            className="w-full pl-9 pr-3 py-2 rounded-lg bg-slate-800/50 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 transition-all"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
+      </div>
+
+      {/* Favorites Toggle */}
+      <button
+        onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
+        className={`w-full px-4 py-2 rounded-lg text-sm font-medium transition-all border flex items-center gap-2 ${showFavoritesOnly
+          ? 'bg-red-600/20 text-red-400 border-red-500/50'
+          : 'bg-slate-800/30 text-slate-400 border-slate-700 hover:bg-slate-800'
+          }`}
+      >
+        <Star className={`w-4 h-4 ${showFavoritesOnly ? 'fill-current' : ''}`} />
+        Favoris uniquement
+      </button>
+
+      {/* Themes List */}
+      <div className="space-y-2">
+        <div className="flex items-center justify-between">
+          <label className="text-xs font-bold text-slate-500 uppercase tracking-wider">Catégories</label>
+          <span className="text-[10px] bg-slate-800 text-slate-400 px-2 py-0.5 rounded-full">{themes.length}</span>
+        </div>
+        <div className="space-y-1">
+          {themes.map(theme => (
+            <button
+              key={theme}
+              onClick={() => setSelectedTheme(theme)}
+              className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-all flex items-center justify-between group ${selectedTheme === theme
+                ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-900/20'
+                : 'text-slate-400 hover:bg-slate-800 hover:text-white'
+                }`}
+            >
+              <span>{theme}</span>
+              {selectedTheme === theme && <div className="w-1.5 h-1.5 rounded-full bg-white" />}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <>
       <ParticleBackground />
-      <Layout currentView={currentView} onViewChange={setCurrentView}>
+      <Layout
+        currentView={currentView}
+        onViewChange={setCurrentView}
+        sidebarContent={currentView === 'exercises' ? SidebarFilters : null}
+      >
         <PageTransition>
           {currentView === 'exercises' && (
             <>
-              <div className="mb-8">
-                <h1 className="text-3xl font-bold mb-2 drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-white to-red-500">Bibliothèque d'Exercices Wattrelos FC</h1>
-                <p className="text-slate-400 text-lg">Plus de {exercises.length} exercices adaptés pour les 10-11 ans.</p>
-              </div>
-
-              {/* Filters */}
-              <div className="bg-slate-800/40 backdrop-blur-md p-4 rounded-2xl border border-slate-700/50 shadow-lg mb-8 sticky top-0 z-40">
-                <div className="flex flex-col md:flex-row gap-4">
-                  <div className="relative flex-1">
-                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 w-5 h-5" />
-                    <input
-                      type="text"
-                      placeholder="Rechercher un exercice, un tag..."
-                      className="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-900/50 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all"
-                      value={searchTerm}
-                      onChange={(e) => setSearchTerm(e.target.value)}
-                    />
-                  </div>
-                  <div className="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
-                    <Filter className="w-5 h-5 text-slate-400" />
-                    <button
-                      onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
-                      className={`px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap transition-all border flex items-center gap-2 ${showFavoritesOnly
-                        ? 'bg-gradient-to-r from-red-600 to-red-700 text-white border-red-500 shadow-lg shadow-red-900/30'
-                        : 'bg-slate-800/50 text-slate-400 border-slate-700 hover:bg-red-600/20 hover:text-white'
-                        }`}
-                    >
-                      <Star className={`w-4 h-4 ${showFavoritesOnly ? 'fill-white' : ''}`} />
-                      Favoris {favorites.length > 0 && `(${favorites.length})`}
-                    </button>
-                    {themes.map(theme => (
-                      <button
-                        key={theme}
-                        onClick={() => setSelectedTheme(theme)}
-                        className={`px-4 py-2 rounded-xl text-sm font-medium whitespace-nowrap transition-all border ${selectedTheme === theme
-                          ? 'bg-gradient-to-r from-emerald-600 to-emerald-700 text-white border-emerald-500 shadow-lg shadow-emerald-900/30'
-                          : 'bg-slate-800/50 text-slate-400 border-slate-700 hover:bg-gradient-to-r hover:from-emerald-600/20 hover:to-red-600/20 hover:text-white'
-                          }`}
-                      >
-                        {theme}
-                      </button>
-                    ))}
-                  </div>
-                </div>
+              <div className="mb-6">
+                <h1 className="text-2xl font-bold mb-1 drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-white to-red-500">Bibliothèque d'Exercices</h1>
+                <p className="text-slate-400 text-sm">Plus de {exercises.length} exercices disponibles.</p>
               </div>
 
               {/* Grid */}

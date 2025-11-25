@@ -53,83 +53,65 @@ export function ExerciseCard({ exercise, onClick, isFavorite = false, onToggleFa
             />
 
             {/* Theme Badge */}
-            <div className="relative p-5 border-b border-slate-700/50 group-hover:border-slate-600/50 transition-colors">
-                <div className="flex items-center justify-between mb-3">
+            <div className="relative p-3 border-b border-slate-700/50 group-hover:border-slate-600/50 transition-colors">
+                <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-2">
                         <motion.div
                             whileHover={{ scale: 1.1, rotate: 5 }}
-                            className="px-3 py-1 rounded-full text-xs font-bold border shadow-lg"
+                            className="px-2 py-0.5 rounded-full text-[10px] font-bold border shadow-lg"
                             style={{
                                 background: `linear-gradient(135deg, ${colors.from}, ${colors.to})`,
                                 borderColor: colors.from,
-                                boxShadow: `0 4px 12px ${colors.glow}`
+                                boxShadow: `0 2px 8px ${colors.glow}`
                             }}
                         >
                             <span className="text-white drop-shadow-sm">{exercise.theme}</span>
                         </motion.div>
 
-                        {/* NEW: Duration Badge */}
+                        {/* Duration Badge */}
                         {exercise.duration_minutes && (
-                            <motion.div
-                                initial={{ opacity: 0, x: -10 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                className="px-2 py-1 rounded-lg text-xs font-medium bg-emerald-600/20 text-emerald-300 border border-emerald-500/30 flex items-center gap-1"
-                            >
-                                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div className="px-1.5 py-0.5 rounded text-[10px] font-medium bg-emerald-600/20 text-emerald-300 border border-emerald-500/30 flex items-center gap-1">
+                                <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                                 {exercise.duration_minutes}'
-                            </motion.div>
+                            </div>
                         )}
 
-                        {/* NEW: Difficulty Indicator */}
+                        {/* Difficulty Indicator */}
                         {exercise.difficulty && (
-                            <motion.div
-                                initial={{ opacity: 0, scale: 0.8 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                className={`px-2 py-1 rounded-lg text-xs font-bold ${exercise.difficulty === 'Facile' ? 'bg-green-600/20 text-green-300 border border-green-500/30' :
-                                    exercise.difficulty === 'Moyen' ? 'bg-yellow-600/20 text-yellow-300 border border-yellow-500/30' :
-                                        'bg-red-600/20 text-red-300 border border-red-500/30'
-                                    }`}
-                            >
+                            <div className={`px-1.5 py-0.5 rounded text-[10px] font-bold ${exercise.difficulty === 'Facile' ? 'bg-green-600/20 text-green-300 border border-green-500/30' :
+                                exercise.difficulty === 'Moyen' ? 'bg-yellow-600/20 text-yellow-300 border border-yellow-500/30' :
+                                    'bg-red-600/20 text-red-300 border border-red-500/30'
+                                }`}>
                                 {exercise.difficulty === 'Facile' ? '🟢' : exercise.difficulty === 'Moyen' ? '🟡' : '🔴'}
-                            </motion.div>
+                            </div>
                         )}
                     </div>
 
                     <div className="flex items-center gap-2">
-                        {/* Fun Rating with Animation */}
-                        <motion.div
-                            className="flex items-center gap-1"
-                            whileHover={{ scale: 1.15 }}
-                        >
+                        {/* Fun Rating */}
+                        <div className="flex items-center gap-0.5">
                             {[...Array(5)].map((_, i) => (
-                                <motion.div
+                                <Star
                                     key={i}
-                                    initial={{ scale: 0 }}
-                                    animate={{ scale: 1 }}
-                                    transition={{ delay: i * 0.05 }}
-                                >
-                                    <Star
-                                        className={`w-4 h-4 transition-all duration-200 ${i < exercise.fun_rating
-                                            ? 'text-amber-400 fill-amber-400 drop-shadow-[0_0_4px_rgba(251,191,36,0.6)]'
-                                            : 'text-slate-600'
-                                            }`}
-                                    />
-                                </motion.div>
+                                    className={`w-3 h-3 ${i < exercise.fun_rating
+                                        ? 'text-amber-400 fill-amber-400'
+                                        : 'text-slate-600'
+                                        }`}
+                                />
                             ))}
-                        </motion.div>
+                        </div>
 
                         {/* Favorite Star */}
                         {onToggleFavorite && (
                             <button
                                 onClick={handleFavoriteClick}
-                                className="p-1.5 hover:bg-white/10 rounded-lg transition-all flex-shrink-0"
-                                aria-label={isFavorite ? "Retirer des favoris" : "Ajouter aux favoris"}
+                                className="p-1 hover:bg-white/10 rounded transition-all flex-shrink-0"
                             >
                                 <Star
-                                    className={`w-5 h-5 transition-all ${isFavorite
-                                        ? 'fill-red-500 text-red-500 drop-shadow-[0_0_6px_rgba(239,68,68,0.8)]'
+                                    className={`w-4 h-4 transition-all ${isFavorite
+                                        ? 'fill-red-500 text-red-500'
                                         : 'text-slate-400 hover:text-red-400'
                                         }`}
                                 />
@@ -139,25 +121,25 @@ export function ExerciseCard({ exercise, onClick, isFavorite = false, onToggleFa
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent group-hover:from-white group-hover:to-white transition-all duration-300 px-5 pb-2">
+                <h3 className="text-lg font-bold text-white leading-tight mb-2 truncate pr-2">
                     {exercise.title}
                 </h3>
 
                 {/* Subtitle Info */}
-                <div className="flex items-center gap-4 text-sm text-slate-400">
-                    <div className="flex items-center gap-1.5 group-hover:text-blue-300 transition-colors">
-                        <Users className="w-4 h-4" />
-                        <span className="font-medium">{exercise.game_format}</span>
+                <div className="flex items-center gap-3 text-xs text-slate-400">
+                    <div className="flex items-center gap-1">
+                        <Users className="w-3 h-3" />
+                        <span>{exercise.game_format}</span>
                     </div>
-                    <div className="flex items-center gap-1.5 group-hover:text-emerald-300 transition-colors">
-                        <Activity className="w-4 h-4" />
-                        <span className="font-medium">{exercise.motor_skills_focus}</span>
+                    <div className="flex items-center gap-1 truncate">
+                        <Activity className="w-3 h-3" />
+                        <span className="truncate max-w-[100px]">{exercise.motor_skills_focus}</span>
                     </div>
                 </div>
             </div>
 
-            {/* Tags Section with Enhanced Design */}
-            <div className="relative p-5">
+            {/* Tags Section */}
+            <div className="relative p-3 bg-slate-900/30">
                 <div className="flex flex-wrap gap-2">
                     {exercise.tags.slice(0, 3).map((tag, index) => (
                         <motion.span

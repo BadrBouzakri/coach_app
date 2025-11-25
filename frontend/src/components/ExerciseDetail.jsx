@@ -10,7 +10,7 @@ export function ExerciseDetail({ exercise, onClose }) {
             <div className="bg-slate-900 rounded-2xl w-full max-w-5xl max-h-[90vh] overflow-y-auto shadow-2xl flex flex-col md:flex-row border border-slate-700">
 
                 {/* Left: Visuals */}
-                <div className="w-full md:w-1/2 bg-slate-800/50 p-6 flex flex-col gap-4 sticky top-0 border-r border-slate-700/50">
+                <div className="w-full md:w-1/2 bg-slate-800/50 p-4 md:p-6 flex flex-col gap-4 md:sticky md:top-0 border-b md:border-b-0 md:border-r border-slate-700/50">
                     <div className="flex justify-between items-start md:hidden">
                         <h2 className="text-xl font-bold text-white">{exercise.title}</h2>
                         <button onClick={onClose} className="p-2 hover:bg-slate-700 rounded-full text-white"><X className="w-6 h-6" /></button>
