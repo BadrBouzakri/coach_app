@@ -1,7 +1,7 @@
 ﻿[
     {
         "id": "ex_024",
-        "title": "Le Slalom GÃ©ant",
+        "title": "Le Slalom Géant",
         "theme": "Dribble",
         "game_format": "Individuel",
         "motor_skills_focus": "Coordination",
@@ -9,17 +9,17 @@
         "setup_instructions": {
             "field_dimensions": "20x10m",
             "equipment": [
-                "6 cÃ´nes",
+                "6 cônes",
                 "1 ballon"
             ],
-            "player_arrangement": "DÃ©part en ligne"
+            "player_arrangement": "Départ en ligne"
         },
         "rules_and_scoring": {
             "rules": [
-                "Slalom entre les cÃ´nes.",
+                "Slalom entre les cônes.",
                 "Retour en conduite rapide."
             ],
-            "scoring_system": "ChronomÃ¨tre."
+            "scoring_system": "Chronomètre."
         },
         "coaching_questions": [
             "Quel pied utiliser ?",
@@ -31,7 +31,7 @@
         ],
         "animation": [
             {
-                "step_description": "DÃ©part",
+                "step_description": "Départ",
                 "duration": 1,
                 "entities": [
                     {
@@ -148,15 +148,15 @@
     },
     {
         "id": "ex_025",
-        "title": "L'Ã‰chelle Infernale",
+        "title": "L'Échelle Infernale",
         "theme": "Coordination",
         "game_format": "Individuel",
-        "motor_skills_focus": "FrÃ©quence d'appuis",
+        "motor_skills_focus": "Fréquence d'appuis",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "10x5m",
             "equipment": [
-                "1 Ã©chelle de rythme"
+                "1 échelle de rythme"
             ],
             "player_arrangement": "File indienne"
         },
@@ -172,12 +172,12 @@
             "Utilises-tu tes bras ?"
         ],
         "tags": [
-            "Ã‰chelle",
+            "Échelle",
             "Appuis"
         ],
         "animation": [
             {
-                "step_description": "DÃ©part",
+                "step_description": "Départ",
                 "duration": 1,
                 "entities": [
                     {
@@ -196,7 +196,7 @@
                 ]
             },
             {
-                "step_description": "TraversÃ©e",
+                "step_description": "Traversée",
                 "duration": 2,
                 "entities": [
                     {

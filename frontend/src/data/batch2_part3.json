@@ -15,7 +15,7 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Le premier joueur se dÃ©place avec le ballon.",
+                "Le premier joueur se déplace avec le ballon.",
                 "Tous les autres suivent en imitant exactement ses mouvements.",
                 "Change de leader toutes les 30 secondes."
             ],
@@ -32,7 +32,7 @@
         ],
         "animation": [
             {
-                "step_description": "DÃ©part - Le leader commence",
+                "step_description": "Départ - Le leader commence",
                 "duration": 1.5,
                 "entities": [
                     {
@@ -170,36 +170,36 @@
         "title": "La Ruche en Folie",
         "theme": "Vision de jeu",
         "game_format": "10-12 joueurs",
-        "motor_skills_focus": "Vision pÃ©riphÃ©rique",
+        "motor_skills_focus": "Vision périphérique",
         "fun_rating": 5,
         "setup_instructions": {
-            "field_dimensions": "15x15m carrÃ©",
+            "field_dimensions": "15x15m carré",
             "equipment": [
                 "1 ballon par joueur",
-                "4 cÃ´nes d'angle"
+                "4 cônes d'angle"
             ],
-            "player_arrangement": "Tous dispersÃ©s alÃ©atoirement"
+            "player_arrangement": "Tous dispersés aléatoirement"
         },
         "rules_and_scoring": {
             "rules": [
-                "Tout le monde se dÃ©place en conduisant son ballon sans sortir du carrÃ©.",
-                "Ã‰viter les collisions entre joueurs.",
-                "Au signal, changer de direction immÃ©diatement."
+                "Tout le monde se déplace en conduisant son ballon sans sortir du carré.",
+                "Éviter les collisions entre joueurs.",
+                "Au signal, changer de direction immédiatement."
             ],
             "scoring_system": "1 point perdu par collision."
         },
         "coaching_questions": [
-            "Utilises-tu ta vision pÃ©riphÃ©rique ?",
-            "Comment Ã©viter les autres joueurs ?"
+            "Utilises-tu ta vision périphérique ?",
+            "Comment éviter les autres joueurs ?"
         ],
         "tags": [
             "Vision",
-            "Chaos contrÃ´lÃ©",
+            "Chaos contrôlé",
             "Dribble"
         ],
         "animation": [
             {
-                "step_description": "Tous se dÃ©placent librement",
+                "step_description": "Tous se déplacent librement",
                 "duration": 1,
                 "entities": [
                     {
@@ -245,7 +245,7 @@
                 ]
             },
             {
-                "step_description": "Mouvement chaotique - Ã‰viter les collisions !",
+                "step_description": "Mouvement chaotique - Éviter les collisions !",
                 "duration": 3,
                 "entities": [
                     {
@@ -343,13 +343,13 @@
         "title": "Le Roi du Cercle",
         "theme": "Duel",
         "game_format": "1v1 tournant",
-        "motor_skills_focus": "DÃ©sÃ©quilibre",
+        "motor_skills_focus": "Déséquilibre",
         "fun_rating": 5,
         "setup_instructions": {
-            "field_dimensions": "Cercle de 8m de diamÃ¨tre",
+            "field_dimensions": "Cercle de 8m de diamètre",
             "equipment": [
                 "1 ballon",
-                "CÃ´nes pour cercle"
+                "Cônes pour cercle"
             ],
             "player_arrangement": "2 joueurs dans le cercle, les autres autour"
         },
@@ -362,13 +362,13 @@
             "scoring_system": "Le gagnant devient le 'Roi' et affronte le suivant."
         },
         "coaching_questions": [
-            "Comment dÃ©sÃ©quilibrer ton adversaire ?",
+            "Comment déséquilibrer ton adversaire ?",
             "Utilises-tu des feintes ?"
         ],
         "tags": [
             "Duel",
             "1v1",
-            "DÃ©sÃ©quilibre"
+            "Déséquilibre"
         ],
         "animation": [
             {

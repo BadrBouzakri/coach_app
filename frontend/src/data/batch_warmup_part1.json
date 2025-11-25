@@ -1,10 +1,10 @@
 ﻿[
     {
         "id": "warm_001",
-        "title": "Le RÃ©veil des Muscles",
-        "theme": "Ã‰chauffement",
+        "title": "Le Réveil des Muscles",
+        "theme": "Échauffement",
         "game_format": "Groupe complet",
-        "motor_skills_focus": "MobilitÃ© articulaire",
+        "motor_skills_focus": "Mobilité articulaire",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "Espace libre 15x15m",
@@ -16,19 +16,19 @@
         "rules_and_scoring": {
             "rules": [
                 "Rotation des chevilles, genoux, hanches (10 secondes chaque).",
-                "Moulinets de bras avant/arriÃ¨re.",
+                "Moulinets de bras avant/arrière.",
                 "Rotation du cou doucement.",
-                "Ã‰tirements dynamiques lÃ©gers."
+                "Étirements dynamiques légers."
             ],
-            "scoring_system": "Pas de score, focus sur la qualitÃ© d'exÃ©cution."
+            "scoring_system": "Pas de score, focus sur la qualité d'exécution."
         },
         "coaching_questions": [
-            "Sens-tu tes articulations se dÃ©tendre ?",
+            "Sens-tu tes articulations se détendre ?",
             "Quelle partie du corps a besoin de plus d'attention ?"
         ],
         "tags": [
-            "Ã‰chauffement",
-            "MobilitÃ©",
+            "Échauffement",
+            "Mobilité",
             "Articulaire"
         ],
         "animation": [
@@ -127,31 +127,31 @@
     {
         "id": "warm_002",
         "title": "La Course des Animaux",
-        "theme": "Ã‰chauffement",
+        "theme": "Échauffement",
         "game_format": "Individuel",
         "motor_skills_focus": "Coordination motrice",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "20x20m",
             "equipment": [
-                "4 cÃ´nes pour dÃ©limiter"
+                "4 cônes pour délimiter"
             ],
             "player_arrangement": "Dispersion dans l'espace"
         },
         "rules_and_scoring": {
             "rules": [
-                "Au signal, imiter l'animal annoncÃ© : kangourou (sauts), crabe (sur 4 pattes retournÃ©), grenouille (bonds).",
+                "Au signal, imiter l'animal annoncé : kangourou (sauts), crabe (sur 4 pattes retourné), grenouille (bonds).",
                 "Changer d'animal toutes les 30 secondes.",
                 "Utiliser tout l'espace disponible."
             ],
-            "scoring_system": "QualitÃ© de l'imitation."
+            "scoring_system": "Qualité de l'imitation."
         },
         "coaching_questions": [
-            "Quel animal Ã©tait le plus difficile ?",
-            "Comment amÃ©liorer ton saut de kangourou ?"
+            "Quel animal était le plus difficile ?",
+            "Comment améliorer ton saut de kangourou ?"
         ],
         "tags": [
-            "Ã‰chauffement",
+            "Échauffement",
             "Fun",
             "Coordination",
             "Imitation"
@@ -196,7 +196,7 @@
                 ]
             },
             {
-                "step_description": "Mode Crabe - 4 pattes retournÃ©",
+                "step_description": "Mode Crabe - 4 pattes retourné",
                 "duration": 2,
                 "entities": [
                     {
@@ -276,9 +276,9 @@
     {
         "id": "warm_003",
         "title": "Jacques a Dit Sportif",
-        "theme": "Ã‰chauffement",
+        "theme": "Échauffement",
         "game_format": "Groupe complet",
-        "motor_skills_focus": "RÃ©activitÃ© et Ã©coute",
+        "motor_skills_focus": "Réactivité et écoute",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "15x15m",
@@ -289,25 +289,25 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Le coach dit 'Jacques a dit : montÃ©es de genoux' â†’ tout le monde exÃ©cute.",
+                "Le coach dit 'Jacques a dit : montées de genoux' â†’ tout le monde exécute.",
                 "Si le coach ne dit pas 'Jacques a dit', ne pas bouger !",
-                "Mouvements : montÃ©es de genoux, talons-fesses, jumping jacks, etc."
+                "Mouvements : montées de genoux, talons-fesses, jumping jacks, etc."
             ],
-            "scoring_system": "Ã‰limination si erreur (puis rÃ©intÃ©gration rapide)."
+            "scoring_system": "Élimination si erreur (puis réintégration rapide)."
         },
         "coaching_questions": [
-            "Restes-tu concentrÃ© mÃªme aprÃ¨s plusieurs ordres ?",
-            "Comment Ã©viter les piÃ¨ges ?"
+            "Restes-tu concentré même après plusieurs ordres ?",
+            "Comment éviter les pièges ?"
         ],
         "tags": [
-            "Ã‰chauffement",
+            "Échauffement",
             "Jeu",
             "Concentration",
-            "RÃ©activitÃ©"
+            "Réactivité"
         ],
         "animation": [
             {
-                "step_description": "Jacques a dit : MontÃ©es de genoux",
+                "step_description": "Jacques a dit : Montées de genoux",
                 "duration": 2,
                 "entities": [
                     {
@@ -383,7 +383,7 @@
                 ]
             },
             {
-                "step_description": "PiÃ¨ge ! Sans 'Jacques a dit'",
+                "step_description": "Piège ! Sans 'Jacques a dit'",
                 "duration": 1.5,
                 "entities": [
                     {
@@ -425,7 +425,7 @@
     {
         "id": "warm_004",
         "title": "Le Train Fou",
-        "theme": "Ã‰chauffement",
+        "theme": "Échauffement",
         "game_format": "Groupes de 5-6",
         "motor_skills_focus": "Coordination collective",
         "fun_rating": 4,
@@ -434,13 +434,13 @@
             "equipment": [
                 "Aucun"
             ],
-            "player_arrangement": "File indienne, mains sur Ã©paules du prÃ©cÃ©dent"
+            "player_arrangement": "File indienne, mains sur épaules du précédent"
         },
         "rules_and_scoring": {
             "rules": [
                 "Former un 'train' en file indienne.",
                 "Le premier est la locomotive, il guide le train.",
-                "Faire des virages, slaloms, accÃ©lÃ©rations.",
+                "Faire des virages, slaloms, accélérations.",
                 "Changer de locomotive toutes les minutes."
             ],
             "scoring_system": "Le train ne doit jamais se casser !"
@@ -450,8 +450,8 @@
             "Comment anticiper les virages ?"
         ],
         "tags": [
-            "Ã‰chauffement",
-            "CohÃ©sion",
+            "Échauffement",
+            "Cohésion",
             "Coordination"
         ],
         "animation": [
@@ -502,7 +502,7 @@
                 ]
             },
             {
-                "step_description": "Virage serrÃ© vers la droite",
+                "step_description": "Virage serré vers la droite",
                 "duration": 2,
                 "entities": [
                     {
@@ -548,7 +548,7 @@
                 ]
             },
             {
-                "step_description": "AccÃ©lÃ©ration finale",
+                "step_description": "Accélération finale",
                 "duration": 2,
                 "entities": [
                     {
@@ -598,9 +598,9 @@
     {
         "id": "warm_005",
         "title": "Les Statues Musicales",
-        "theme": "Ã‰chauffement",
+        "theme": "Échauffement",
         "game_format": "Tous ensemble",
-        "motor_skills_focus": "Ã‰quilibre et contrÃ´le",
+        "motor_skills_focus": "Équilibre et contrôle",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "20x20m",
@@ -612,18 +612,18 @@
         "rules_and_scoring": {
             "rules": [
                 "Musique en cours : tout le monde court/trottine librement.",
-                "Musique STOP : se figer en statue (Ã©quilibre sur 1 pied, positions amusantes).",
-                "Celui qui bouge est Ã©liminÃ© temporairement (10 secondes)."
+                "Musique STOP : se figer en statue (équilibre sur 1 pied, positions amusantes).",
+                "Celui qui bouge est éliminé temporairement (10 secondes)."
             ],
             "scoring_system": "Dernier debout gagne."
         },
         "coaching_questions": [
-            "Arrives-tu Ã  garder l'Ã©quilibre ?",
-            "Quelle statue Ã©tait la plus difficile ?"
+            "Arrives-tu Ã  garder l'équilibre ?",
+            "Quelle statue était la plus difficile ?"
         ],
         "tags": [
-            "Ã‰chauffement",
-            "Ã‰quilibre",
+            "Échauffement",
+            "Équilibre",
             "Jeu",
             "Fun"
         ],
@@ -667,7 +667,7 @@
                 ]
             },
             {
-                "step_description": "STOP ! Statues figÃ©es",
+                "step_description": "STOP ! Statues figées",
                 "duration": 1.5,
                 "entities": [
                     {

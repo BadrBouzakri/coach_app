@@ -1,29 +1,29 @@
 ﻿[
     {
         "id": "ex_037",
-        "title": "La Bataille des Ã‰quipes",
+        "title": "La Bataille des Équipes",
         "theme": "Jeu collectif",
-        "game_format": "2 Ã©quipes de 5-6",
+        "game_format": "2 équipes de 5-6",
         "motor_skills_focus": "Endurance",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "30x20m avec 2 zones de but de 5m",
             "equipment": [
                 "1 ballon",
-                "4 cÃ´nes pour dÃ©limiter les buts"
+                "4 cônes pour délimiter les buts"
             ],
-            "player_arrangement": "2 Ã©quipes rÃ©parties sur le terrain"
+            "player_arrangement": "2 équipes réparties sur le terrain"
         },
         "rules_and_scoring": {
             "rules": [
-                "Match 4v4 avec gardiens volants (dernier dÃ©fenseur).",
-                "But marquÃ© = 1 point.",
-                "Changement de rÃ´les toutes les 3 minutes."
+                "Match 4v4 avec gardiens volants (dernier défenseur).",
+                "But marqué = 1 point.",
+                "Changement de rôles toutes les 3 minutes."
             ],
-            "scoring_system": "Ã‰quipe avec le plus de points aprÃ¨s 15 minutes."
+            "scoring_system": "Équipe avec le plus de points après 15 minutes."
         },
         "coaching_questions": [
-            "Comment crÃ©er des espaces ?",
+            "Comment créer des espaces ?",
             "Quelle est ta position quand tu n'as pas le ballon ?"
         ],
         "tags": [
@@ -33,7 +33,7 @@
         ],
         "animation": [
             {
-                "step_description": "Formation 2-2 pour l'Ã©quipe A",
+                "step_description": "Formation 2-2 pour l'équipe A",
                 "duration": 1,
                 "entities": [
                     {
@@ -281,36 +281,36 @@
         "id": "ex_038",
         "title": "Les Sauts de Grenouille",
         "theme": "Force explosive",
-        "game_format": "Individuel ou binÃ´mes",
-        "motor_skills_focus": "DÃ©tente",
+        "game_format": "Individuel ou binômes",
+        "motor_skills_focus": "Détente",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "20x10m",
             "equipment": [
-                "6 cÃ´nes espacÃ©s de 2m"
+                "6 cônes espacés de 2m"
             ],
             "player_arrangement": "File indienne"
         },
         "rules_and_scoring": {
             "rules": [
-                "Sauter Ã  pieds joints de cÃ´ne en cÃ´ne.",
-                "RÃ©ception Ã©quilibrÃ©e obligatoire.",
-                "3 sÃ©ries de 6 sauts."
+                "Sauter Ã  pieds joints de cône en cône.",
+                "Réception équilibrée obligatoire.",
+                "3 séries de 6 sauts."
             ],
-            "scoring_system": "QualitÃ© de l'exÃ©cution notÃ©e par le coach."
+            "scoring_system": "Qualité de l'exécution notée par le coach."
         },
         "coaching_questions": [
             "Utilises-tu tes bras pour t'aider ?",
-            "Comment atterrir sans dÃ©sÃ©quilibre ?"
+            "Comment atterrir sans déséquilibre ?"
         ],
         "tags": [
-            "DÃ©tente",
-            "PliomÃ©trie",
+            "Détente",
+            "Pliométrie",
             "Force"
         ],
         "animation": [
             {
-                "step_description": "Position de dÃ©part devant le premier cÃ´ne",
+                "step_description": "Position de départ devant le premier cône",
                 "duration": 1,
                 "entities": [
                     {
@@ -360,7 +360,7 @@
                 ]
             },
             {
-                "step_description": "Saut explosif vers le premier cÃ´ne",
+                "step_description": "Saut explosif vers le premier cône",
                 "duration": 0.8,
                 "entities": [
                     {
@@ -410,7 +410,7 @@
                 ]
             },
             {
-                "step_description": "EnchaÃ®nement des sauts",
+                "step_description": "Enchaînement des sauts",
                 "duration": 2,
                 "entities": [
                     {
@@ -466,10 +466,10 @@
         "title": "Le Chef d'Orchestre",
         "theme": "Concentration",
         "game_format": "Groupe de 8-12 joueurs",
-        "motor_skills_focus": "Ã‰coute et rÃ©action",
+        "motor_skills_focus": "Écoute et réaction",
         "fun_rating": 4,
         "setup_instructions": {
-            "field_dimensions": "Cercle de 12m de diamÃ¨tre",
+            "field_dimensions": "Cercle de 12m de diamètre",
             "equipment": [
                 "1 ballon"
             ],
@@ -478,19 +478,19 @@
         "rules_and_scoring": {
             "rules": [
                 "Le chef au centre donne des ordres : 'Stop', 'Passe Ã  gauche', 'Passe Ã  droite', etc.",
-                "Les joueurs doivent exÃ©cuter immÃ©diatement.",
-                "Erreur = Ã©limination temporaire (30 secondes)."
+                "Les joueurs doivent exécuter immédiatement.",
+                "Erreur = élimination temporaire (30 secondes)."
             ],
             "scoring_system": "Dernier joueur debout devient le nouveau chef."
         },
         "coaching_questions": [
-            "Restes-tu concentrÃ© mÃªme sans le ballon ?",
+            "Restes-tu concentré même sans le ballon ?",
             "Comment anticiper l'ordre du chef ?"
         ],
         "tags": [
             "Concentration",
             "Passes",
-            "RÃ©activitÃ©"
+            "Réactivité"
         ],
         "animation": [
             {

@@ -8,28 +8,28 @@
         "fun_rating": 5,
         "duration_minutes": 15,
         "setup_instructions": {
-            "field_dimensions": "CarrÃ© de 8x8m",
+            "field_dimensions": "Carré de 8x8m",
             "equipment": [
-                "4 cÃ´nes",
+                "4 cônes",
                 "1 ballon",
-                "Chasubles pour diffÃ©rencier"
+                "Chasubles pour différencier"
             ],
-            "player_arrangement": "4 joueurs aux coins, 1 dÃ©fenseur au centre"
+            "player_arrangement": "4 joueurs aux coins, 1 défenseur au centre"
         },
         "rules_and_scoring": {
             "rules": [
-                "Les 4 joueurs extÃ©rieurs se passent le ballon.",
-                "Le dÃ©fenseur au centre essaie d'intercepter.",
-                "Maximum 2 touches par joueur extÃ©rieur.",
-                "Si le dÃ©fenseur touche le ballon, il Ã©change avec celui qui a perdu le ballon.",
-                "Compter le nombre de passes consÃ©cutives."
+                "Les 4 joueurs extérieurs se passent le ballon.",
+                "Le défenseur au centre essaie d'intercepter.",
+                "Maximum 2 touches par joueur extérieur.",
+                "Si le défenseur touche le ballon, il échange avec celui qui a perdu le ballon.",
+                "Compter le nombre de passes consécutives."
             ],
             "scoring_system": "Objectif : 20 passes sans interception. Record du groupe Ã  battre."
         },
         "variants": [
             {
                 "name": "Facile - 3 Touches",
-                "description": "3 touches autorisÃ©es, carrÃ© de 10x10m."
+                "description": "3 touches autorisées, carré de 10x10m."
             },
             {
                 "name": "Moyen - 2 Touches",
@@ -40,25 +40,25 @@
                 "description": "Une seule touche obligatoire."
             },
             {
-                "name": "Expert - 2 DÃ©fenseurs",
+                "name": "Expert - 2 Défenseurs",
                 "description": "4v2, vitesse maximale requise."
             }
         ],
         "success_criteria": [
             "Passes Ã  hauteur de pied des partenaires",
-            "Corps entre le ballon et le dÃ©fenseur",
-            "Vision pÃ©riphÃ©rique active",
-            "Passes rapides et dosÃ©es"
+            "Corps entre le ballon et le défenseur",
+            "Vision périphérique active",
+            "Passes rapides et dosées"
         ],
         "safety_notes": [
-            "Ã‰chauffement articulaire obligatoire",
-            "Surface de jeu plane et dÃ©gagÃ©e",
+            "Échauffement articulaire obligatoire",
+            "Surface de jeu plane et dégagée",
             "Hydratation entre les tours"
         ],
         "coaching_questions": [
             "OÃ¹ regardes-tu avant de recevoir le ballon ?",
-            "Comment crÃ©es-tu des angles de passe ?",
-            "Ton premier toucher est-il dÃ©jÃ  orientÃ© ?"
+            "Comment crées-tu des angles de passe ?",
+            "Ton premier toucher est-il déjÃ  orienté ?"
         ],
         "tags": [
             "Rondo",
@@ -120,7 +120,7 @@
                 ]
             },
             {
-                "step_description": "Passe rapide pour Ã©viter le dÃ©fenseur",
+                "step_description": "Passe rapide pour éviter le défenseur",
                 "duration": 1.5,
                 "entities": [
                     {
@@ -243,67 +243,67 @@
         "fun_rating": 5,
         "duration_minutes": 10,
         "setup_instructions": {
-            "field_dimensions": "2 couloirs parallÃ¨les de 25m x 3m",
+            "field_dimensions": "2 couloirs parallèles de 25m x 3m",
             "equipment": [
-                "8 cÃ´nes pour dÃ©limiter",
+                "8 cônes pour délimiter",
                 "2 ballons"
             ],
-            "player_arrangement": "BinÃ´mes cÃ´te Ã  cÃ´te sur la ligne de dÃ©part"
+            "player_arrangement": "Binômes côte Ã  côte sur la ligne de départ"
         },
         "rules_and_scoring": {
             "rules": [
-                "2 joueurs partent simultanÃ©ment avec leur ballon.",
+                "2 joueurs partent simultanément avec leur ballon.",
                 "Sprint de 25m en conduisant le ballon.",
                 "Le ballon doit franchir la ligne avec le joueur.",
-                "Si le ballon sort du couloir de 3m de large, pÃ©nalitÃ© de 2 secondes.",
+                "Si le ballon sort du couloir de 3m de large, pénalité de 2 secondes.",
                 "Le gagnant reste, le perdant va en fin de file."
             ],
-            "scoring_system": "Meilleur temps chronomÃ©trÃ©. Tournoi par Ã©limination ou classement gÃ©nÃ©ral."
+            "scoring_system": "Meilleur temps chronométré. Tournoi par élimination ou classement général."
         },
         "variants": [
             {
-                "name": "DÃ©butant - Trottiner",
-                "description": "Course Ã  allure modÃ©rÃ©e, couloir de 4m."
+                "name": "Débutant - Trottiner",
+                "description": "Course Ã  allure modérée, couloir de 4m."
             },
             {
-                "name": "IntermÃ©diaire - Sprint Standard",
+                "name": "Intermédiaire - Sprint Standard",
                 "description": "Sprint normal, couloir de 3m."
             },
             {
-                "name": "AvancÃ© - Sprint Maximal",
+                "name": "Avancé - Sprint Maximal",
                 "description": "Vitesse maximale, couloir de 2m."
             },
             {
-                "name": "Expert - Slalom IntÃ©grÃ©",
-                "description": "4 cÃ´nes Ã  slalomer dans les 25m."
+                "name": "Expert - Slalom Intégré",
+                "description": "4 cônes Ã  slalomer dans les 25m."
             }
         ],
         "success_criteria": [
-            "Touches de ballon lÃ©gÃ¨res et frÃ©quentes",
-            "Corps penchÃ© en avant lors du sprint",
+            "Touches de ballon légères et fréquentes",
+            "Corps penché en avant lors du sprint",
             "Ballon toujours dans le champ de vision",
-            "AccÃ©lÃ©rations explosives"
+            "Accélérations explosives"
         ],
         "safety_notes": [
-            "Ã‰chauffement musculaire (quadriceps, ischio-jambiers)",
-            "VÃ©rifier la surface pour Ã©viter les trous",
-            "Espacer les couloirs pour Ã©viter les collisions",
-            "Pas de dÃ©part avant le signal"
+            "Échauffement musculaire (quadriceps, ischio-jambiers)",
+            "Vérifier la surface pour éviter les trous",
+            "Espacer les couloirs pour éviter les collisions",
+            "Pas de départ avant le signal"
         ],
         "coaching_questions": [
             "OÃ¹ poussais-tu le ballon pour maintenir ta vitesse ?",
-            "Ton corps Ã©tait-il bien Ã©quilibrÃ© ?",
-            "Comment as-tu gÃ©rÃ© les accÃ©lÃ©rations ?"
+            "Ton corps était-il bien équilibré ?",
+            "Comment as-tu géré les accélérations ?"
         ],
         "tags": [
             "Vitesse",
             "Conduite",
             "Sprint",
-            "CompÃ©tition"
+            "Compétition"
         ],
         "animation": [
             {
-                "step_description": "DÃ©part des 2 joueurs",
+                "step_description": "Départ des 2 joueurs",
                 "duration": 1,
                 "entities": [
                     {
@@ -395,7 +395,7 @@
                 ]
             },
             {
-                "step_description": "ArrivÃ©e - Joueur 1 gagne",
+                "step_description": "Arrivée - Joueur 1 gagne",
                 "duration": 1.5,
                 "entities": [
                     {
@@ -454,16 +454,16 @@
             "field_dimensions": "Variable selon effectif",
             "equipment": [
                 "Ballons",
-                "CÃ´nes",
+                "Cônes",
                 "Chasubles"
             ],
-            "player_arrangement": "Voir rÃ¨gles dÃ©taillÃ©es"
+            "player_arrangement": "Voir règles détaillées"
         },
         "rules_and_scoring": {
             "rules": [
-                "RÃ¨gles spÃ©cifiques adaptÃ©es au thÃ¨me de l'exercice.",
-                "Rotation des rÃ´les pour Ã©quitÃ©.",
-                "CritÃ¨res de rÃ©ussite clairs annoncÃ©s en dÃ©but d'exercice."
+                "Règles spécifiques adaptées au thème de l'exercice.",
+                "Rotation des rôles pour équité.",
+                "Critères de réussite clairs annoncés en début d'exercice."
             ],
             "scoring_system": "Points selon objectif de l'exercice."
         },
@@ -478,11 +478,11 @@
             },
             {
                 "name": "Difficile",
-                "description": "Espace rÃ©duit, temps court, pression haute."
+                "description": "Espace réduit, temps court, pression haute."
             },
             {
                 "name": "Expert",
-                "description": "Contraintes tactiques supplÃ©mentaires."
+                "description": "Contraintes tactiques supplémentaires."
             }
         ],
         "success_criteria": [
@@ -492,20 +492,20 @@
             "Progression visible pendant l'exercice"
         ],
         "safety_notes": [
-            "Ã‰chauffement prÃ©alable adaptÃ©",
-            "Terrain sÃ©curisÃ© et dÃ©limitÃ©",
+            "Échauffement préalable adapté",
+            "Terrain sécurisé et délimité",
             "Surveillance active du coach"
         ],
         "coaching_questions": [
-            "Quel a Ã©tÃ© le moment clÃ© de l'exercice ?",
-            "Comment pourrais-tu amÃ©liorer ta performance ?",
+            "Quel a été le moment clé de l'exercice ?",
+            "Comment pourrais-tu améliorer ta performance ?",
             "As-tu bien compris l'objectif tactique ?"
         ],
         "tags": [
             "Jeu de position",
             "Vision et circulation du ballon",
             "U12",
-            "QualitÃ© Premium"
+            "Qualité Premium"
         ],
         "animation": [
             {
@@ -537,7 +537,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2,
                 "entities": [
                     {
@@ -596,26 +596,26 @@
     },
     {
         "id": "ex_premium_006",
-        "title": "Le Tir de PrÃ©cision",
+        "title": "Le Tir de Précision",
         "theme": "Finition",
         "game_format": "Ateliers par 3",
-        "motor_skills_focus": "Frappe cadrÃ©e",
+        "motor_skills_focus": "Frappe cadrée",
         "fun_rating": 4,
         "duration_minutes": 15,
         "setup_instructions": {
             "field_dimensions": "Variable selon effectif",
             "equipment": [
                 "Ballons",
-                "CÃ´nes",
+                "Cônes",
                 "Chasubles"
             ],
-            "player_arrangement": "Voir rÃ¨gles dÃ©taillÃ©es"
+            "player_arrangement": "Voir règles détaillées"
         },
         "rules_and_scoring": {
             "rules": [
-                "RÃ¨gles spÃ©cifiques adaptÃ©es au thÃ¨me de l'exercice.",
-                "Rotation des rÃ´les pour Ã©quitÃ©.",
-                "CritÃ¨res de rÃ©ussite clairs annoncÃ©s en dÃ©but d'exercice."
+                "Règles spécifiques adaptées au thème de l'exercice.",
+                "Rotation des rôles pour équité.",
+                "Critères de réussite clairs annoncés en début d'exercice."
             ],
             "scoring_system": "Points selon objectif de l'exercice."
         },
@@ -630,11 +630,11 @@
             },
             {
                 "name": "Difficile",
-                "description": "Espace rÃ©duit, temps court, pression haute."
+                "description": "Espace réduit, temps court, pression haute."
             },
             {
                 "name": "Expert",
-                "description": "Contraintes tactiques supplÃ©mentaires."
+                "description": "Contraintes tactiques supplémentaires."
             }
         ],
         "success_criteria": [
@@ -644,20 +644,20 @@
             "Progression visible pendant l'exercice"
         ],
         "safety_notes": [
-            "Ã‰chauffement prÃ©alable adaptÃ©",
-            "Terrain sÃ©curisÃ© et dÃ©limitÃ©",
+            "Échauffement préalable adapté",
+            "Terrain sécurisé et délimité",
             "Surveillance active du coach"
         ],
         "coaching_questions": [
-            "Quel a Ã©tÃ© le moment clÃ© de l'exercice ?",
-            "Comment pourrais-tu amÃ©liorer ta performance ?",
+            "Quel a été le moment clé de l'exercice ?",
+            "Comment pourrais-tu améliorer ta performance ?",
             "As-tu bien compris l'objectif tactique ?"
         ],
         "tags": [
             "Finition",
-            "Frappe cadrÃ©e",
+            "Frappe cadrée",
             "U12",
-            "QualitÃ© Premium"
+            "Qualité Premium"
         ],
         "animation": [
             {
@@ -689,7 +689,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2,
                 "entities": [
                     {
@@ -748,8 +748,8 @@
     },
     {
         "id": "ex_premium_007",
-        "title": "L'Ã‰chelle de Coordination",
-        "theme": "AgilitÃ©",
+        "title": "L'Échelle de Coordination",
+        "theme": "Agilité",
         "game_format": "Circuit individuel",
         "motor_skills_focus": "Coordination pieds rapides",
         "fun_rating": 4,
@@ -758,16 +758,16 @@
             "field_dimensions": "Variable selon effectif",
             "equipment": [
                 "Ballons",
-                "CÃ´nes",
+                "Cônes",
                 "Chasubles"
             ],
-            "player_arrangement": "Voir rÃ¨gles dÃ©taillÃ©es"
+            "player_arrangement": "Voir règles détaillées"
         },
         "rules_and_scoring": {
             "rules": [
-                "RÃ¨gles spÃ©cifiques adaptÃ©es au thÃ¨me de l'exercice.",
-                "Rotation des rÃ´les pour Ã©quitÃ©.",
-                "CritÃ¨res de rÃ©ussite clairs annoncÃ©s en dÃ©but d'exercice."
+                "Règles spécifiques adaptées au thème de l'exercice.",
+                "Rotation des rôles pour équité.",
+                "Critères de réussite clairs annoncés en début d'exercice."
             ],
             "scoring_system": "Points selon objectif de l'exercice."
         },
@@ -782,11 +782,11 @@
             },
             {
                 "name": "Difficile",
-                "description": "Espace rÃ©duit, temps court, pression haute."
+                "description": "Espace réduit, temps court, pression haute."
             },
             {
                 "name": "Expert",
-                "description": "Contraintes tactiques supplÃ©mentaires."
+                "description": "Contraintes tactiques supplémentaires."
             }
         ],
         "success_criteria": [
@@ -796,20 +796,20 @@
             "Progression visible pendant l'exercice"
         ],
         "safety_notes": [
-            "Ã‰chauffement prÃ©alable adaptÃ©",
-            "Terrain sÃ©curisÃ© et dÃ©limitÃ©",
+            "Échauffement préalable adapté",
+            "Terrain sécurisé et délimité",
             "Surveillance active du coach"
         ],
         "coaching_questions": [
-            "Quel a Ã©tÃ© le moment clÃ© de l'exercice ?",
-            "Comment pourrais-tu amÃ©liorer ta performance ?",
+            "Quel a été le moment clé de l'exercice ?",
+            "Comment pourrais-tu améliorer ta performance ?",
             "As-tu bien compris l'objectif tactique ?"
         ],
         "tags": [
-            "AgilitÃ©",
+            "Agilité",
             "Coordination pieds rapides",
             "U12",
-            "QualitÃ© Premium"
+            "Qualité Premium"
         ],
         "animation": [
             {
@@ -841,7 +841,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2,
                 "entities": [
                     {
@@ -900,7 +900,7 @@
     },
     {
         "id": "ex_premium_008",
-        "title": "La Transition Ã‰clair",
+        "title": "La Transition Éclair",
         "theme": "Contre-attaque",
         "game_format": "4v4 sur 2 buts",
         "motor_skills_focus": "Vitesse de transition",
@@ -910,16 +910,16 @@
             "field_dimensions": "Variable selon effectif",
             "equipment": [
                 "Ballons",
-                "CÃ´nes",
+                "Cônes",
                 "Chasubles"
             ],
-            "player_arrangement": "Voir rÃ¨gles dÃ©taillÃ©es"
+            "player_arrangement": "Voir règles détaillées"
         },
         "rules_and_scoring": {
             "rules": [
-                "RÃ¨gles spÃ©cifiques adaptÃ©es au thÃ¨me de l'exercice.",
-                "Rotation des rÃ´les pour Ã©quitÃ©.",
-                "CritÃ¨res de rÃ©ussite clairs annoncÃ©s en dÃ©but d'exercice."
+                "Règles spécifiques adaptées au thème de l'exercice.",
+                "Rotation des rôles pour équité.",
+                "Critères de réussite clairs annoncés en début d'exercice."
             ],
             "scoring_system": "Points selon objectif de l'exercice."
         },
@@ -934,11 +934,11 @@
             },
             {
                 "name": "Difficile",
-                "description": "Espace rÃ©duit, temps court, pression haute."
+                "description": "Espace réduit, temps court, pression haute."
             },
             {
                 "name": "Expert",
-                "description": "Contraintes tactiques supplÃ©mentaires."
+                "description": "Contraintes tactiques supplémentaires."
             }
         ],
         "success_criteria": [
@@ -948,20 +948,20 @@
             "Progression visible pendant l'exercice"
         ],
         "safety_notes": [
-            "Ã‰chauffement prÃ©alable adaptÃ©",
-            "Terrain sÃ©curisÃ© et dÃ©limitÃ©",
+            "Échauffement préalable adapté",
+            "Terrain sécurisé et délimité",
             "Surveillance active du coach"
         ],
         "coaching_questions": [
-            "Quel a Ã©tÃ© le moment clÃ© de l'exercice ?",
-            "Comment pourrais-tu amÃ©liorer ta performance ?",
+            "Quel a été le moment clé de l'exercice ?",
+            "Comment pourrais-tu améliorer ta performance ?",
             "As-tu bien compris l'objectif tactique ?"
         ],
         "tags": [
             "Contre-attaque",
             "Vitesse de transition",
             "U12",
-            "QualitÃ© Premium"
+            "Qualité Premium"
         ],
         "animation": [
             {
@@ -993,7 +993,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2,
                 "entities": [
                     {
@@ -1052,26 +1052,26 @@
     },
     {
         "id": "ex_premium_009",
-        "title": "Le Pressing OrganisÃ©",
-        "theme": "DÃ©fense collective",
+        "title": "Le Pressing Organisé",
+        "theme": "Défense collective",
         "game_format": "6v6",
-        "motor_skills_focus": "Pressing coordonnÃ©",
+        "motor_skills_focus": "Pressing coordonné",
         "fun_rating": 4,
         "duration_minutes": 15,
         "setup_instructions": {
             "field_dimensions": "Variable selon effectif",
             "equipment": [
                 "Ballons",
-                "CÃ´nes",
+                "Cônes",
                 "Chasubles"
             ],
-            "player_arrangement": "Voir rÃ¨gles dÃ©taillÃ©es"
+            "player_arrangement": "Voir règles détaillées"
         },
         "rules_and_scoring": {
             "rules": [
-                "RÃ¨gles spÃ©cifiques adaptÃ©es au thÃ¨me de l'exercice.",
-                "Rotation des rÃ´les pour Ã©quitÃ©.",
-                "CritÃ¨res de rÃ©ussite clairs annoncÃ©s en dÃ©but d'exercice."
+                "Règles spécifiques adaptées au thème de l'exercice.",
+                "Rotation des rôles pour équité.",
+                "Critères de réussite clairs annoncés en début d'exercice."
             ],
             "scoring_system": "Points selon objectif de l'exercice."
         },
@@ -1086,11 +1086,11 @@
             },
             {
                 "name": "Difficile",
-                "description": "Espace rÃ©duit, temps court, pression haute."
+                "description": "Espace réduit, temps court, pression haute."
             },
             {
                 "name": "Expert",
-                "description": "Contraintes tactiques supplÃ©mentaires."
+                "description": "Contraintes tactiques supplémentaires."
             }
         ],
         "success_criteria": [
@@ -1100,20 +1100,20 @@
             "Progression visible pendant l'exercice"
         ],
         "safety_notes": [
-            "Ã‰chauffement prÃ©alable adaptÃ©",
-            "Terrain sÃ©curisÃ© et dÃ©limitÃ©",
+            "Échauffement préalable adapté",
+            "Terrain sécurisé et délimité",
             "Surveillance active du coach"
         ],
         "coaching_questions": [
-            "Quel a Ã©tÃ© le moment clÃ© de l'exercice ?",
-            "Comment pourrais-tu amÃ©liorer ta performance ?",
+            "Quel a été le moment clé de l'exercice ?",
+            "Comment pourrais-tu améliorer ta performance ?",
             "As-tu bien compris l'objectif tactique ?"
         ],
         "tags": [
-            "DÃ©fense collective",
-            "Pressing coordonnÃ©",
+            "Défense collective",
+            "Pressing coordonné",
             "U12",
-            "QualitÃ© Premium"
+            "Qualité Premium"
         ],
         "animation": [
             {
@@ -1145,7 +1145,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2,
                 "entities": [
                     {
@@ -1204,7 +1204,7 @@
     },
     {
         "id": "ex_premium_010",
-        "title": "Le Jeu en SupÃ©rioritÃ©",
+        "title": "Le Jeu en Supériorité",
         "theme": "Tactique",
         "game_format": "3v2 (+1 appui)",
         "motor_skills_focus": "Exploitation du surnombre",
@@ -1214,16 +1214,16 @@
             "field_dimensions": "Variable selon effectif",
             "equipment": [
                 "Ballons",
-                "CÃ´nes",
+                "Cônes",
                 "Chasubles"
             ],
-            "player_arrangement": "Voir rÃ¨gles dÃ©taillÃ©es"
+            "player_arrangement": "Voir règles détaillées"
         },
         "rules_and_scoring": {
             "rules": [
-                "RÃ¨gles spÃ©cifiques adaptÃ©es au thÃ¨me de l'exercice.",
-                "Rotation des rÃ´les pour Ã©quitÃ©.",
-                "CritÃ¨res de rÃ©ussite clairs annoncÃ©s en dÃ©but d'exercice."
+                "Règles spécifiques adaptées au thème de l'exercice.",
+                "Rotation des rôles pour équité.",
+                "Critères de réussite clairs annoncés en début d'exercice."
             ],
             "scoring_system": "Points selon objectif de l'exercice."
         },
@@ -1238,11 +1238,11 @@
             },
             {
                 "name": "Difficile",
-                "description": "Espace rÃ©duit, temps court, pression haute."
+                "description": "Espace réduit, temps court, pression haute."
             },
             {
                 "name": "Expert",
-                "description": "Contraintes tactiques supplÃ©mentaires."
+                "description": "Contraintes tactiques supplémentaires."
             }
         ],
         "success_criteria": [
@@ -1252,20 +1252,20 @@
             "Progression visible pendant l'exercice"
         ],
         "safety_notes": [
-            "Ã‰chauffement prÃ©alable adaptÃ©",
-            "Terrain sÃ©curisÃ© et dÃ©limitÃ©",
+            "Échauffement préalable adapté",
+            "Terrain sécurisé et délimité",
             "Surveillance active du coach"
         ],
         "coaching_questions": [
-            "Quel a Ã©tÃ© le moment clÃ© de l'exercice ?",
-            "Comment pourrais-tu amÃ©liorer ta performance ?",
+            "Quel a été le moment clé de l'exercice ?",
+            "Comment pourrais-tu améliorer ta performance ?",
             "As-tu bien compris l'objectif tactique ?"
         ],
         "tags": [
             "Tactique",
             "Exploitation du surnombre",
             "U12",
-            "QualitÃ© Premium"
+            "Qualité Premium"
         ],
         "animation": [
             {
@@ -1297,7 +1297,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2,
                 "entities": [
                     {

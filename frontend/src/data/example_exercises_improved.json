@@ -3,25 +3,25 @@
         "id": "ex_001",
         "title": "Le Labyrinthe Magique (Conduite & Vision)",
         "theme": "Prise d'information",
-        "game_format": "Individuel dans une zone partagÃ©e",
+        "game_format": "Individuel dans une zone partagée",
         "motor_skills_focus": "Dissociation",
         "fun_rating": 5,
         "duration_minutes": 12,
         "setup_instructions": {
-            "field_dimensions": "CarrÃ© de 20m x 20m",
+            "field_dimensions": "Carré de 20m x 20m",
             "equipment": [
-                "20 cÃ´nes de 4 couleurs diffÃ©rentes (5 rouges, 5 bleus, 5 jaunes, 5 verts)",
+                "20 cônes de 4 couleurs différentes (5 rouges, 5 bleus, 5 jaunes, 5 verts)",
                 "1 ballon par joueur",
                 "Chasubles si besoin"
             ],
-            "player_arrangement": "Tous les joueurs rÃ©partis dans le carrÃ©, chacun avec son ballon"
+            "player_arrangement": "Tous les joueurs répartis dans le carré, chacun avec son ballon"
         },
         "rules_and_scoring": {
             "rules": [
-                "PHASE 1 - Conduite libre : Conduis ton ballon partout dans le carrÃ© SANS toucher les autres joueurs NI les cÃ´nes. TÃªte HAUTE pour voir oÃ¹ tu vas !",
-                "PHASE 2 - RÃ©action aux couleurs : Le coach annonce une couleur (exemple : 'ROUGE !'). Tu dois IMMÃ‰DIATEMENT toucher un cÃ´ne de cette couleur avec ta main TOUT EN CONTRÃ”LANT ton ballon avec ton pied.",
-                "PHASE 3 - Signal STOP : Quand le coach crie 'STOP', tu dois t'arrÃªter SEMELLE SUR LE BALLON en moins de 2 secondes. Le ballon ne doit PLUS BOUGER.",
-                "RÃˆGLE IMPORTANTE : Si tu touches un autre joueur ou un cÃ´ne pendant la conduite libre, tu dois faire 3 montÃ©es de genoux sur place avant de continuer."
+                "PHASE 1 - Conduite libre : Conduis ton ballon partout dans le carré SANS toucher les autres joueurs NI les cônes. Tête HAUTE pour voir oÃ¹ tu vas !",
+                "PHASE 2 - Réaction aux couleurs : Le coach annonce une couleur (exemple : 'ROUGE !'). Tu dois IMMÉDIATEMENT toucher un cône de cette couleur avec ta main TOUT EN CONTRÔLANT ton ballon avec ton pied.",
+                "PHASE 3 - Signal STOP : Quand le coach crie 'STOP', tu dois t'arrêter SEMELLE SUR LE BALLON en moins de 2 secondes. Le ballon ne doit PLUS BOUGER.",
+                "RÈGLE IMPORTANTE : Si tu touches un autre joueur ou un cône pendant la conduite libre, tu dois faire 3 montées de genoux sur place avant de continuer."
             ],
             "scoring_system": "Le dernier joueur Ã  toucher la bonne couleur fait un GAGE RIGOLO (faire l'avion, sauter sur un pied, etc.). Les 3 premiers gagnent 1 point chacun. Premier Ã  5 points = CHAMPION DU LABYRINTHE !",
             "winning_condition": "Premier joueur Ã  marquer 5 points sur plusieurs tours."
@@ -29,7 +29,7 @@
         "variants": [
             {
                 "name": "Facile - Gros Espace",
-                "description": "CarrÃ© de 25x25m, seulement 8 joueurs maximum, conduite lente autorisÃ©e."
+                "description": "Carré de 25x25m, seulement 8 joueurs maximum, conduite lente autorisée."
             },
             {
                 "name": "Moyen - Standard",
@@ -37,44 +37,44 @@
             },
             {
                 "name": "Difficile - Mini Labyrinthe",
-                "description": "CarrÃ© de 15x15m, conduite rapide obligatoire, 15 joueurs."
+                "description": "Carré de 15x15m, conduite rapide obligatoire, 15 joueurs."
             },
             {
-                "name": "Expert - Couleur InversÃ©e",
+                "name": "Expert - Couleur Inversée",
                 "description": "Si le coach dit 'ROUGE', tu dois toucher TOUTES LES COULEURS SAUF LE ROUGE !"
             }
         ],
         "success_criteria": [
             "Le joueur regarde DEVANT lui (pas son ballon) pendant la conduite",
-            "Il contrÃ´le le ballon avec de petites touches frÃ©quentes",
-            "Il s'arrÃªte rapidement au signal (ballon immobile en 2 secondes)",
-            "Il Ã©vite les collisions avec les autres joueurs",
-            "Il rÃ©agit vite Ã  l'annonce des couleurs (moins de 3 secondes)"
+            "Il contrôle le ballon avec de petites touches fréquentes",
+            "Il s'arrête rapidement au signal (ballon immobile en 2 secondes)",
+            "Il évite les collisions avec les autres joueurs",
+            "Il réagit vite Ã  l'annonce des couleurs (moins de 3 secondes)"
         ],
         "safety_notes": [
-            "VÃ©rifier que le terrain est plat et sans obstacle dangereux",
-            "Espacer suffisamment les cÃ´nes pour Ã©viter les chutes",
-            "Limiter le nombre de joueurs selon la taille du carrÃ©",
-            "Rappeler aux joueurs de lever la tÃªte pour Ã©viter les collisions"
+            "Vérifier que le terrain est plat et sans obstacle dangereux",
+            "Espacer suffisamment les cônes pour éviter les chutes",
+            "Limiter le nombre de joueurs selon la taille du carré",
+            "Rappeler aux joueurs de lever la tête pour éviter les collisions"
         ],
         "coaching_questions": [
-            "Comment fais-tu pour ne PAS foncer dans tes copains ? (RÃ©ponse attendue : Je lÃ¨ve la tÃªte, je regarde autour de moi)",
-            "Regardes-tu ton ballon ou les espaces libres ? (RÃ©ponse attendue : Les espaces libres)",
-            "Si tu lÃ¨ves la tÃªte, vas-tu plus vite ou moins vite ? (RÃ©ponse attendue : Plus vite car je vois mieux oÃ¹ aller)",
-            "Quelle partie du pied utilises-tu pour de petites touches ? (RÃ©ponse attendue : L'intÃ©rieur ou l'extÃ©rieur du pied)"
+            "Comment fais-tu pour ne PAS foncer dans tes copains ? (Réponse attendue : Je lève la tête, je regarde autour de moi)",
+            "Regardes-tu ton ballon ou les espaces libres ? (Réponse attendue : Les espaces libres)",
+            "Si tu lèves la tête, vas-tu plus vite ou moins vite ? (Réponse attendue : Plus vite car je vois mieux oÃ¹ aller)",
+            "Quelle partie du pied utilises-tu pour de petites touches ? (Réponse attendue : L'intérieur ou l'extérieur du pied)"
         ],
         "tags": [
             "Conduite",
             "Vision",
             "Ludique",
             "Coordination",
-            "Vitesse de rÃ©action"
+            "Vitesse de réaction"
         ],
         "animation": [
             {
                 "step": 1,
                 "title": "Position initiale - Dispersion",
-                "description": "Les joueurs sont dispersÃ©s dans le carrÃ© avec leur ballon. Les cÃ´nes de 4 couleurs sont placÃ©s alÃ©atoirement dans l'espace.",
+                "description": "Les joueurs sont dispersés dans le carré avec leur ballon. Les cônes de 4 couleurs sont placés aléatoirement dans l'espace.",
                 "duration": 1,
                 "entities": [
                     {
@@ -165,8 +165,8 @@
             },
             {
                 "step": 2,
-                "title": "Conduite libre - TÃªte haute",
-                "description": "Les joueurs conduisent leur ballon librement dans l'espace en levant la tÃªte pour Ã©viter les autres. Touches de ballon frÃ©quentes et lÃ©gÃ¨res.",
+                "title": "Conduite libre - Tête haute",
+                "description": "Les joueurs conduisent leur ballon librement dans l'espace en levant la tête pour éviter les autres. Touches de ballon fréquentes et légères.",
                 "duration": 2,
                 "entities": [
                     {
@@ -270,8 +270,8 @@
             },
             {
                 "step": 3,
-                "title": "Signal ROUGE ! - Sprint vers les cÃ´nes rouges",
-                "description": "Le coach crie 'ROUGE !'. Tous les joueurs sprintent vers le cÃ´ne rouge le plus proche tout en contrÃ´lant leur ballon.",
+                "title": "Signal ROUGE ! - Sprint vers les cônes rouges",
+                "description": "Le coach crie 'ROUGE !'. Tous les joueurs sprintent vers le cône rouge le plus proche tout en contrôlant leur ballon.",
                 "duration": 2,
                 "entities": [
                     {
@@ -385,8 +385,8 @@
             },
             {
                 "step": 4,
-                "title": "Signal STOP ! - ArrÃªt semelle",
-                "description": "Le coach crie 'STOP !'. Tous les joueurs doivent immÃ©diatement bloquer leur ballon avec la semelle. Le ballon doit Ãªtre IMMOBILE.",
+                "title": "Signal STOP ! - Arrêt semelle",
+                "description": "Le coach crie 'STOP !'. Tous les joueurs doivent immédiatement bloquer leur ballon avec la semelle. Le ballon doit être IMMOBILE.",
                 "duration": 1.5,
                 "entities": [
                     {
@@ -471,7 +471,7 @@
             {
                 "step": 5,
                 "title": "Reprise - Retour vers le centre",
-                "description": "Les joueurs repartent en conduite libre vers le centre du carrÃ© pour un nouveau tour. Le jeu continue avec d'autres couleurs.",
+                "description": "Les joueurs repartent en conduite libre vers le centre du carré pour un nouveau tour. Le jeu continue avec d'autres couleurs.",
                 "duration": 2,
                 "entities": [
                     {

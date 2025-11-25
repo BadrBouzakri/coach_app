@@ -2,14 +2,14 @@
     {
         "id": "ex_053",
         "title": "La Citadelle Express",
-        "theme": "AgilitÃ©",
+        "theme": "Agilité",
         "game_format": "Individuel",
-        "motor_skills_focus": "RÃ©activitÃ©",
+        "motor_skills_focus": "Réactivité",
         "fun_rating": 4,
         "setup_instructions": {
             "field_dimensions": "23x18m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -17,19 +17,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
-            "AgilitÃ©",
-            "RÃ©activitÃ©",
+            "Agilité",
+            "Réactivité",
             "U12"
         ],
         "animation": [
@@ -66,7 +66,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.032562371262933,
                 "entities": [
                     {
@@ -136,12 +136,12 @@
         "title": "Le Donjon Express",
         "theme": "Coordination",
         "game_format": "Groupes de 4",
-        "motor_skills_focus": "RÃ©activitÃ©",
+        "motor_skills_focus": "Réactivité",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "21x12m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -149,19 +149,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Coordination",
-            "RÃ©activitÃ©",
+            "Réactivité",
             "U12"
         ],
         "animation": [
@@ -198,7 +198,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.9090775851885895,
                 "entities": [
                     {
@@ -265,15 +265,15 @@
     },
     {
         "id": "ex_055",
-        "title": "L'ArÃ¨ne Express",
+        "title": "L'Arène Express",
         "theme": "Coordination",
         "game_format": "Individuel",
-        "motor_skills_focus": "AgilitÃ©",
+        "motor_skills_focus": "Agilité",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "31x13m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -281,19 +281,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Coordination",
-            "AgilitÃ©",
+            "Agilité",
             "U12"
         ],
         "animation": [
@@ -330,7 +330,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.0020213036156105,
                 "entities": [
                     {
@@ -397,15 +397,15 @@
     },
     {
         "id": "ex_056",
-        "title": "Le ColisÃ©e Express",
+        "title": "Le Colisée Express",
         "theme": "Vitesse",
-        "game_format": "BinÃ´mes",
+        "game_format": "Binômes",
         "motor_skills_focus": "Coordination",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "17x22m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -413,15 +413,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Vitesse",
@@ -462,7 +462,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.53456836332532,
                 "entities": [
                     {
@@ -531,13 +531,13 @@
         "id": "ex_057",
         "title": "Le Stade Express",
         "theme": "Endurance",
-        "game_format": "BinÃ´mes",
-        "motor_skills_focus": "RÃ©activitÃ©",
+        "game_format": "Binômes",
+        "motor_skills_focus": "Réactivité",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "34x14m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -545,19 +545,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Endurance",
-            "RÃ©activitÃ©",
+            "Réactivité",
             "U12"
         ],
         "animation": [
@@ -594,7 +594,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.947124511346151,
                 "entities": [
                     {
@@ -663,13 +663,13 @@
         "id": "ex_058",
         "title": "Le Ring Express",
         "theme": "Endurance",
-        "game_format": "Ã‰quipes de 5-6",
-        "motor_skills_focus": "AgilitÃ©",
+        "game_format": "Équipes de 5-6",
+        "motor_skills_focus": "Agilité",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "25x24m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -677,19 +677,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Endurance",
-            "AgilitÃ©",
+            "Agilité",
             "U12"
         ],
         "animation": [
@@ -726,7 +726,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.4471763443615524,
                 "entities": [
                     {
@@ -801,7 +801,7 @@
         "setup_instructions": {
             "field_dimensions": "17x15m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -809,15 +809,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Vitesse",
@@ -858,7 +858,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.164940885304831,
                 "entities": [
                     {
@@ -928,12 +928,12 @@
         "title": "Le Circuit Express",
         "theme": "Vitesse",
         "game_format": "Groupes de 4",
-        "motor_skills_focus": "AgilitÃ©",
+        "motor_skills_focus": "Agilité",
         "fun_rating": 4,
         "setup_instructions": {
             "field_dimensions": "34x20m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -941,19 +941,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Vitesse",
-            "AgilitÃ©",
+            "Agilité",
             "U12"
         ],
         "animation": [
@@ -990,7 +990,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.092214627078766,
                 "entities": [
                     {
@@ -1057,7 +1057,7 @@
     },
     {
         "id": "ex_061",
-        "title": "L'Ã‰toile Filante Express",
+        "title": "L'Étoile Filante Express",
         "theme": "Coordination",
         "game_format": "Groupes de 4",
         "motor_skills_focus": "Coordination",
@@ -1065,7 +1065,7 @@
         "setup_instructions": {
             "field_dimensions": "30x22m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -1073,15 +1073,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Coordination",
@@ -1122,7 +1122,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.2665129148047507,
                 "entities": [
                     {
@@ -1190,14 +1190,14 @@
     {
         "id": "ex_062",
         "title": "Le Tornado Express",
-        "theme": "AgilitÃ©",
-        "game_format": "BinÃ´mes",
-        "motor_skills_focus": "AgilitÃ©",
+        "theme": "Agilité",
+        "game_format": "Binômes",
+        "motor_skills_focus": "Agilité",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "32x20m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -1205,19 +1205,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
-            "AgilitÃ©",
-            "AgilitÃ©",
+            "Agilité",
+            "Agilité",
             "U12"
         ],
         "animation": [
@@ -1254,7 +1254,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.2591660261932884,
                 "entities": [
                     {
@@ -1321,15 +1321,15 @@
     },
     {
         "id": "ex_063",
-        "title": "La FusÃ©e Express",
+        "title": "La Fusée Express",
         "theme": "Endurance",
-        "game_format": "BinÃ´mes",
-        "motor_skills_focus": "RÃ©activitÃ©",
+        "game_format": "Binômes",
+        "motor_skills_focus": "Réactivité",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "15x13m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -1337,19 +1337,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Endurance",
-            "RÃ©activitÃ©",
+            "Réactivité",
             "U12"
         ],
         "animation": [
@@ -1386,7 +1386,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.5165002023158367,
                 "entities": [
                     {
@@ -1455,13 +1455,13 @@
         "id": "ex_064",
         "title": "Le Papillon Express",
         "theme": "Vitesse",
-        "game_format": "BinÃ´mes",
+        "game_format": "Binômes",
         "motor_skills_focus": "Vitesse",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "28x14m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -1469,15 +1469,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Vitesse",
@@ -1518,7 +1518,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.7245173859004055,
                 "entities": [
                     {
@@ -1585,15 +1585,15 @@
     },
     {
         "id": "ex_065",
-        "title": "L'Ã‰clair Express",
-        "theme": "AgilitÃ©",
-        "game_format": "Ã‰quipes de 5-6",
+        "title": "L'Éclair Express",
+        "theme": "Agilité",
+        "game_format": "Équipes de 5-6",
         "motor_skills_focus": "Vitesse",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "19x13m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -1601,18 +1601,18 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
-            "AgilitÃ©",
+            "Agilité",
             "Vitesse",
             "U12"
         ],
@@ -1650,7 +1650,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.8691906734258583,
                 "entities": [
                     {
@@ -1719,13 +1719,13 @@
         "id": "ex_066",
         "title": "Le Tourbillon Express",
         "theme": "Endurance",
-        "game_format": "BinÃ´mes",
-        "motor_skills_focus": "RÃ©activitÃ©",
+        "game_format": "Binômes",
+        "motor_skills_focus": "Réactivité",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "15x19m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -1733,19 +1733,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Endurance",
-            "RÃ©activitÃ©",
+            "Réactivité",
             "U12"
         ],
         "animation": [
@@ -1782,7 +1782,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.357081406345958,
                 "entities": [
                     {
@@ -1849,15 +1849,15 @@
     },
     {
         "id": "ex_067",
-        "title": "La ComÃ¨te Express",
+        "title": "La Comète Express",
         "theme": "Coordination",
-        "game_format": "BinÃ´mes",
+        "game_format": "Binômes",
         "motor_skills_focus": "Vitesse",
         "fun_rating": 4,
         "setup_instructions": {
             "field_dimensions": "33x20m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -1865,15 +1865,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Coordination",
@@ -1914,7 +1914,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.3094584986747906,
                 "entities": [
                     {
@@ -1981,15 +1981,15 @@
     },
     {
         "id": "ex_068",
-        "title": "Le MÃ©tÃ©ore Express",
+        "title": "Le Météore Express",
         "theme": "Endurance",
-        "game_format": "Ã‰quipes de 5-6",
-        "motor_skills_focus": "AgilitÃ©",
+        "game_format": "Équipes de 5-6",
+        "motor_skills_focus": "Agilité",
         "fun_rating": 4,
         "setup_instructions": {
             "field_dimensions": "24x14m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -1997,19 +1997,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Endurance",
-            "AgilitÃ©",
+            "Agilité",
             "U12"
         ],
         "animation": [
@@ -2046,7 +2046,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.353367858195517,
                 "entities": [
                     {
@@ -2115,13 +2115,13 @@
         "id": "ex_069",
         "title": "L'Ouragan Express",
         "theme": "Vitesse",
-        "game_format": "Ã‰quipes de 5-6",
-        "motor_skills_focus": "RÃ©activitÃ©",
+        "game_format": "Équipes de 5-6",
+        "motor_skills_focus": "Réactivité",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "29x11m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -2129,19 +2129,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Vitesse",
-            "RÃ©activitÃ©",
+            "Réactivité",
             "U12"
         ],
         "animation": [
@@ -2178,7 +2178,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.989928289297531,
                 "entities": [
                     {
@@ -2248,12 +2248,12 @@
         "title": "Le Cyclone Express",
         "theme": "Vitesse",
         "game_format": "Groupes de 4",
-        "motor_skills_focus": "AgilitÃ©",
+        "motor_skills_focus": "Agilité",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "24x12m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -2261,19 +2261,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Vitesse",
-            "AgilitÃ©",
+            "Agilité",
             "U12"
         ],
         "animation": [
@@ -2310,7 +2310,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.42978384948559,
                 "entities": [
                     {
@@ -2378,14 +2378,14 @@
     {
         "id": "ex_071",
         "title": "La Vague Express",
-        "theme": "AgilitÃ©",
+        "theme": "Agilité",
         "game_format": "Groupes de 4",
-        "motor_skills_focus": "RÃ©activitÃ©",
+        "motor_skills_focus": "Réactivité",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "21x13m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -2393,19 +2393,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
-            "AgilitÃ©",
-            "RÃ©activitÃ©",
+            "Agilité",
+            "Réactivité",
             "U12"
         ],
         "animation": [
@@ -2442,7 +2442,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.616247884463599,
                 "entities": [
                     {
@@ -2511,13 +2511,13 @@
         "id": "ex_072",
         "title": "Le Tsunami Express",
         "theme": "Coordination",
-        "game_format": "BinÃ´mes",
-        "motor_skills_focus": "AgilitÃ©",
+        "game_format": "Binômes",
+        "motor_skills_focus": "Agilité",
         "fun_rating": 4,
         "setup_instructions": {
             "field_dimensions": "32x15m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -2525,19 +2525,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Coordination",
-            "AgilitÃ©",
+            "Agilité",
             "U12"
         ],
         "animation": [
@@ -2574,7 +2574,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.1739776943982783,
                 "entities": [
                     {
@@ -2649,7 +2649,7 @@
         "setup_instructions": {
             "field_dimensions": "27x15m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -2657,15 +2657,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Tirs",
@@ -2706,7 +2706,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.880684867999414,
                 "entities": [
                     {
@@ -2781,7 +2781,7 @@
         "setup_instructions": {
             "field_dimensions": "15x10m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -2789,15 +2789,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Dribble",
@@ -2838,7 +2838,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.4596173101938126,
                 "entities": [
                     {
@@ -2905,7 +2905,7 @@
     },
     {
         "id": "ex_075",
-        "title": "Le SÃ©isme Pro",
+        "title": "Le Séisme Pro",
         "theme": "Dribble",
         "game_format": "3v3",
         "motor_skills_focus": "Technique individuelle",
@@ -2913,7 +2913,7 @@
         "setup_instructions": {
             "field_dimensions": "24x15m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -2921,15 +2921,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Dribble",
@@ -2970,7 +2970,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.7083857864944414,
                 "entities": [
                     {
@@ -3037,7 +3037,7 @@
     },
     {
         "id": "ex_076",
-        "title": "Le PhÃ©nix Pro",
+        "title": "Le Phénix Pro",
         "theme": "Passes",
         "game_format": "Circuit",
         "motor_skills_focus": "Technique individuelle",
@@ -3045,7 +3045,7 @@
         "setup_instructions": {
             "field_dimensions": "23x13m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -3053,15 +3053,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Passes",
@@ -3102,7 +3102,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.237454662248161,
                 "entities": [
                     {
@@ -3177,7 +3177,7 @@
         "setup_instructions": {
             "field_dimensions": "23x15m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -3185,15 +3185,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Tirs",
@@ -3234,7 +3234,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.9976322412871697,
                 "entities": [
                     {
@@ -3304,12 +3304,12 @@
         "title": "Le Tigre Pro",
         "theme": "Passes",
         "game_format": "Circuit",
-        "motor_skills_focus": "PrÃ©cision",
+        "motor_skills_focus": "Précision",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "25x19m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -3317,19 +3317,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Passes",
-            "PrÃ©cision",
+            "Précision",
             "U12"
         ],
         "animation": [
@@ -3366,7 +3366,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.1466175556200584,
                 "entities": [
                     {
@@ -3433,7 +3433,7 @@
     },
     {
         "id": "ex_079",
-        "title": "Le GuÃ©pard Pro",
+        "title": "Le Guépard Pro",
         "theme": "Dribble",
         "game_format": "Circuit",
         "motor_skills_focus": "Technique individuelle",
@@ -3441,7 +3441,7 @@
         "setup_instructions": {
             "field_dimensions": "18x18m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -3449,15 +3449,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Dribble",
@@ -3498,7 +3498,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.67052949562588,
                 "entities": [
                     {
@@ -3566,14 +3566,14 @@
     {
         "id": "ex_080",
         "title": "Le Faucon Pro",
-        "theme": "ContrÃ´le",
+        "theme": "Contrôle",
         "game_format": "Circuit",
         "motor_skills_focus": "Frappe",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "25x17m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -3581,18 +3581,18 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
-            "ContrÃ´le",
+            "Contrôle",
             "Frappe",
             "U12"
         ],
@@ -3630,7 +3630,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.988679291238407,
                 "entities": [
                     {
@@ -3705,7 +3705,7 @@
         "setup_instructions": {
             "field_dimensions": "29x11m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -3713,15 +3713,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Tirs",
@@ -3762,7 +3762,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.8003520285541414,
                 "entities": [
                     {
@@ -3832,12 +3832,12 @@
         "title": "Le Serpent Pro",
         "theme": "Dribble",
         "game_format": "2v2",
-        "motor_skills_focus": "PrÃ©cision",
+        "motor_skills_focus": "Précision",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "32x14m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -3845,19 +3845,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Dribble",
-            "PrÃ©cision",
+            "Précision",
             "U12"
         ],
         "animation": [
@@ -3894,7 +3894,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.9728130588766706,
                 "entities": [
                     {
@@ -3962,14 +3962,14 @@
     {
         "id": "ex_083",
         "title": "Le Renard Pro",
-        "theme": "ContrÃ´le",
+        "theme": "Contrôle",
         "game_format": "Circuit",
-        "motor_skills_focus": "PrÃ©cision",
+        "motor_skills_focus": "Précision",
         "fun_rating": 4,
         "setup_instructions": {
             "field_dimensions": "28x21m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -3977,19 +3977,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
-            "ContrÃ´le",
-            "PrÃ©cision",
+            "Contrôle",
+            "Précision",
             "U12"
         ],
         "animation": [
@@ -4026,7 +4026,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.183904453247884,
                 "entities": [
                     {
@@ -4094,14 +4094,14 @@
     {
         "id": "ex_084",
         "title": "Le Loup Pro",
-        "theme": "ContrÃ´le",
+        "theme": "Contrôle",
         "game_format": "Circuit",
-        "motor_skills_focus": "PrÃ©cision",
+        "motor_skills_focus": "Précision",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "34x14m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -4109,19 +4109,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
-            "ContrÃ´le",
-            "PrÃ©cision",
+            "Contrôle",
+            "Précision",
             "U12"
         ],
         "animation": [
@@ -4158,7 +4158,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.2028040334546266,
                 "entities": [
                     {
@@ -4233,7 +4233,7 @@
         "setup_instructions": {
             "field_dimensions": "31x11m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -4241,15 +4241,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Passes",
@@ -4290,7 +4290,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.1519618011683916,
                 "entities": [
                     {
@@ -4357,7 +4357,7 @@
     },
     {
         "id": "ex_086",
-        "title": "La PanthÃ¨re Pro",
+        "title": "La Panthère Pro",
         "theme": "Passes",
         "game_format": "2v2",
         "motor_skills_focus": "Conduite",
@@ -4365,7 +4365,7 @@
         "setup_instructions": {
             "field_dimensions": "21x18m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -4373,15 +4373,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Passes",
@@ -4422,7 +4422,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.534878285451394,
                 "entities": [
                     {
@@ -4497,7 +4497,7 @@
         "setup_instructions": {
             "field_dimensions": "26x24m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -4505,15 +4505,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Tirs",
@@ -4554,7 +4554,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.1857173775534955,
                 "entities": [
                     {
@@ -4622,14 +4622,14 @@
     {
         "id": "ex_088",
         "title": "Le Jaguar Pro",
-        "theme": "ContrÃ´le",
+        "theme": "Contrôle",
         "game_format": "2v2",
         "motor_skills_focus": "Technique individuelle",
         "fun_rating": 4,
         "setup_instructions": {
             "field_dimensions": "19x19m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -4637,18 +4637,18 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
-            "ContrÃ´le",
+            "Contrôle",
             "Technique individuelle",
             "U12"
         ],
@@ -4686,7 +4686,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.685688759405547,
                 "entities": [
                     {
@@ -4761,7 +4761,7 @@
         "setup_instructions": {
             "field_dimensions": "25x24m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -4769,15 +4769,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Tirs",
@@ -4818,7 +4818,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.5463933928890063,
                 "entities": [
                     {
@@ -4888,12 +4888,12 @@
         "title": "Le Cobra Pro",
         "theme": "Tirs",
         "game_format": "2v2",
-        "motor_skills_focus": "PrÃ©cision",
+        "motor_skills_focus": "Précision",
         "fun_rating": 4,
         "setup_instructions": {
             "field_dimensions": "27x20m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -4901,19 +4901,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Tirs",
-            "PrÃ©cision",
+            "Précision",
             "U12"
         ],
         "animation": [
@@ -4950,7 +4950,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.582356525230535,
                 "entities": [
                     {
@@ -5018,14 +5018,14 @@
     {
         "id": "ex_091",
         "title": "Le Maestro Pro",
-        "theme": "ContrÃ´le",
+        "theme": "Contrôle",
         "game_format": "3v3",
         "motor_skills_focus": "Technique individuelle",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "18x14m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -5033,18 +5033,18 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
-            "ContrÃ´le",
+            "Contrôle",
             "Technique individuelle",
             "U12"
         ],
@@ -5082,7 +5082,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.3692760708060803,
                 "entities": [
                     {
@@ -5157,7 +5157,7 @@
         "setup_instructions": {
             "field_dimensions": "17x18m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -5165,15 +5165,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Passes",
@@ -5214,7 +5214,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.888261238035015,
                 "entities": [
                     {
@@ -5289,7 +5289,7 @@
         "setup_instructions": {
             "field_dimensions": "23x11m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -5297,15 +5297,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Tactique",
@@ -5346,7 +5346,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.795136894291707,
                 "entities": [
                     {
@@ -5421,7 +5421,7 @@
         "setup_instructions": {
             "field_dimensions": "28x19m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -5429,15 +5429,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Tactique",
@@ -5478,7 +5478,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.523932760673948,
                 "entities": [
                     {
@@ -5545,15 +5545,15 @@
     },
     {
         "id": "ex_095",
-        "title": "Le GÃ©nie Tactique",
+        "title": "Le Génie Tactique",
         "theme": "Jeu collectif",
         "game_format": "3v2",
-        "motor_skills_focus": "DÃ©placements",
+        "motor_skills_focus": "Déplacements",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "31x11m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -5561,19 +5561,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Jeu collectif",
-            "DÃ©placements",
+            "Déplacements",
             "U12"
         ],
         "animation": [
@@ -5610,7 +5610,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.8555284853020537,
                 "entities": [
                     {
@@ -5680,12 +5680,12 @@
         "title": "Le Champion Tactique",
         "theme": "Tactique",
         "game_format": "4v4",
-        "motor_skills_focus": "DÃ©placements",
+        "motor_skills_focus": "Déplacements",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "31x14m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -5693,19 +5693,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Tactique",
-            "DÃ©placements",
+            "Déplacements",
             "U12"
         ],
         "animation": [
@@ -5742,7 +5742,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.6835322606405274,
                 "entities": [
                     {
@@ -5812,12 +5812,12 @@
         "title": "Le Prodige Tactique",
         "theme": "Transition",
         "game_format": "3v2",
-        "motor_skills_focus": "DÃ©placements",
+        "motor_skills_focus": "Déplacements",
         "fun_rating": 4,
         "setup_instructions": {
             "field_dimensions": "33x19m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -5825,19 +5825,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Transition",
-            "DÃ©placements",
+            "Déplacements",
             "U12"
         ],
         "animation": [
@@ -5874,7 +5874,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.5332712968242856,
                 "entities": [
                     {
@@ -5941,7 +5941,7 @@
     },
     {
         "id": "ex_098",
-        "title": "La LÃ©gende Tactique",
+        "title": "La Légende Tactique",
         "theme": "Jeu collectif",
         "game_format": "5v5",
         "motor_skills_focus": "Pressing",
@@ -5949,7 +5949,7 @@
         "setup_instructions": {
             "field_dimensions": "23x18m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -5957,15 +5957,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Jeu collectif",
@@ -6006,7 +6006,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.532661573341982,
                 "entities": [
                     {
@@ -6073,7 +6073,7 @@
     },
     {
         "id": "ex_099",
-        "title": "Le HÃ©ros Tactique",
+        "title": "Le Héros Tactique",
         "theme": "Tactique",
         "game_format": "3v2",
         "motor_skills_focus": "Pressing",
@@ -6081,7 +6081,7 @@
         "setup_instructions": {
             "field_dimensions": "26x24m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -6089,15 +6089,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Tactique",
@@ -6138,7 +6138,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.222649020203086,
                 "entities": [
                     {
@@ -6213,7 +6213,7 @@
         "setup_instructions": {
             "field_dimensions": "31x10m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -6221,15 +6221,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Jeu collectif",
@@ -6270,7 +6270,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.4182418257577423,
                 "entities": [
                     {
@@ -6345,7 +6345,7 @@
         "setup_instructions": {
             "field_dimensions": "20x19m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -6353,15 +6353,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Pressing",
@@ -6402,7 +6402,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.9091763542306515,
                 "entities": [
                     {
@@ -6477,7 +6477,7 @@
         "setup_instructions": {
             "field_dimensions": "30x22m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -6485,15 +6485,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Pressing",
@@ -6534,7 +6534,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.9416794702298743,
                 "entities": [
                     {
@@ -6609,7 +6609,7 @@
         "setup_instructions": {
             "field_dimensions": "18x21m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -6617,15 +6617,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Tactique",
@@ -6666,7 +6666,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.47347326058569,
                 "entities": [
                     {
@@ -6741,7 +6741,7 @@
         "setup_instructions": {
             "field_dimensions": "15x20m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -6749,15 +6749,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Jeu collectif",
@@ -6798,7 +6798,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.2508617589326416,
                 "entities": [
                     {
@@ -6873,7 +6873,7 @@
         "setup_instructions": {
             "field_dimensions": "30x14m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -6881,15 +6881,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Tactique",
@@ -6930,7 +6930,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.653103128881314,
                 "entities": [
                     {
@@ -7000,12 +7000,12 @@
         "title": "Le Chevalier Tactique",
         "theme": "Jeu collectif",
         "game_format": "5v5",
-        "motor_skills_focus": "DÃ©placements",
+        "motor_skills_focus": "Déplacements",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "23x10m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -7013,19 +7013,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Jeu collectif",
-            "DÃ©placements",
+            "Déplacements",
             "U12"
         ],
         "animation": [
@@ -7062,7 +7062,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.6182644276074285,
                 "entities": [
                     {
@@ -7137,7 +7137,7 @@
         "setup_instructions": {
             "field_dimensions": "27x11m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -7145,15 +7145,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Pressing",
@@ -7194,7 +7194,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.173843675500433,
                 "entities": [
                     {
@@ -7269,7 +7269,7 @@
         "setup_instructions": {
             "field_dimensions": "20x11m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -7277,15 +7277,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Jeu collectif",
@@ -7326,7 +7326,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.9842891172529966,
                 "entities": [
                     {
@@ -7393,7 +7393,7 @@
     },
     {
         "id": "ex_109",
-        "title": "Le ConquÃ©rant Tactique",
+        "title": "Le Conquérant Tactique",
         "theme": "Jeu collectif",
         "game_format": "4v3",
         "motor_skills_focus": "Pressing",
@@ -7401,7 +7401,7 @@
         "setup_instructions": {
             "field_dimensions": "32x18m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -7409,15 +7409,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Jeu collectif",
@@ -7458,7 +7458,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.648275009328273,
                 "entities": [
                     {
@@ -7533,7 +7533,7 @@
         "setup_instructions": {
             "field_dimensions": "25x21m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -7541,15 +7541,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Tactique",
@@ -7590,7 +7590,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.8373887042376866,
                 "entities": [
                     {
@@ -7657,7 +7657,7 @@
     },
     {
         "id": "ex_111",
-        "title": "Le Labyrinthe AvancÃ© Tactique",
+        "title": "Le Labyrinthe Avancé Tactique",
         "theme": "Tactique",
         "game_format": "4v3",
         "motor_skills_focus": "Pressing",
@@ -7665,7 +7665,7 @@
         "setup_instructions": {
             "field_dimensions": "26x10m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -7673,15 +7673,15 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Tactique",
@@ -7722,7 +7722,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.5779217503472056,
                 "entities": [
                     {
@@ -7792,12 +7792,12 @@
         "title": "La Forteresse Tactique",
         "theme": "Tactique",
         "game_format": "4v4",
-        "motor_skills_focus": "DÃ©placements",
+        "motor_skills_focus": "Déplacements",
         "fun_rating": 3,
         "setup_instructions": {
             "field_dimensions": "17x22m",
             "equipment": [
-                "CÃ´nes",
+                "Cônes",
                 "Ballons",
                 "Chasuble si besoin"
             ],
@@ -7805,19 +7805,19 @@
         },
         "rules_and_scoring": {
             "rules": [
-                "Suivre les consignes de l'entraÃ®neur.",
+                "Suivre les consignes de l'entraîneur.",
                 "Respecter les limites du terrain.",
-                "Jouer en sÃ©curitÃ©."
+                "Jouer en sécurité."
             ],
             "scoring_system": "Points selon performance individuelle ou collective."
         },
         "coaching_questions": [
             "Comment optimiser ton mouvement ?",
-            "Quelle dÃ©cision prendre dans cette situation ?"
+            "Quelle décision prendre dans cette situation ?"
         ],
         "tags": [
             "Tactique",
-            "DÃ©placements",
+            "Déplacements",
             "U12"
         ],
         "animation": [
@@ -7854,7 +7854,7 @@
                 ]
             },
             {
-                "step_description": "Phase d'exÃ©cution",
+                "step_description": "Phase d'exécution",
                 "duration": 2.9978513962074147,
                 "entities": [
                     {

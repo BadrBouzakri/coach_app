@@ -3,37 +3,37 @@
         "id": "ex_026",
         "title": "La Course aux Couleurs",
         "theme": "Vitesse",
-        "game_format": "Ã‰quipes de 4",
-        "motor_skills_focus": "RÃ©activitÃ©",
+        "game_format": "Équipes de 4",
+        "motor_skills_focus": "Réactivité",
         "fun_rating": 5,
         "setup_instructions": {
             "field_dimensions": "20x20m",
             "equipment": [
-                "4 cÃ´nes rouges",
-                "4 cÃ´nes bleus",
-                "4 cÃ´nes jaunes"
+                "4 cônes rouges",
+                "4 cônes bleus",
+                "4 cônes jaunes"
             ],
             "player_arrangement": "4 groupes aux coins"
         },
         "rules_and_scoring": {
             "rules": [
-                "Au signal couleur, sprint vers le cÃ´ne correspondant.",
-                "Premier arrivÃ© = 3 points, 2Ã¨me = 2 points, 3Ã¨me = 1 point."
+                "Au signal couleur, sprint vers le cône correspondant.",
+                "Premier arrivé = 3 points, 2ème = 2 points, 3ème = 1 point."
             ],
-            "scoring_system": "Total des points aprÃ¨s 10 tours."
+            "scoring_system": "Total des points après 10 tours."
         },
         "coaching_questions": [
-            "Comment anticiper le dÃ©part ?",
-            "Quelle est ta position de dÃ©part idÃ©ale ?"
+            "Comment anticiper le départ ?",
+            "Quelle est ta position de départ idéale ?"
         ],
         "tags": [
-            "RÃ©activitÃ©",
+            "Réactivité",
             "Sprint",
             "Fun"
         ],
         "animation": [
             {
-                "step_description": "Position de dÃ©part - Tous aux coins",
+                "step_description": "Position de départ - Tous aux coins",
                 "duration": 1.5,
                 "entities": [
                     {
@@ -89,7 +89,7 @@
                 ]
             },
             {
-                "step_description": "Sprint vers le cÃ´ne central au signal !",
+                "step_description": "Sprint vers le cône central au signal !",
                 "duration": 2,
                 "entities": [
                     {
@@ -145,7 +145,7 @@
                 ]
             },
             {
-                "step_description": "ArrivÃ©e ! Qui est le plus rapide ?",
+                "step_description": "Arrivée ! Qui est le plus rapide ?",
                 "duration": 1,
                 "entities": [
                     {
@@ -206,7 +206,7 @@
         "id": "ex_027",
         "title": "Le Miroir Magique",
         "theme": "Coordination",
-        "game_format": "BinÃ´mes",
+        "game_format": "Binômes",
         "motor_skills_focus": "Coordination",
         "fun_rating": 4,
         "setup_instructions": {
@@ -219,17 +219,17 @@
         "rules_and_scoring": {
             "rules": [
                 "Un joueur fait des mouvements, l'autre imite comme un miroir.",
-                "Changement de rÃ´le toutes les 30 secondes."
+                "Changement de rôle toutes les 30 secondes."
             ],
-            "scoring_system": "Pas de score, focus sur la qualitÃ©."
+            "scoring_system": "Pas de score, focus sur la qualité."
         },
         "coaching_questions": [
-            "Comment rester synchronisÃ© ?",
+            "Comment rester synchronisé ?",
             "Regardes-tu tes mains ou ton partenaire ?"
         ],
         "tags": [
             "Coordination",
-            "BinÃ´me",
+            "Binôme",
             "Concentration"
         ],
         "animation": [
@@ -256,7 +256,7 @@
                 ]
             },
             {
-                "step_description": "Le leader lÃ¨ve le bras droit, le miroir suit",
+                "step_description": "Le leader lève le bras droit, le miroir suit",
                 "duration": 2,
                 "entities": [
                     {
@@ -278,7 +278,7 @@
                 ]
             },
             {
-                "step_description": "Changement de rÃ´le",
+                "step_description": "Changement de rôle",
                 "duration": 1.5,
                 "entities": [
                     {
@@ -303,7 +303,7 @@
     },
     {
         "id": "ex_028",
-        "title": "Le Gardien du TrÃ©sor",
+        "title": "Le Gardien du Trésor",
         "theme": "Dribble",
         "game_format": "1v1",
         "motor_skills_focus": "Dribble sous pression",
@@ -311,21 +311,21 @@
         "setup_instructions": {
             "field_dimensions": "10x10m",
             "equipment": [
-                "1 ballon par binÃ´me",
-                "4 cÃ´nes pour dÃ©limiter"
+                "1 ballon par binôme",
+                "4 cônes pour délimiter"
             ],
-            "player_arrangement": "BinÃ´mes dans une zone carrÃ©e"
+            "player_arrangement": "Binômes dans une zone carrée"
         },
         "rules_and_scoring": {
             "rules": [
-                "Un joueur protÃ¨ge son ballon (le trÃ©sor).",
+                "Un joueur protège son ballon (le trésor).",
                 "L'autre essaye de le lui voler.",
                 "30 secondes puis on inverse."
             ],
-            "scoring_system": "1 point par ballon volÃ©."
+            "scoring_system": "1 point par ballon volé."
         },
         "coaching_questions": [
-            "Comment protÃ©ger ton ballon ?",
+            "Comment protéger ton ballon ?",
             "Utilises-tu ton corps comme bouclier ?"
         ],
         "tags": [
@@ -335,7 +335,7 @@
         ],
         "animation": [
             {
-                "step_description": "DÃ©part - Le gardien protÃ¨ge son trÃ©sor",
+                "step_description": "Départ - Le gardien protège son trésor",
                 "duration": 1,
                 "entities": [
                     {
@@ -439,7 +439,7 @@
                 ]
             },
             {
-                "step_description": "Le gardien se dÃ©place pour protÃ©ger",
+                "step_description": "Le gardien se déplace pour protéger",
                 "duration": 1.5,
                 "entities": [
                     {
@@ -500,22 +500,22 @@
         "motor_skills_focus": "Endurance",
         "fun_rating": 3,
         "setup_instructions": {
-            "field_dimensions": "Cercle de 15m de diamÃ¨tre",
+            "field_dimensions": "Cercle de 15m de diamètre",
             "equipment": [
-                "6 cÃ´nes pour marquer le cercle"
+                "6 cônes pour marquer le cercle"
             ],
             "player_arrangement": "Tous en cercle"
         },
         "rules_and_scoring": {
             "rules": [
                 "Course en cercle Ã  vitesse progressive.",
-                "Chaque tour, un joueur devient leader et accÃ©lÃ¨re.",
+                "Chaque tour, un joueur devient leader et accélère.",
                 "Les autres suivent."
             ],
-            "scoring_system": "DurÃ©e totale : 3 minutes."
+            "scoring_system": "Durée totale : 3 minutes."
         },
         "coaching_questions": [
-            "Comment gÃ©rer ton effort ?",
+            "Comment gérer ton effort ?",
             "Respires-tu bien ?"
         ],
         "tags": [
@@ -525,7 +525,7 @@
         ],
         "animation": [
             {
-                "step_description": "DÃ©part - Course en cercle",
+                "step_description": "Départ - Course en cercle",
                 "duration": 1,
                 "entities": [
                     {
@@ -581,7 +581,7 @@
                 ]
             },
             {
-                "step_description": "Le leader accÃ©lÃ¨re !",
+                "step_description": "Le leader accélère !",
                 "duration": 2,
                 "entities": [
                     {
@@ -637,7 +637,7 @@
                 ]
             },
             {
-                "step_description": "Ralentissement - RÃ©cupÃ©ration",
+                "step_description": "Ralentissement - Récupération",
                 "duration": 1.5,
                 "entities": [
                     {
@@ -705,20 +705,20 @@
             "field_dimensions": "20x15m",
             "equipment": [
                 "1 ballon",
-                "4 cÃ´nes"
+                "4 cônes"
             ],
-            "player_arrangement": "2 Ã©quipes de 4"
+            "player_arrangement": "2 équipes de 4"
         },
         "rules_and_scoring": {
             "rules": [
-                "10 passes consÃ©cutives = 1 point.",
-                "AprÃ¨s chaque passe, le joueur doit sprinter vers un cone et revenir."
+                "10 passes consécutives = 1 point.",
+                "Après chaque passe, le joueur doit sprinter vers un cone et revenir."
             ],
-            "scoring_system": "PremiÃ¨re Ã©quipe Ã  5 points gagne."
+            "scoring_system": "Première équipe Ã  5 points gagne."
         },
         "coaching_questions": [
-            "OÃ¹ te positionnes-tu aprÃ¨s la passe ?",
-            "Comment crÃ©er des espaces ?"
+            "OÃ¹ te positionnes-tu après la passe ?",
+            "Comment créer des espaces ?"
         ],
         "tags": [
             "Passes",
