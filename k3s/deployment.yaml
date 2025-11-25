@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: coach-app
-        image: badrbouzakri/coach-app:latest
+        image: registry.gitlab.com/bouzakri.badr/coach_app:latest
         ports:
         - containerPort: 80
         resources:
