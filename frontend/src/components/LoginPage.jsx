@@ -4,15 +4,30 @@ import { Trophy, User, Lock, ArrowRight, Shield } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 export function LoginPage() {
-    const { login } = useAuth();
+    const { login, register } = useAuth();
+    const [isRegistering, setIsRegistering] = useState(false);
     const [name, setName] = useState('');
+    const [password, setPassword] = useState('');
     const [role, setRole] = useState('Coach');
     const [team, setTeam] = useState('U11');
+    const [error, setError] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!name.trim()) return;
-        login({ name, role, team });
+        setError('');
+
+        if (!name.trim() || !password.trim()) {
+            setError('Veuillez remplir tous les champs');
+            return;
+        }
+
+        if (isRegistering) {
+            const result = register({ name, password, role, team });
+            if (!result.success) setError(result.error);
+        } else {
+            const result = login(name, password);
+            if (!result.success) setError(result.error);
+        }
     };
 
     return (
@@ -51,8 +66,14 @@ export function LoginPage() {
                         <p className="text-slate-400 text-sm font-medium">Plateforme Coaching Premium</p>
                     </div>
 
-                    {/* Login Form */}
+                    {/* Form */}
                     <form onSubmit={handleSubmit} className="p-8 space-y-5">
+                        {error && (
+                            <div className="p-3 bg-red-500/10 border border-red-500/20 rounded-xl text-red-400 text-sm text-center font-medium">
+                                {error}
+                            </div>
+                        )}
+
                         <div className="space-y-2">
                             <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">Identifiant</label>
                             <div className="relative">
@@ -61,49 +82,77 @@ export function LoginPage() {
                                     type="text"
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
-                                    placeholder="Votre nom (ex: Coach Thomas)"
+                                    placeholder="Nom d'utilisateur"
                                     className="w-full pl-12 pr-4 py-3.5 bg-slate-800/50 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500/50 transition-all"
-                                    autoFocus
                                 />
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-2 gap-4">
-                            <div className="space-y-2">
-                                <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">Rôle</label>
-                                <select
-                                    value={role}
-                                    onChange={(e) => setRole(e.target.value)}
-                                    className="w-full px-4 py-3.5 bg-slate-800/50 border border-slate-700 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-emerald-500/50 transition-all appearance-none cursor-pointer"
-                                >
-                                    <option>Coach</option>
-                                    <option>Adjoint</option>
-                                    <option>Joueur</option>
-                                </select>
-                            </div>
-                            <div className="space-y-2">
-                                <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">Équipe</label>
-                                <select
-                                    value={team}
-                                    onChange={(e) => setTeam(e.target.value)}
-                                    className="w-full px-4 py-3.5 bg-slate-800/50 border border-slate-700 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-emerald-500/50 transition-all appearance-none cursor-pointer"
-                                >
-                                    <option>U10-U11</option>
-                                    <option>U12-U13</option>
-                                    <option>U14-U15</option>
-                                    <option>Seniors</option>
-                                </select>
+                        <div className="space-y-2">
+                            <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">Mot de passe</label>
+                            <div className="relative">
+                                <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 w-5 h-5" />
+                                <input
+                                    type="password"
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    placeholder="••••••••"
+                                    className="w-full pl-12 pr-4 py-3.5 bg-slate-800/50 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500/50 transition-all"
+                                />
                             </div>
                         </div>
 
+                        {isRegistering && (
+                            <motion.div
+                                initial={{ opacity: 0, height: 0 }}
+                                animate={{ opacity: 1, height: 'auto' }}
+                                className="grid grid-cols-2 gap-4 overflow-hidden"
+                            >
+                                <div className="space-y-2">
+                                    <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">Rôle</label>
+                                    <select
+                                        value={role}
+                                        onChange={(e) => setRole(e.target.value)}
+                                        className="w-full px-4 py-3.5 bg-slate-800/50 border border-slate-700 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-emerald-500/50 transition-all appearance-none cursor-pointer"
+                                    >
+                                        <option>Coach</option>
+                                        <option>Adjoint</option>
+                                        <option>Joueur</option>
+                                    </select>
+                                </div>
+                                <div className="space-y-2">
+                                    <label className="text-xs font-bold text-slate-500 uppercase tracking-wider ml-1">Équipe</label>
+                                    <select
+                                        value={team}
+                                        onChange={(e) => setTeam(e.target.value)}
+                                        className="w-full px-4 py-3.5 bg-slate-800/50 border border-slate-700 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-emerald-500/50 transition-all appearance-none cursor-pointer"
+                                    >
+                                        <option>U10-U11</option>
+                                        <option>U12-U13</option>
+                                        <option>U14-U15</option>
+                                        <option>Seniors</option>
+                                    </select>
+                                </div>
+                            </motion.div>
+                        )}
+
                         <button
                             type="submit"
-                            disabled={!name.trim()}
-                            className="w-full py-4 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white font-bold rounded-xl shadow-lg shadow-emerald-900/30 flex items-center justify-center gap-2 transition-all transform hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed mt-4"
+                            className="w-full py-4 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white font-bold rounded-xl shadow-lg shadow-emerald-900/30 flex items-center justify-center gap-2 transition-all transform hover:scale-[1.02] active:scale-[0.98] mt-4"
                         >
-                            <span>Accéder au Dashboard</span>
+                            <span>{isRegistering ? "Créer mon compte" : "Se connecter"}</span>
                             <ArrowRight className="w-5 h-5" />
                         </button>
+
+                        <div className="text-center pt-2">
+                            <button
+                                type="button"
+                                onClick={() => { setIsRegistering(!isRegistering); setError(''); }}
+                                className="text-slate-400 text-sm hover:text-white transition-colors"
+                            >
+                                {isRegistering ? "Déjà un compte ? Se connecter" : "Pas encore de compte ? S'inscrire"}
+                            </button>
+                        </div>
                     </form>
 
                     {/* Footer */}
