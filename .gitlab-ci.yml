@@ -36,17 +36,3 @@ docker_build:
   only:
     - main
 
-update_k8s_manifest:
-  stage: deploy
-  image: alpine:latest
-  before_script:
-    - apk add --no-cache git
-    - git config --global user.email "ci@gitlab.com"
-    - git config --global user.name "GitLab CI"
-  script:
-    - sed -i "s|registry.gitlab.com/bouzakri.badr/coach_app:.*|$IMAGE_NAME|g" k3s/deployment.yaml
-    - git add k3s/deployment.yaml
-    - git diff --staged --quiet || git commit -m "Update image to $CI_COMMIT_SHORT_SHA [skip ci]"
-    - git push https://oauth2:${CI_PUSH_TOKEN}@gitlab.com/${CI_PROJECT_PATH}.git HEAD:main
-  only:
-    - main
