@@ -5,9 +5,9 @@ services:
       - "8080:80"
     restart: always
     depends_on:
-      - backend
+      - coach-app-backend-service
 
-  backend:
+  coach-app-backend-service:
     build: ./backend
     ports:
       - "5000:5000"
