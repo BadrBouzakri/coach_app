@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Layout } from './components/Layout';
 import { ExerciseCard } from './components/ExerciseCard';
 import { ExerciseDetail } from './components/ExerciseDetail';
 import { StatisticsPanel } from './components/StatisticsPanel';
 import { SessionPlanner } from './components/SessionPlanner';
 import { ParticleBackground, PageTransition } from './components/PageTransition';
+import { AuthProvider, useAuth } from './context/AuthContext';
+import { LoginPage } from './components/LoginPage';
 import batch1 from './data/batch1_exercises.json';
 import batch2 from './data/batch2_warmup.json';
 import batch3 from './data/batch3_generated.json';
@@ -14,32 +16,40 @@ import premiumExercises from './data/premium_exercises_complete.json';
 import examples from './data/example_exercises.json';
 import { Search, Filter, Star } from 'lucide-react';
 
-function App() {
+function AppContent() {
+  const { user, loading } = useAuth();
   const [exercises] = useState(() => {
-    // Merge improved warmups: replace original ones with improved versions
     const warmupsMap = new Map(batchWarmup.map(ex => [ex.id, ex]));
     improvedWarmups.forEach(ex => warmupsMap.set(ex.id, ex));
     const mergedWarmups = Array.from(warmupsMap.values());
-
     return [...examples, ...batch1, ...batch2, ...batch3, ...mergedWarmups];
   });
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTheme, setSelectedTheme] = useState("All");
   const [selectedExercise, setSelectedExercise] = useState(null);
   const [currentView, setCurrentView] = useState('exercises');
-  const [favorites, setFavorites] = useState(() => {
-    const saved = localStorage.getItem('favoritesExercises');
-    return saved ? JSON.parse(saved) : [];
-  });
+  const [favorites, setFavorites] = useState([]);
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
 
+  // Load favorites when user changes
+  useEffect(() => {
+    if (user) {
+      const saved = localStorage.getItem(`favorites_${user.id}`);
+      setFavorites(saved ? JSON.parse(saved) : []);
+    }
+  }, [user]);
+
   const toggleFavorite = (exerciseId) => {
+    if (!user) return;
     const newFavorites = favorites.includes(exerciseId)
       ? favorites.filter(id => id !== exerciseId)
       : [...favorites, exerciseId];
     setFavorites(newFavorites);
-    localStorage.setItem('favoritesExercises', JSON.stringify(newFavorites));
+    localStorage.setItem(`favorites_${user.id}`, JSON.stringify(newFavorites));
   };
+
+  if (loading) return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-emerald-500">Chargement...</div>;
+  if (!user) return <LoginPage />;
 
   const themes = ["All", ...new Set(exercises.map(ex => ex.theme))];
 
@@ -160,6 +170,14 @@ function App() {
         </PageTransition>
       </Layout>
     </>
+  );
+}
+
+function App() {
+  return (
+    <AuthProvider>
+      <AppContent />
+    </AuthProvider>
   );
 }
 

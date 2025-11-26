@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import { Trophy, LayoutDashboard, Calendar, Settings, BarChart3, Menu, X } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
+import { LogOut } from 'lucide-react';
 
 export function Layout({ children, currentView, onViewChange, sidebarContent }) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const { user, logout } = useAuth();
 
     const SidebarContent = () => (
         <>
@@ -59,14 +60,23 @@ export function Layout({ children, currentView, onViewChange, sidebarContent }) 
             )}
 
             <div className="p-4 border-t border-slate-800/50 mt-auto">
-                <div className="flex items-center gap-3 px-4 py-2 bg-gradient-to-r from-emerald-900/30 to-red-900/30 rounded-xl border border-emerald-500/30">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-emerald-500 to-red-600 flex items-center justify-center font-bold shadow-lg shadow-emerald-500/20">
-                        W
+                <div className="flex items-center justify-between gap-2 px-4 py-3 bg-gradient-to-r from-emerald-900/30 to-red-900/30 rounded-xl border border-emerald-500/30">
+                    <div className="flex items-center gap-3">
+                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-emerald-500 to-red-600 flex items-center justify-center font-bold text-white shadow-lg shadow-emerald-500/20">
+                            {user?.name?.charAt(0) || 'W'}
+                        </div>
+                        <div className="text-sm overflow-hidden">
+                            <p className="font-medium text-white truncate max-w-[100px]">{user?.name || 'Coach'}</p>
+                            <p className="text-emerald-300 text-xs font-medium truncate">{user?.team || 'Wattrelos FC'}</p>
+                        </div>
                     </div>
-                    <div className="text-sm">
-                        <p className="font-medium text-white">Coach Principal</p>
-                        <p className="text-emerald-300 text-xs font-medium">Wattrelos FC - 2025</p>
-                    </div>
+                    <button
+                        onClick={logout}
+                        className="p-1.5 text-slate-400 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-colors"
+                        title="Se déconnecter"
+                    >
+                        <LogOut className="w-4 h-4" />
+                    </button>
                 </div>
             </div>
         </>
