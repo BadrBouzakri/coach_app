@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: coach-app
-        image: registry.gitlab.com/bouzakri.badr/coach_app:latest
+        image: registry.gitlab.com/bouzakri.badr/coach_app/frontend:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
