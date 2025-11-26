@@ -31,7 +31,7 @@ docker_build_frontend:
   before_script:
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
   script:
-    - docker build -t $FRONTEND_IMAGE -t $FRONTEND_LATEST ./frontend
+    - docker build --no-cache -t $FRONTEND_IMAGE -t $FRONTEND_LATEST ./frontend
     - docker push $FRONTEND_IMAGE
     - docker push $FRONTEND_LATEST
   only:
