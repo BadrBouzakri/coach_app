@@ -4,7 +4,12 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
+  - backend-deployment.yaml
+  - mongodb-deployment.yaml
+  - mongodb-pvc.yaml
 
 images:
   - name: registry.gitlab.com/bouzakri.badr/coach_app
+    newTag: latest
+  - name: registry.gitlab.com/bouzakri.badr/coach_app/backend
     newTag: latest

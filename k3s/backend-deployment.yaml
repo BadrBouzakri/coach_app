@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: coach-app-backend
+  namespace: coach-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: coach-app-backend
+  template:
+    metadata:
+      labels:
+        app: coach-app-backend
+    spec:
+      containers:
+      - name: backend
+        image: registry.gitlab.com/bouzakri.badr/coach_app/backend:latest
+        ports:
+        - containerPort: 5000
+        env:
+        - name: MONGO_URI
+          value: "mongodb://mongodb-service:27017/coach_app"
+        - name: JWT_SECRET
+          value: "wattrelos_fc_secret_key_2025"
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "200m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: coach-app-backend-service
+  namespace: coach-app
+spec:
+  selector:
+    app: coach-app-backend
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+  type: ClusterIP

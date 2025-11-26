@@ -1,11 +1,12 @@
 stages:
   - build
   - docker
-  - deploy
 
 variables:
-  IMAGE_NAME: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA
-  IMAGE_LATEST: $CI_REGISTRY_IMAGE:latest
+  FRONTEND_IMAGE: $CI_REGISTRY_IMAGE/frontend:$CI_COMMIT_SHORT_SHA
+  BACKEND_IMAGE: $CI_REGISTRY_IMAGE/backend:$CI_COMMIT_SHORT_SHA
+  FRONTEND_LATEST: $CI_REGISTRY_IMAGE/frontend:latest
+  BACKEND_LATEST: $CI_REGISTRY_IMAGE/backend:latest
 
 build_frontend:
   stage: build
@@ -22,7 +23,7 @@ build_frontend:
       - frontend/dist/
     expire_in: 1 hour
 
-docker_build:
+docker_build_frontend:
   stage: docker
   image: docker:24
   services:
@@ -30,9 +31,22 @@ docker_build:
   before_script:
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
   script:
-    - docker build -t $IMAGE_NAME -t $IMAGE_LATEST ./frontend
-    - docker push $IMAGE_NAME
-    - docker push $IMAGE_LATEST
+    - docker build -t $FRONTEND_IMAGE -t $FRONTEND_LATEST ./frontend
+    - docker push $FRONTEND_IMAGE
+    - docker push $FRONTEND_LATEST
   only:
     - main
 
+docker_build_backend:
+  stage: docker
+  image: docker:24
+  services:
+    - docker:24-dind
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - docker build -t $BACKEND_IMAGE -t $BACKEND_LATEST ./backend
+    - docker push $BACKEND_IMAGE
+    - docker push $BACKEND_LATEST
+  only:
+    - main
