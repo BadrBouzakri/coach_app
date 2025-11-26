@@ -144,8 +144,8 @@ export function NotesPanel() {
                                             onClick={() => setIsEditing(false)}
                                             className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg font-medium transition-colors"
                                         >
-                                            <Annuler
-                    </button>
+                                            Annuler
+                                        </button>
                                     </div>
                                 </div>
                             </div>
