@@ -1,5 +1,6 @@
+import React, { useState } from 'react';
+import { Trophy, LayoutDashboard, Calendar, BarChart3, Menu, X, LogOut } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
-import { LogOut } from 'lucide-react';
 
 export function Layout({ children, currentView, onViewChange, sidebarContent }) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -9,7 +10,13 @@ export function Layout({ children, currentView, onViewChange, sidebarContent }) 
         <>
             <div className="p-6 border-b border-slate-800/50 flex-shrink-0">
                 <div className="flex items-center gap-3">
-                    <Trophy className="w-8 h-8 text-emerald-400 drop-shadow-[0_0_12px_rgba(52,211,153,0.6)]" />
+                    <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center p-1.5">
+                        <img
+                            src="/logo_wattrelos.png"
+                            alt="Wattrelos FC"
+                            className="w-full h-full object-contain"
+                        />
+                    </div>
                     <div className="flex flex-col">
                         <span className="text-lg font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-white to-red-500">Coach Wattrelos FC</span>
                         <span className="text-xs text-slate-400 font-medium">Excellence & Passion</span>
