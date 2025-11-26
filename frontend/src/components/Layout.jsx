@@ -57,6 +57,19 @@ export function Layout({ children, currentView, onViewChange, sidebarContent }) 
                     <Calendar className="w-5 h-5" />
                     Planificateur
                 </button>
+
+                <button
+                    onClick={() => { onViewChange?.('notes'); setIsMobileMenuOpen(false); }}
+                    className={`w-full flex items-center gap-3 px-4 py-3 ${currentView === 'notes'
+                        ? 'bg-gradient-to-r from-emerald-600 to-emerald-700 shadow-lg shadow-emerald-900/30'
+                        : 'text-slate-400 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/10 hover:to-red-600/10'
+                        } rounded-xl font-medium backdrop-blur-sm transition-all`}
+                >
+                    <div className="relative">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-sticky-note"><path d="M15.5 3H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V8.5L15.5 3Z" /><path d="M15 3v6h6" /></svg>
+                    </div>
+                    Mes Notes
+                </button>
             </nav>
 
             {/* Custom Sidebar Content (Filters) */}

@@ -4,6 +4,7 @@ import { ExerciseCard } from './components/ExerciseCard';
 import { ExerciseDetail } from './components/ExerciseDetail';
 import { StatisticsPanel } from './components/StatisticsPanel';
 import { SessionPlanner } from './components/SessionPlanner';
+import { NotesPanel } from './components/NotesPanel';
 import { ParticleBackground, PageTransition } from './components/PageTransition';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { LoginPage } from './components/LoginPage';
@@ -17,7 +18,7 @@ import examples from './data/example_exercises.json';
 import { Search, Filter, Star } from 'lucide-react';
 
 function AppContent() {
-  const { user, loading } = useAuth();
+  const { user, loading, updateUserFavorites } = useAuth();
   const [exercises] = useState(() => {
     const warmupsMap = new Map(batchWarmup.map(ex => [ex.id, ex]));
     improvedWarmups.forEach(ex => warmupsMap.set(ex.id, ex));
@@ -33,9 +34,10 @@ function AppContent() {
 
   // Load favorites when user changes
   useEffect(() => {
-    if (user) {
-      const saved = localStorage.getItem(`favorites_${user.id}`);
-      setFavorites(saved ? JSON.parse(saved) : []);
+    if (user && user.favorites) {
+      setFavorites(user.favorites);
+    } else {
+      setFavorites([]);
     }
   }, [user]);
 
@@ -45,7 +47,7 @@ function AppContent() {
       ? favorites.filter(id => id !== exerciseId)
       : [...favorites, exerciseId];
     setFavorites(newFavorites);
-    localStorage.setItem(`favorites_${user.id}`, JSON.stringify(newFavorites));
+    updateUserFavorites(newFavorites);
   };
 
   if (loading) return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-emerald-500">Chargement...</div>;
@@ -166,6 +168,10 @@ function AppContent() {
 
           {currentView === 'planner' && (
             <SessionPlanner exercises={exercises} />
+          )}
+
+          {currentView === 'notes' && (
+            <NotesPanel />
           )}
         </PageTransition>
       </Layout>

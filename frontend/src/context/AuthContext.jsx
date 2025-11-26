@@ -7,51 +7,86 @@ export function AuthProvider({ children }) {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const savedUser = localStorage.getItem('coach_app_active_user');
-        if (savedUser) {
+        const token = localStorage.getItem('token');
+        const savedUser = localStorage.getItem('user');
+        if (token && savedUser) {
             setUser(JSON.parse(savedUser));
         }
         setLoading(false);
     }, []);
 
-    const login = (name, password) => {
-        const users = JSON.parse(localStorage.getItem('coach_app_users_db') || '[]');
-        const foundUser = users.find(u => u.name === name && u.password === password);
+    const login = async (name, password) => {
+        try {
+            const res = await fetch('/api/auth/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, password })
+            });
+            const data = await res.json();
 
-        if (foundUser) {
-            const { password, ...safeUser } = foundUser; // Exclude password from session
-            setUser(safeUser);
-            localStorage.setItem('coach_app_active_user', JSON.stringify(safeUser));
-            return { success: true };
+            if (data.success) {
+                setUser(data.user);
+                localStorage.setItem('token', data.token);
+                localStorage.setItem('user', JSON.stringify(data.user));
+                return { success: true };
+            }
+            return { success: false, error: data.error };
+        } catch (err) {
+            return { success: false, error: "Erreur de connexion au serveur" };
         }
-        return { success: false, error: "Identifiants incorrects" };
     };
 
-    const register = (userData) => {
-        const users = JSON.parse(localStorage.getItem('coach_app_users_db') || '[]');
+    const register = async (userData) => {
+        try {
+            const res = await fetch('/api/auth/register', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(userData)
+            });
+            const data = await res.json();
 
-        if (users.find(u => u.name === userData.name)) {
-            return { success: false, error: "Ce nom d'utilisateur existe déjà" };
+            if (data.success) {
+                setUser(data.user);
+                localStorage.setItem('token', data.token);
+                localStorage.setItem('user', JSON.stringify(data.user));
+                return { success: true };
+            }
+            return { success: false, error: data.error };
+        } catch (err) {
+            return { success: false, error: "Erreur lors de l'inscription" };
         }
-
-        const newUser = { ...userData, id: Date.now().toString() };
-        users.push(newUser);
-        localStorage.setItem('coach_app_users_db', JSON.stringify(users));
-
-        // Auto login after register
-        const { password, ...safeUser } = newUser;
-        setUser(safeUser);
-        localStorage.setItem('coach_app_active_user', JSON.stringify(safeUser));
-        return { success: true };
     };
 
     const logout = () => {
         setUser(null);
-        localStorage.removeItem('coach_app_active_user');
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+    };
+
+    const updateUserFavorites = async (newFavorites) => {
+        if (!user) return;
+
+        // Optimistic update
+        const updatedUser = { ...user, favorites: newFavorites };
+        setUser(updatedUser);
+        localStorage.setItem('user', JSON.stringify(updatedUser));
+
+        try {
+            await fetch('/api/auth/favorites', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                },
+                body: JSON.stringify({ userId: user.id, favorites: newFavorites })
+            });
+        } catch (err) {
+            console.error("Failed to sync favorites", err);
+        }
     };
 
     return (
-        <AuthContext.Provider value={{ user, login, register, logout, loading }}>
+        <AuthContext.Provider value={{ user, login, register, logout, loading, updateUserFavorites }}>
             {children}
         </AuthContext.Provider>
     );
