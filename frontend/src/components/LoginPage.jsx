@@ -12,7 +12,7 @@ export function LoginPage() {
     const [team, setTeam] = useState('U11');
     const [error, setError] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setError('');
 
@@ -22,10 +22,10 @@ export function LoginPage() {
         }
 
         if (isRegistering) {
-            const result = register({ name, password, role, team });
+            const result = await register({ name, password, role, team });
             if (!result.success) setError(result.error);
         } else {
-            const result = login(name, password);
+            const result = await login(name, password);
             if (!result.success) setError(result.error);
         }
     };
