@@ -7,9 +7,8 @@ export function AuthProvider({ children }) {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const token = localStorage.getItem('token');
         const savedUser = localStorage.getItem('user');
-        if (token && savedUser) {
+        if (savedUser) {
             setUser(JSON.parse(savedUser));
         }
         setLoading(false);
@@ -26,7 +25,6 @@ export function AuthProvider({ children }) {
 
             if (data.success) {
                 setUser(data.user);
-                localStorage.setItem('token', data.token);
                 localStorage.setItem('user', JSON.stringify(data.user));
                 return { success: true };
             }
@@ -47,7 +45,6 @@ export function AuthProvider({ children }) {
 
             if (data.success) {
                 setUser(data.user);
-                localStorage.setItem('token', data.token);
                 localStorage.setItem('user', JSON.stringify(data.user));
                 return { success: true };
             }
@@ -57,9 +54,13 @@ export function AuthProvider({ children }) {
         }
     };
 
-    const logout = () => {
+    const logout = async () => {
+        try {
+            await fetch('/api/auth/logout');
+        } catch (err) {
+            console.error("Logout failed", err);
+        }
         setUser(null);
-        localStorage.removeItem('token');
         localStorage.removeItem('user');
     };
 
@@ -75,8 +76,7 @@ export function AuthProvider({ children }) {
             await fetch('/api/auth/favorites', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                    'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({ userId: user.id, favorites: newFavorites })
             });

@@ -3,6 +3,7 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
+const { protect } = require('../middleware/auth');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'wattrelos_fc_secret_key_2025';
 
@@ -35,17 +36,26 @@ router.post('/register', async (req, res) => {
         // Create token
         const token = jwt.sign({ id: user._id }, JWT_SECRET, { expiresIn: '30d' });
 
-        res.json({
-            success: true,
-            token,
-            user: {
-                id: user._id,
-                name: user.name,
-                role: user.role,
-                team: user.team,
-                favorites: user.favorites
-            }
-        });
+        // Send token in cookie
+        const options = {
+            expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production',
+            sameSite: 'strict'
+        };
+
+        res.status(200)
+            .cookie('token', token, options)
+            .json({
+                success: true,
+                user: {
+                    id: user._id,
+                    name: user.name,
+                    role: user.role,
+                    team: user.team,
+                    favorites: user.favorites
+                }
+            });
     } catch (err) {
         console.error(err);
         res.status(500).json({ success: false, error: 'Erreur serveur' });
@@ -72,17 +82,26 @@ router.post('/login', async (req, res) => {
         // Create token
         const token = jwt.sign({ id: user._id }, JWT_SECRET, { expiresIn: '30d' });
 
-        res.json({
-            success: true,
-            token,
-            user: {
-                id: user._id,
-                name: user.name,
-                role: user.role,
-                team: user.team,
-                favorites: user.favorites
-            }
-        });
+        // Send token in cookie
+        const options = {
+            expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production',
+            sameSite: 'strict'
+        };
+
+        res.status(200)
+            .cookie('token', token, options)
+            .json({
+                success: true,
+                user: {
+                    id: user._id,
+                    name: user.name,
+                    role: user.role,
+                    team: user.team,
+                    favorites: user.favorites
+                }
+            });
     } catch (err) {
         console.error(err);
         res.status(500).json({ success: false, error: 'Erreur serveur' });
@@ -90,7 +109,7 @@ router.post('/login', async (req, res) => {
 });
 
 // Update Favorites
-router.post('/favorites', async (req, res) => {
+router.post('/favorites', protect, async (req, res) => {
     try {
         const { userId, favorites } = req.body;
         await User.findByIdAndUpdate(userId, { favorites });
@@ -98,6 +117,15 @@ router.post('/favorites', async (req, res) => {
     } catch (err) {
         res.status(500).json({ success: false, error: 'Erreur mise à jour favoris' });
     }
+});
+
+// Logout
+router.get('/logout', (req, res) => {
+    res.cookie('token', 'none', {
+        expires: new Date(Date.now() + 10 * 1000),
+        httpOnly: true
+    });
+    res.status(200).json({ success: true, data: {} });
 });
 
 module.exports = router;

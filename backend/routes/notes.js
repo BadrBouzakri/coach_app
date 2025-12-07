@@ -2,8 +2,10 @@ const express = require('express');
 const router = express.Router();
 const Note = require('../models/Note');
 
+const { protect } = require('../middleware/auth');
+
 // Get all notes for a user
-router.get('/:userId', async (req, res) => {
+router.get('/:userId', protect, async (req, res) => {
     try {
         const notes = await Note.find({ userId: req.params.userId }).sort({ timestamp: -1 });
         res.json(notes);
@@ -13,7 +15,7 @@ router.get('/:userId', async (req, res) => {
 });
 
 // Create a note
-router.post('/', async (req, res) => {
+router.post('/', protect, async (req, res) => {
     try {
         const newNote = new Note(req.body);
         const savedNote = await newNote.save();
@@ -24,7 +26,7 @@ router.post('/', async (req, res) => {
 });
 
 // Update a note
-router.put('/:id', async (req, res) => {
+router.put('/:id', protect, async (req, res) => {
     try {
         const updatedNote = await Note.findByIdAndUpdate(req.params.id, req.body, { new: true });
         res.json(updatedNote);
@@ -34,7 +36,7 @@ router.put('/:id', async (req, res) => {
 });
 
 // Delete a note
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', protect, async (req, res) => {
     try {
         await Note.findByIdAndDelete(req.params.id);
         res.json({ success: true });
