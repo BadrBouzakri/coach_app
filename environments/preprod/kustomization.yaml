@@ -1,0 +1,41 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+bases:
+  - ../base
+
+namespace: coach-app
+
+resources:
+  - configmap.yaml
+  - sealed-secrets.yaml
+  - ingress.yaml
+  - hpa.yaml
+
+patches:
+  # 2 replicas for preprod
+  - target:
+      kind: Deployment
+      name: backend
+    patch: |-
+      - op: replace
+        path: /spec/replicas
+        value: 2
+  - target:
+      kind: Deployment
+      name: frontend
+    patch: |-
+      - op: replace
+        path: /spec/replicas
+        value: 2
+
+images:
+  - name: coach-app-backend
+    newName: registry.gitlab.com/bouzakri.badr/coach_app/backend
+    newTag: latest
+  - name: coach-app-frontend
+    newName: registry.gitlab.com/bouzakri.badr/coach_app/frontend
+    newTag: latest
+
+commonLabels:
+  environment: preprod

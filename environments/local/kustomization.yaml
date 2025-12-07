@@ -1,0 +1,48 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: coach-app
+
+resources:
+  - ../base
+  - configmap.yaml
+  - secrets.yaml
+  - ingress.yaml
+
+
+patches:
+  # Reduce replicas for local development
+  - target:
+      kind: Deployment
+      name: backend
+    patch: |-
+      - op: replace
+        path: /spec/replicas
+        value: 1
+  - target:
+      kind: Deployment
+      name: frontend
+    patch: |-
+      - op: replace
+        path: /spec/replicas
+        value: 1
+  - target:
+      kind: Deployment
+      name: mongodb
+    patch: |-
+      - op: replace
+        path: /spec/replicas
+        value: 1
+
+images:
+  - name: coach-app-backend
+    newName: coach-app-backend
+    newTag: latest
+  - name: coach-app-frontend
+    newName: coach-app-frontend
+    newTag: latest
+
+labels:
+  - pairs:
+      environment: local
+

@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Clock, Users, Activity, Trophy, HelpCircle, Brain, Sparkles } from 'lucide-react';
+import { X, Clock, Users, Activity, Trophy, HelpCircle, Brain, Sparkles, Video } from 'lucide-react';
 import { TacticalBoard } from './TacticalBoard';
 
 export function ExerciseDetail({ exercise, onClose }) {
@@ -17,6 +17,25 @@ export function ExerciseDetail({ exercise, onClose }) {
                     </div>
 
                     <TacticalBoard setup={exercise.setup_instructions} animation={exercise.animation} />
+
+                    {/* Video Player */}
+                    {exercise.video && (
+                        <div className="bg-slate-800 p-4 rounded-xl border border-slate-700">
+                            <h3 className="font-bold text-white mb-3 flex items-center gap-2">
+                                <Video className="w-5 h-5 text-blue-500" />
+                                Démonstration Vidéo
+                            </h3>
+                            <div className="relative w-full aspect-video rounded-lg overflow-hidden bg-black border border-slate-700/50">
+                                <iframe
+                                    src={exercise.video}
+                                    title={exercise.title}
+                                    className="absolute inset-0 w-full h-full"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    )}
 
                     <div className="bg-slate-800 p-4 rounded-xl border border-slate-700">
                         <h3 className="font-bold text-white mb-2 flex items-center gap-2">

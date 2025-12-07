@@ -1,12 +1,15 @@
 stages:
   - build
   - docker
+  - deploy
 
 variables:
   FRONTEND_IMAGE: $CI_REGISTRY_IMAGE/frontend:$CI_COMMIT_SHORT_SHA
   BACKEND_IMAGE: $CI_REGISTRY_IMAGE/backend:$CI_COMMIT_SHORT_SHA
   FRONTEND_LATEST: $CI_REGISTRY_IMAGE/frontend:latest
   BACKEND_LATEST: $CI_REGISTRY_IMAGE/backend:latest
+
+# ==================== BUILD STAGE ====================
 
 build_frontend:
   stage: build
@@ -22,6 +25,10 @@ build_frontend:
     paths:
       - frontend/dist/
     expire_in: 1 hour
+  only:
+    - main
+
+# ==================== DOCKER STAGE ====================
 
 docker_build_frontend:
   stage: docker
@@ -48,5 +55,27 @@ docker_build_backend:
     - docker build -t $BACKEND_IMAGE -t $BACKEND_LATEST ./backend
     - docker push $BACKEND_IMAGE
     - docker push $BACKEND_LATEST
+  only:
+    - main
+
+# ==================== DEPLOY STAGE ====================
+
+deploy_production:
+  stage: deploy
+  image: bitnami/kubectl:latest
+  before_script:
+    - mkdir -p ~/.kube
+    - echo "$KUBE_CONFIG" | base64 -d > ~/.kube/config
+    - chmod 600 ~/.kube/config
+  script:
+    - echo "Deploying to production..."
+    - kubectl set image deployment/frontend frontend=$FRONTEND_IMAGE -n coach-app
+    - kubectl set image deployment/backend backend=$BACKEND_IMAGE -n coach-app
+    - kubectl rollout status deployment/frontend -n coach-app --timeout=120s
+    - kubectl rollout status deployment/backend -n coach-app --timeout=120s
+    - echo "✅ Deployment complete!"
+  environment:
+    name: production
+    url: http://coach-app.local
   only:
     - main

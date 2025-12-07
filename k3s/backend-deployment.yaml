@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
       - name: backend
-        image: registry.gitlab.com/bouzakri.badr/coach_app/backend:latest
+        image: coach-app-backend:local
+        imagePullPolicy: Never
         ports:
         - containerPort: 5000
         env:

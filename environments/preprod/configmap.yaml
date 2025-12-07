@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+  namespace: coach-app
+data:
+  node_env: "staging"
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-config
+  namespace: coach-app
+data:
+  api_url: "http://preprod.coach-app.local/api"

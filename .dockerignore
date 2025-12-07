@@ -1,0 +1,44 @@
+# Node modules
+node_modules
+npm-debug.log
+
+# Git
+.git
+.gitignore
+
+# Documentation
+*.md
+docs
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Testing
+coverage
+.nyc_output
+*.test.js
+*.spec.js
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts (backend)
+dist
+build
+
+# Logs
+logs
+*.log
+
+# K8s
+k8s
+*.yaml

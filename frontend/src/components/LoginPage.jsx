@@ -50,18 +50,17 @@ export function LoginPage() {
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
                             transition={{ type: "spring", stiffness: 260, damping: 20 }}
-                            className="w-32 h-32 bg-white/10 rounded-2xl flex items-center justify-center shadow-lg shadow-emerald-900/50 mb-6 relative group p-4 backdrop-blur-sm border border-white/10"
+                            className="w-24 h-24 flex items-center justify-center mb-6"
                         >
                             <img
-                                src="/logo_wattrelos.png"
-                                alt="Logo Wattrelos FC"
-                                className="w-full h-full object-contain drop-shadow-md"
+                                src="/logo_coachplay.png"
+                                alt="CoachPlay"
+                                className="w-full h-full object-contain drop-shadow-2xl"
                             />
-                            <div className="absolute inset-0 bg-white/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
                         </motion.div>
 
-                        <h1 className="text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-white to-red-500 mb-2">
-                            Wattrelos FC
+                        <h1 className="text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-white to-emerald-600 mb-2">
+                            CoachPlay
                         </h1>
                         <p className="text-slate-400 text-sm font-medium">Plateforme Coaching Premium</p>
                     </div>
@@ -159,7 +158,7 @@ export function LoginPage() {
                     <div className="p-4 bg-slate-900/50 border-t border-slate-800 text-center">
                         <p className="text-xs text-slate-500 flex items-center justify-center gap-1">
                             <Shield className="w-3 h-3" />
-                            Espace sécurisé • Wattrelos FC © 2025
+                            Espace sécurisé • CoachPlay © 2025
                         </p>
                     </div>
                 </div>

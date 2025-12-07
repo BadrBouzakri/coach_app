@@ -1,0 +1,55 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: coach-app
+  namespace: argocd
+spec:
+  description: Coach App - Wattrelos FC
+  
+  # Source repositories
+  sourceRepos:
+  - 'https://gitlab.com/bouzakri.badr/coach_app.git'
+  - 'registry.gitlab.com/bouzakri.badr/coach_app/*'
+  
+  # Destination clusters and namespaces
+  destinations:
+  - namespace: coach-app
+    server: https://kubernetes.default.svc
+  - namespace: argocd
+    server: https://kubernetes.default.svc
+  
+  # Cluster resource whitelist
+  clusterResourceWhitelist:
+  - group: ''
+    kind: Namespace
+  
+  # Namespace resource whitelist
+  namespaceResourceWhitelist:
+  - group: ''
+    kind: '*'
+  - group: 'apps'
+    kind: '*'
+  - group: 'batch'
+    kind: '*'
+  - group: 'networking.k8s.io'
+    kind: '*'
+  - group: 'autoscaling'
+    kind: '*'
+  - group: 'bitnami.com'
+    kind: 'SealedSecret'
+  
+  # Roles for RBAC
+  roles:
+  - name: read-only
+    description: Read-only access to coach-app
+    policies:
+    - p, proj:coach-app:read-only, applications, get, coach-app/*, allow
+    groups:
+    - developers
+  
+  - name: admin
+    description: Full access to coach-app
+    policies:
+    - p, proj:coach-app:admin, applications, *, coach-app/*, allow
+    groups:
+    - admins

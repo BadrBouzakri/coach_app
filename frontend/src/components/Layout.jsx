@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Trophy, LayoutDashboard, Calendar, BarChart3, Menu, X, LogOut } from 'lucide-react';
+import { Trophy, LayoutDashboard, Calendar, BarChart3, Menu, X, LogOut, Users, Shield, Wand2, MonitorPlay } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 export function Layout({ children, currentView, onViewChange, sidebarContent }) {
@@ -10,15 +10,15 @@ export function Layout({ children, currentView, onViewChange, sidebarContent }) 
         <>
             <div className="p-6 border-b border-slate-800/50 flex-shrink-0">
                 <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center p-1.5">
+                    <div className="w-10 h-10 flex items-center justify-center">
                         <img
-                            src="/logo_wattrelos.png"
-                            alt="Wattrelos FC"
-                            className="w-full h-full object-contain"
+                            src="/logo_coachplay.png"
+                            alt="CoachPlay"
+                            className="w-full h-full object-contain drop-shadow-lg"
                         />
                     </div>
                     <div className="flex flex-col">
-                        <span className="text-lg font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-white to-red-500">Coach Wattrelos FC</span>
+                        <span className="text-lg font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-white to-red-500">CoachPlay</span>
                         <span className="text-xs text-slate-400 font-medium">Excellence & Passion</span>
                     </div>
                 </div>
@@ -56,6 +56,61 @@ export function Layout({ children, currentView, onViewChange, sidebarContent }) 
                 >
                     <Calendar className="w-5 h-5" />
                     Planificateur
+                </button>
+
+                <button
+                    onClick={() => { onViewChange?.('roster'); setIsMobileMenuOpen(false); }}
+                    className={`w-full flex items-center gap-3 px-4 py-3 ${currentView === 'roster'
+                        ? 'bg-gradient-to-r from-emerald-600 to-emerald-700 shadow-lg shadow-emerald-900/30'
+                        : 'text-slate-400 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/10 hover:to-red-600/10'
+                        } rounded-xl font-medium backdrop-blur-sm transition-all`}
+                >
+                    <Users className="w-5 h-5" />
+                    Équipe
+                </button>
+
+                <button
+                    onClick={() => { onViewChange?.('calendar'); setIsMobileMenuOpen(false); }}
+                    className={`w-full flex items-center gap-3 px-4 py-3 ${currentView === 'calendar'
+                        ? 'bg-gradient-to-r from-emerald-600 to-emerald-700 shadow-lg shadow-emerald-900/30'
+                        : 'text-slate-400 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/10 hover:to-red-600/10'
+                        } rounded-xl font-medium backdrop-blur-sm transition-all`}
+                >
+                    <Calendar className="w-5 h-5" />
+                    Calendrier
+                </button>
+
+                <button
+                    onClick={() => { onViewChange?.('lineup'); setIsMobileMenuOpen(false); }}
+                    className={`w-full flex items-center gap-3 px-4 py-3 ${currentView === 'lineup'
+                        ? 'bg-gradient-to-r from-emerald-600 to-emerald-700 shadow-lg shadow-emerald-900/30'
+                        : 'text-slate-400 hover:text-white hover:bg-gradient-to-r hover:from-emerald-600/10 hover:to-red-600/10'
+                        } rounded-xl font-medium backdrop-blur-sm transition-all`}
+                >
+                    <Shield className="w-5 h-5" />
+                    Compo
+                </button>
+
+                <button
+                    onClick={() => { onViewChange?.('generator'); setIsMobileMenuOpen(false); }}
+                    className={`w-full flex items-center gap-3 px-4 py-3 ${currentView === 'generator'
+                        ? 'bg-gradient-to-r from-purple-600 to-purple-700 shadow-lg shadow-purple-900/30'
+                        : 'text-slate-400 hover:text-white hover:bg-gradient-to-r hover:from-purple-600/10 hover:to-purple-600/10'
+                        } rounded-xl font-medium backdrop-blur-sm transition-all`}
+                >
+                    <Wand2 className="w-5 h-5" />
+                    Assistant IA
+                </button>
+
+                <button
+                    onClick={() => { onViewChange?.('videos'); setIsMobileMenuOpen(false); }}
+                    className={`w-full flex items-center gap-3 px-4 py-3 ${currentView === 'videos'
+                        ? 'bg-gradient-to-r from-blue-600 to-blue-700 shadow-lg shadow-blue-900/30'
+                        : 'text-slate-400 hover:text-white hover:bg-gradient-to-r hover:from-blue-600/10 hover:to-blue-600/10'
+                        } rounded-xl font-medium backdrop-blur-sm transition-all`}
+                >
+                    <MonitorPlay className="w-5 h-5" />
+                    Vidéos
                 </button>
 
                 <button
@@ -133,7 +188,7 @@ export function Layout({ children, currentView, onViewChange, sidebarContent }) 
                         </button>
                         <div className="flex items-center gap-2">
                             <Trophy className="w-6 h-6 text-emerald-400 drop-shadow-[0_0_8px_rgba(52,211,153,0.6)]" />
-                            <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-white to-red-500">Wattrelos FC</span>
+                            <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-white to-red-500">CoachPlay</span>
                         </div>
                     </div>
                 </header>

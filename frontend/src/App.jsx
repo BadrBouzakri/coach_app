@@ -5,6 +5,11 @@ import { ExerciseDetail } from './components/ExerciseDetail';
 import { StatisticsPanel } from './components/StatisticsPanel';
 import { SessionPlanner } from './components/SessionPlanner';
 import { NotesPanel } from './components/NotesPanel';
+import { TeamRoster } from './components/team/TeamRoster';
+import { TeamCalendar } from './components/team/TeamCalendar';
+import { LineupBuilder } from './components/tactics/LineupBuilder';
+import { SessionGenerator } from './components/coach/SessionGenerator';
+import { VideoLibrary } from './components/training/VideoLibrary';
 import { ParticleBackground, PageTransition } from './components/PageTransition';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { LoginPage } from './components/LoginPage';
@@ -19,6 +24,11 @@ import { Search, Filter, Star } from 'lucide-react';
 
 function AppContent() {
   const { user, loading, updateUserFavorites } = useAuth();
+
+  useEffect(() => {
+    console.log("Coach App Frontend v3 - Tactics Module Loaded");
+  }, []);
+
   const [exercises] = useState(() => {
     const warmupsMap = new Map(batchWarmup.map(ex => [ex.id, ex]));
     improvedWarmups.forEach(ex => warmupsMap.set(ex.id, ex));
@@ -172,6 +182,26 @@ function AppContent() {
 
           {currentView === 'notes' && (
             <NotesPanel />
+          )}
+
+          {currentView === 'roster' && (
+            <TeamRoster />
+          )}
+
+          {currentView === 'calendar' && (
+            <TeamCalendar />
+          )}
+
+          {currentView === 'lineup' && (
+            <LineupBuilder />
+          )}
+
+          {currentView === 'generator' && (
+            <SessionGenerator />
+          )}
+
+          {currentView === 'videos' && (
+            <VideoLibrary />
           )}
         </PageTransition>
       </Layout>

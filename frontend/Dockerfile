@@ -1,20 +1,49 @@
-# Build Stage
-FROM node:20-alpine as build
+# Multi-stage build for frontend optimization
+
+# Stage 1: Build
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
+# Copy package files
 COPY package*.json ./
-RUN npm install
 
+# Install all dependencies (including devDependencies for build)
+RUN npm ci
+
+# Copy source code
 COPY . .
+
+# Build the application
 RUN npm run build
 
-# Production Stage
-FROM nginx:alpine
+# Stage 2: Production with Nginx
+FROM nginx:1.25-alpine AS production
 
-COPY --from=build /app/dist /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Copy custom nginx configuration
+COPY nginx.conf /etc/nginx/nginx.conf
 
+# Copy built files from builder stage
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+# Add non-root user for security
+RUN addgroup -g 1001 -S nginx-custom && \
+    adduser -S nginx-custom -u 1001 && \
+    chown -R nginx-custom:nginx-custom /usr/share/nginx/html && \
+    chown -R nginx-custom:nginx-custom /var/cache/nginx && \
+    chown -R nginx-custom:nginx-custom /var/log/nginx && \
+    touch /var/run/nginx.pid && \
+    chown nginx-custom:nginx-custom /var/run/nginx.pid
+
+# Expose port 80
 EXPOSE 80
 
+# Health check
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD wget --quiet --tries=1 --spider http://localhost:80/ || exit 1
+
+# Switch to non-root user
+USER nginx-custom
+
+# Start nginx
 CMD ["nginx", "-g", "daemon off;"]

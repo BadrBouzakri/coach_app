@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Users, Activity, Star, Sparkles } from 'lucide-react';
+import { Target, Users, Activity, Star, Sparkles, Video } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const themeColors = {
@@ -181,6 +181,20 @@ export function ExerciseCard({ exercise, onClick, isFavorite = false, onToggleFa
                             <Sparkles className="w-4 h-4" />
                         </motion.div>
                         <span className="drop-shadow-sm">Animation disponible ({exercise.animation.length} étapes)</span>
+                    </motion.div>
+                )}
+
+                {/* Video Indicator */}
+                {exercise.video && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        className="mt-2 flex items-center gap-2 text-xs text-blue-400 font-medium"
+                    >
+                        <div className="p-1 bg-blue-500/10 rounded-full border border-blue-500/30">
+                            <Video className="w-3 h-3" />
+                        </div>
+                        <span className="drop-shadow-sm">Vidéo disponible</span>
                     </motion.div>
                 )}
             </div>

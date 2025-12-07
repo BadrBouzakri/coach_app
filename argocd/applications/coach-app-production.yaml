@@ -1,0 +1,43 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: coach-app-production
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: coach-app
+  
+  source:
+    repoURL: https://gitlab.com/bouzakri.badr/coach_app.git
+    targetRevision: main
+    path: environments/production
+  
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: coach-app
+  
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
+      allowEmpty: false
+    syncOptions:
+    - CreateNamespace=true
+    - PrunePropagationPolicy=foreground
+    retry:
+      limit: 5
+      backoff:
+        duration: 5s
+        factor: 2
+        maxDuration: 3m
+  
+  ignoreDifferences:
+  - group: apps
+    kind: Deployment
+    jsonPointers:
+    - /spec/replicas
+  
+  # Notifications (optional, requires argocd-notifications)
+  # annotations:
+  #   notifications.argoproj.io/subscribe.on-sync-succeeded.slack: coach-app-channel

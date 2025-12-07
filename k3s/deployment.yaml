@@ -1,22 +1,111 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: coach-app
+  name: coach-app-mongo
+  namespace: coach-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: coach-app-mongo
+  template:
+    metadata:
+      labels:
+        app: coach-app-mongo
+    spec:
+      containers:
+      - name: mongo
+        image: mongo:latest
+        ports:
+        - containerPort: 27017
+        volumeMounts:
+        - name: mongo-storage
+          mountPath: /data/db
+      volumes:
+      - name: mongo-storage
+        emptyDir: {} # For persistence in prod, use PersistentVolumeClaim
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo
+  namespace: coach-app
+spec:
+  selector:
+    app: coach-app-mongo
+  ports:
+    - protocol: TCP
+      port: 27017
+      targetPort: 27017
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: coach-app-backend
+  namespace: coach-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: coach-app-backend
+  template:
+    metadata:
+      labels:
+        app: coach-app-backend
+    spec:
+      containers:
+      - name: coach-app-backend
+        image: coach-app-backend:v3
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000
+        env:
+        - name: MONGO_URI
+          value: "mongodb://mongo:27017/coachapp"
+        - name: JWT_SECRET
+          value: "secret_dev_key_123"
+        - name: NODE_ENV
+          value: "production"
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "300m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: coach-app-backend-service
+  namespace: coach-app
+spec:
+  selector:
+    app: coach-app-backend
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: coach-app-frontend
   namespace: coach-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: coach-app
+      app: coach-app-frontend
   template:
     metadata:
       labels:
-        app: coach-app
+        app: coach-app-frontend
     spec:
       containers:
-      - name: coach-app
-        image: registry.gitlab.com/bouzakri.badr/coach_app/frontend:latest
-        imagePullPolicy: Always
+      - name: coach-app-frontend
+        image: coach-app-frontend:v7
+        imagePullPolicy: Never
         ports:
         - containerPort: 80
         resources:
@@ -26,3 +115,18 @@ spec:
           limits:
             memory: "256Mi"
             cpu: "200m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: coach-app-frontend-service
+  namespace: coach-app
+spec:
+  selector:
+    app: coach-app-frontend
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30080
+  type: NodePort
