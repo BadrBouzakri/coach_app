@@ -1,7 +1,6 @@
 stages:
   - build
   - docker
-  - deploy
 
 variables:
   FRONTEND_IMAGE: $CI_REGISTRY_IMAGE/frontend:$CI_COMMIT_SHORT_SHA
@@ -41,6 +40,7 @@ docker_build_frontend:
     - docker build --no-cache -t $FRONTEND_IMAGE -t $FRONTEND_LATEST ./frontend
     - docker push $FRONTEND_IMAGE
     - docker push $FRONTEND_LATEST
+    - echo "Frontend image pushed - ArgoCD will sync automatically"
   only:
     - main
 
@@ -55,27 +55,11 @@ docker_build_backend:
     - docker build -t $BACKEND_IMAGE -t $BACKEND_LATEST ./backend
     - docker push $BACKEND_IMAGE
     - docker push $BACKEND_LATEST
+    - echo "Backend image pushed - ArgoCD will sync automatically"
   only:
     - main
 
-# ==================== DEPLOY STAGE ====================
-
-deploy_production:
-  stage: deploy
-  image: alpine/k8s:1.28.4
-  before_script:
-    - mkdir -p ~/.kube
-    - echo "$KUBE_CONFIG" | base64 -d > ~/.kube/config
-    - chmod 600 ~/.kube/config
-  script:
-    - echo "Deploying to production..."
-    - kubectl set image deployment/frontend frontend=$FRONTEND_IMAGE -n coach-app
-    - kubectl set image deployment/backend backend=$BACKEND_IMAGE -n coach-app
-    - kubectl rollout status deployment/frontend -n coach-app --timeout=120s
-    - kubectl rollout status deployment/backend -n coach-app --timeout=120s
-    - echo "✅ Deployment complete!"
-  environment:
-    name: production
-    url: http://coach-app.local
-  only:
-    - main
+# ==================== NOTE ====================
+# ArgoCD handles deployment automatically by syncing from this repo.
+# Make sure your Kustomize/manifests use 'latest' tag or configure
+# ArgoCD Image Updater to track new image versions.
