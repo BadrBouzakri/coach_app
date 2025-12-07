@@ -62,7 +62,7 @@ docker_build_backend:
 
 deploy_production:
   stage: deploy
-  image: bitnami/kubectl:latest
+  image: alpine/k8s:1.28.4
   before_script:
     - mkdir -p ~/.kube
     - echo "$KUBE_CONFIG" | base64 -d > ~/.kube/config
